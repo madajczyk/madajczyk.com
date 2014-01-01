@@ -1,0 +1,35 @@
+#
+# Blog Settings
+#
+author: Lee Madajczyk
+description: Madajczyk.com
+url: http://www.madajczyk.com
+title: Lee Madajczyk
+subtitle: madajczyk.com
+gravatar_url: https://2.gravatar.com/avatar/cdf546b601bf29a7eb4ca777544d11cd
+
+
+# Github repositories
+github_user: madajczyk
+github_repo_url: https://github.com/madajczyk/madajczyk.com/
+
+# Twitter
+twitter_user: madajczyk
+twitter_tweet_button: false
+
+
+# Google Analytics
+google_analytics_tracking_id: UA-138037-5
+
+
+#
+# Jekyll Settings
+#
+markdown: rdiscount
+pygments: true
+permalink: /archive/:year/:month/:day/:title/
+rdiscount:
+  extensions: [smart]
+paginate: 5
+paginate_path: "page/:num"
+category_dir: categories
