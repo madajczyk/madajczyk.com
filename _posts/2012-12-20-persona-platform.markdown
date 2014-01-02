@@ -1,7 +1,10 @@
 ---
-published: false
+layout: post
+title: "Persona Platform"
+date: 2012-12-20 21:26:00 -0600
+comments: false
+categories: [tech]
 ---
-
 After a multi-year hiatus, I’ve decided it’s time to begin rebuilding my online persona again.
 
 ![Site Capture from 2009 through 2012]({{ site.url }}/assets/madajczyk.com-hiatus-300x201.jpg)
