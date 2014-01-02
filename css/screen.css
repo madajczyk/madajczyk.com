@@ -205,17 +205,17 @@ a {
 }
 #sub-nav .social a:hover { opacity: 1 }
 #sub-nav .social a.twitter {
-    background: url('/images/social/twitter.png?1385702818') center no-repeat #55cff8;
+    background: url('/assets/social/twitter.png?1385702818') center no-repeat #55cff8;
     border: 1px solid #55CFF8;
 }
 #sub-nav .social a.twitter:hover { border: 1px solid #24c1f6 }
 #sub-nav .social a.github {
-    background: url('/images/social/github.png?1385702818') center no-repeat #afb6ca;
+    background: url('/assets/social/github.png?1385702818') center no-repeat #afb6ca;
     border: 1px solid #afb6ca;
 }
 #sub-nav .social a.github:hover { border: 1px solid #909ab6 }
 #sub-nav .social a.rss {
-    background: url('/images/social/rss.png?1385702818') center no-repeat #ef7522;
+    background: url('/assets/social/rss.png?1385702818') center no-repeat #ef7522;
     border: 1px solid #EF7522;
 }
 #sub-nav .social a.rss:hover { border: 1px solid #cf5d0f }
