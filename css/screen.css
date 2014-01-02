@@ -224,6 +224,11 @@ a {
     border: 1px solid #1793bb;
 }
 #sub-nav .social a.linkedin:hover { border: 1px solid #1793bb }
+#sub-nav .social a.google {
+    background: url('/assets/social/google.png?1385702818') center no-repeat #bd301c;
+    border: 1px solid #bd301c;
+}
+#sub-nav .social a.google:hover { border: 1px solid #bd301c }
 #pagenavi {
     padding: 20px 0;
     height: 20px;
