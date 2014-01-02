@@ -4,7 +4,7 @@
 	{% endif %}
 </div>
 <hgroup>
-  <h1><a href="/">{{ site.title }}</a></h1>
+  <h1><a href="/" rel="me" title="Lee Madajczyk">{{ site.title }}</a></h1>
   {% if site.subtitle %}
     <h2>{{ site.subtitle }}</h2>
   {% endif %}
@@ -19,7 +19,7 @@
 			<a class="twitter" href="http://twitter.com/{{ site.twitter_user }}" title="Twitter">Twitter</a>
 		{% endif %}
 		{% if site.google_user %}
-			<a class="google" href="https://plus.google.com/+{{ site.google_user }}" title="Google+">Google+</a>
+			<a class="google" href="https://plus.google.com/+{{ site.google_user }}>rel=author" rel="author"  title="Google+">Google+</a>
 		{% endif %}
 		{% if site.linkedin_user %}
 			<a class="linkedin" href="http://www.linkedin.com/in/{{ site.linkedin_user }}" title="LinkedIn">LinkedIn</a>
