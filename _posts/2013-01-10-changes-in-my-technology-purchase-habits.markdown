@@ -26,6 +26,6 @@ Technology has changed.  Apple has completely changed how we think about things.
 
 A few years ago, I purchased an iPhone to replace a number of devices that I had been carrying previously.  It completely met my needs for things I would previously do on a laptop.  Lately, however, I’ve noticed I’m not using that platform to its full potential any more, either.
 
-!({{ site.url }}/assets/PicturesOfCats-300x283.jpg)
+![Pictures of Cats]({{ site.url }}/assets/PicturesOfCats-300x283.jpg)
 
 Exactly.  Yeah, even with with that, I’m not sure how I lasted this long.
