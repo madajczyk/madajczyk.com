@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Persona Platform"
-date: 2012-12-20 21:26:00 -0600
+date: 2012-12-20 -0600
 comments: false
 categories: [tech]
 ---

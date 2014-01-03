@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Ultrabook Purchase: A Process of Elimination"
-date: 2013-01-24 23:58:00 -0800
+date: 2013-01-24 -0600
 comments: false
 categories: [tech]
 ---

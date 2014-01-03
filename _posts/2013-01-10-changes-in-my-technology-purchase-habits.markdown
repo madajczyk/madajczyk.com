@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Changes in My Technology Purchase Habits"
-date: 2013-01-10 20:48:00 -0600
+date: 2013-01-10 -0600
 comments: false
 categories: [tech]
 ---

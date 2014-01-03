@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Asus Zenbook UX31A Review"
-date: 2013-01-27 08:18:39 -0800
+date: 2013-01-27 -0600
 comments: false
 categories: [tech]
 ---
