@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Resume from Hibernation"
+date: 2014-01-02 -0600
 comments: false
 categories: [personal,tech]
 ---
