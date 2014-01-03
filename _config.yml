@@ -24,6 +24,8 @@ google_user: LeeMadajczyk
 # Google Analytics
 google_analytics_tracking_id: UA-138037-5
 
+#RSS
+subscribe_rss: http://feeds.feedburner.com/LeeMadajczyk
 
 #
 # Jekyll Settings
