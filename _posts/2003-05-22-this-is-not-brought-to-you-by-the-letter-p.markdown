@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "This is not brought to you by the letter P"

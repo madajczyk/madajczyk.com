@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Isn't that interesting?"

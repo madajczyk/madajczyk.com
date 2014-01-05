@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Twenty Years of DNS"
