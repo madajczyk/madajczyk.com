@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Dumster Diver"
+title: "Dumpster Diver"
 date: 2004-05-18 -0600
 comments: false
 ---
