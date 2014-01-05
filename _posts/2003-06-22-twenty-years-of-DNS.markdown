@@ -1,7 +1,7 @@
 
 ---
 layout: post
-title: "20 Years of DNS"
+title: "Twenty Years of DNS"
 date: 2003-06-22 -0600
 comments: false
 ---
