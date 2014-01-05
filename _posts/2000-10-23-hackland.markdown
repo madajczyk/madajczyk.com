@@ -1,0 +1,13 @@
+---
+layout: post
+title: "Hackland"
+date: 2000-10-23 -0600
+comments: false
+---
+
+> This article was originally posted via Blogger on a domain name I no longer own.  I am consolidating all of my ramblings and drabble here.
+
+It seems that a hacker has been dropping notes on the desktops of people who have broadband Internet access, telling them that their machine is unsecure. Imagine that! The note apparently directed people to grc.com, which is a site that deals with Internet security. So the FBI asked [Steve Gibson][1] if he had anything to do with it! Hmm, even if he did, I would have said no, too! Read [the full article here][2].
+
+[1]: http://grc.com
+[2]: http://www.wired.com/news/technology/0,1282,39235,00.html
