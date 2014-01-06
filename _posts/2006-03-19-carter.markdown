@@ -1,0 +1,6 @@
+---
+layout: post
+title: Carter Madajczyk
+comments: 'false'
+---
+This is an article about Carter.
