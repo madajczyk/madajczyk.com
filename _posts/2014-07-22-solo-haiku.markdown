@@ -7,6 +7,6 @@ comments: false
 
 I, myself, am here
 
-Sentanced on my own, alone
+Out on my own, all alone
 
-You, missing in action.
+Feeling quite lonesome.
