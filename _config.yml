@@ -31,7 +31,7 @@ subscribe_rss: http://feeds.feedburner.com/LeeMadajczyk
 # Jekyll Settings
 #
 markdown: rdiscount
-pygments: true
+highlighter: pygments
 permalink: /archive/:year/:month/:day/:title/
 rdiscount:
   extensions: [smart]
