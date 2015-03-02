@@ -4,6 +4,7 @@ title: "Persona Platform"
 date: 2012-12-20 -0600
 comments: false
 categories: [tech]
+redirect_from: /persona-platform/
 ---
 After a multi-year hiatus, I’ve decided it’s time to begin rebuilding my online persona again.
 

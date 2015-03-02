@@ -6,10 +6,11 @@ description: Lee Madajczyk
 url: https://www.madajczyk.com
 title: Lee Madajczyk
 subtitle: 
-gravatar_url: https://en.gravatar.com/userimage/55098/4af4f27ed744084970522c5cb73f19c4.jpg?size=160
+gravatar_url: https://en.gravatar.com/userimage/55098/4af4f27ed744084970522c5cb73f19c4.jpg
 # Github repositories
 github_user: madajczyk
 github_repo_url: https://github.com/madajczyk/madajczyk.com/
+lang: en
 
 # Twitter
 twitter_user: lmadajczyk
@@ -38,3 +39,6 @@ rdiscount:
 paginate: 5
 paginate_path: "page/:num"
 category_dir: categories
+
+gems:
+  - jekyll-redirect-from

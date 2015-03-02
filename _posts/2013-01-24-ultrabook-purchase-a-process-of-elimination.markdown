@@ -4,6 +4,7 @@ title: "Ultrabook Purchase: A Process of Elimination"
 date: 2013-01-24 -0600
 comments: false
 categories: [tech]
+redirect_from: /ultrabook-purchase-a-process-of-elimination/
 ---
 
 As forecast by [my previous article][1], I’ve purchased a new ultrabook.  Or as I’ve heard they say in England, I’ve purchased a new piece of kit.
