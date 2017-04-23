@@ -31,7 +31,7 @@ subscribe_rss: http://feeds.feedburner.com/LeeMadajczyk
 #
 # Jekyll Settings
 #
-markdown: rdiscount
+markdown: kramdown
 highlighter: rouge
 permalink: /archive/:year/:month/:day/:title/
 rdiscount:
