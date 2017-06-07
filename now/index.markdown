@@ -14,7 +14,7 @@ I'm continuing to work on updating this website, as I haven't really paid much a
 I really enjoy reading.  I just finished reading *American Icon: Alan Mulally and the Fight to Save Ford Motor Company* by Bryce Hoffman.
 I seem to be drawn to books that cover various periods in business.  Like *Conspiracy of Fools: A True Story* by Kurt Eichenwald and other similar titles.
 
-I've begun my latest class through [Fort Hays State University][2]{:target="_blank"}, which is [IDS 401: Ethical Issues in the Professions and Business][5].
+I've begun my latest class through [Fort Hays State University][2]{:target="_blank"}, which is [IDS 401: Ethical Issues in the Professions and Business][5]{:target="_blank"}.
 
 If you'd like to reach out, I'd love to hear from you.  Send a message to my pretentious email address - <lee@madajczyk.com>.
 
