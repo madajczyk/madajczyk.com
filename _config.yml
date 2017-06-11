@@ -40,5 +40,6 @@ paginate_path: "page/:num"
 category_dir: categories
 
 gems:
+  - jekyll-paginate
   - jekyll-redirect-from
   - jekyll-sitemap
