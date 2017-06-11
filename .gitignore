@@ -1,4 +1,7 @@
-_site
+# Jekyll specific
+_site/
+.sass-cache/
+.jekyll-metadata
 
 # Windows image file caches
 Thumbs.db
