@@ -18,11 +18,14 @@ twitter_tweet_button: true
 # LinkedIn
 linkedin_user: madajczyk
 
-# Google Plus
+# Google Pluss
 google_user: LeeMadajczyk
 
 # Google Analytics
 google_analytics_tracking_id: UA-138037-5
+
+#RSS
+subscribe_rss: https://www.madajczyk.com/atom.xml
 
 #
 # Jekyll Settings
@@ -39,4 +42,3 @@ category_dir: categories
 gems:
   - jekyll-redirect-from
   - jekyll-sitemap
-  - jekyll-feed
