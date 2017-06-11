@@ -11,8 +11,8 @@ I live just outside of Green Bay, WI.  I work for [Humana][1]{:target="_blank"},
 
 I'm continuing to work on updating this website, as I haven't really paid much attention to it over the last couple of years.  You can see updates via the [GitHub repository][4].
 
-I really enjoy reading.  I just finished reading [*American Icon: Alan Mulally and the Fight to Save Ford Motor Company*][6] by Bryce Hoffman.
-I seem to be drawn to books that cover various periods in business.  Like []*Conspiracy of Fools: A True Story* by Kurt Eichenwald][7] and other similar titles.
+I really enjoy reading.  I just finished reading [*American Icon: Alan Mulally and the Fight to Save Ford Motor Company*][6]{:target="_blank"} by Bryce Hoffman.
+I seem to be drawn to books that cover various periods in business.  Like [*Conspiracy of Fools: A True Story* by Kurt Eichenwald][7]{:target="_blank"} and other similar titles.
 
 I've begun my latest class through [Fort Hays State University][2]{:target="_blank"}, which is [IDS 401: Ethical Issues in the Professions and Business][5]{:target="_blank"}.
 
