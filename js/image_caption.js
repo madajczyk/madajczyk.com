@@ -1,4 +1,4 @@
-(function($) {
+$(document).ready(function() {
 	// Append caption after pictures
 	$('.entry-content img').each(function(i) {
 		var alt = this.alt;
@@ -16,4 +16,4 @@
 			$(this).wrap('<a href="'+this.src+'" title="'+alt+'" />');
 		}
 	});
-})(jQuery);
+});
