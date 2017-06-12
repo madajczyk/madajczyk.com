@@ -15,10 +15,10 @@ Searching the web, it was no surprise that I found a ton of different vendors ha
 
 On Wednesday, I received the behemoth.  I was able to manhandle it up the stairs (they suggested team lift, of course, but I didn't have anybody to give me a hand).  The unit is fully assembled; all you need to do is remove it from the packaging and place it on the desk.  I took a few pictures as I got everything set up; it only took me about 45 minutes to get everything situated and ready to go.
 
-![Empty desk, before adding the Varidesk](/assets/2015-02-13/before.jpg)
-![Desk with the Varidesk standing desk on top](/assets/2015-02-13/after.jpg)
-![Full desk, in the sitting position](/assets/2015-02-13/sitting.jpg)
-![Full desk, in the standing positionVaridesk](/assets/2015-02-13/standing.jpg)
+![Empty desk, before adding the Varidesk](){: data-src="/assets/2015-02-13/before.jpg"}
+![Desk with the Varidesk standing desk on top](){: data-src="/assets/2015-02-13/after.jpg"}
+![Full desk, in the sitting position](){: data-src="/assets/2015-02-13/sitting.jpg"}
+![Full desk, in the standing positionVaridesk](){: data-src="/assets/2015-02-13/standing.jpg"}
 
 The only concern I have with the desk is that when it's in the standing position, it feels a little wobbly.  I suspect this really isn't an issue with the Varidesk itself, but rather the cheap desk I have it sitting on.  For purposes of style, the desk has only two legs coming up from the floor, mounted on a horizontal crossbar which makes it almost like a wide I-beam from the side (you can see this pretty clearly in the first picture).  So, when the desk is raised, I have to be careful not to lean on it, but that's probably better anyway.
 
