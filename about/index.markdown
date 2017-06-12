@@ -4,7 +4,6 @@ title: "About"
 date: 2017-05-23 -0600
 comments: false
 categories: [personal]
-sharing: false
 ---
 
 *TODO*: This is one hell of a neglected page that really needs some updating.

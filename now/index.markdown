@@ -4,7 +4,6 @@ title: "Now"
 date: 2017-05-23 -0500
 comments: false
 categories: [personal]
-sharing: false
 ---
 
 I live just outside of Green Bay, WI.  I work for [Humana][1]{:target="_blank"}, in their Information Technology department, as I have for the past handful of years.  Previously, I worked for a large regional bank.  I loved working there, but that love wasn't reciprocated.
