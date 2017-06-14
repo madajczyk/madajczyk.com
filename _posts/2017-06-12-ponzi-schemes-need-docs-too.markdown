@@ -24,7 +24,7 @@ scandal][4]{:target="_blank"} that he confessed to in late 2008.
 I won't give away many details from the podcast, as it was very well done (and
 you should go listen to it immediately).  But, I couldn't help but to reflect on
 a very important point.  In the podcast, it was suggested that the code comments
-from the application(s) used to generate the fraudlent transaction statements and
+from the application(s) used to generate the fraudulent transaction statements and
 other corroborating documents were used to confirm that the trading programs were
 specifically constructed to target or avoid ongoing audit activity.
 
