@@ -10,16 +10,16 @@ We've all been there, stuck debugging some confusing code that has zero code
 comments.  It made sense to the dev at the time, but they've long since moved on
 and you're stuck supporting that bad boy.
 
-[GitHub][1]{:target="_blank"} recently released the results of their
-[Open Source Survey][2]{:target="_blank"}, which polled active users to
+[GitHub][1] recently released the results of their
+[Open Source Survey][2], which polled active users to
 better understand how they were using the software.  One of the primary insights
 they learned?
 
 > Documentation is highly valued, but often overlooked.
 
-I just recently finished listening to [Ponzi Supernova][3]{:target="_blank"}.  This
+I just recently finished listening to [Ponzi Supernova][3].  This
 podcast provides some interesting backstory around the [Bernie Madoff investment
-scandal][4]{:target="_blank"} that he confessed to in late 2008.
+scandal][4] that he confessed to in late 2008.
 
 I won't give away many details from the podcast, as it was very well done (and
 you should go listen to it immediately).  But, I couldn't help but to reflect on
@@ -29,7 +29,7 @@ other corroborating documents were used to confirm that the trading programs wer
 specifically constructed to target or avoid ongoing audit activity.
 
 That caught my attention, so I did some searching.  Sure enough, I came across
-[an article that detailed][5]{:target="_blank"} that the RPG programs included
+[an article that detailed][5] that the RPG programs included
 code comments specific enough to convince a non-technical jury that the
 application was indeed built and subsequently manipulated in a way to pass
 various audits:
