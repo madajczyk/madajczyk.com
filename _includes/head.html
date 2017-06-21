@@ -9,6 +9,8 @@
 	<title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
 	<meta name="author" content="{{ site.author }}">
 
+  {% include google_analytics.html %}
+	
 	{% capture description %}
 		{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}
 	{% endcapture %}
@@ -59,6 +61,4 @@
 	<link rel="me" type="text/html" href="http://twitter.com/lmadajczyk"/>
 
   <link rel="manifest" href="/icons/manifest.json">
-
-  	{% include google_analytics.html %}
 </head>
