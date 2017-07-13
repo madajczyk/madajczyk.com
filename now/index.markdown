@@ -18,7 +18,7 @@ which is [IDS 401: Ethical Issues in the Professions and Business][6].
 
 If you'd like to reach out, I'd love to hear from you.  Send a message to my pretentious email address - <lee@madajczyk.com>.
 
-The addition of this page was inspired by [Derek Sivers][3].  This was last updated on July 3, 2017.
+The addition of this page was inspired by [Derek Sivers][3].  This was last updated on July 12, 2017.
 
 [1]: https://www.humana.com/
 [2]: https://www.fhsu.edu/
