@@ -36,7 +36,11 @@ paginate: 5
 paginate_path: "page/:num"
 category_dir: categories
 
+feed:
+  path: atom.xml
+
 gems:
   - jekyll-paginate
   - jekyll-redirect-from
   - jekyll-sitemap
+  - jekyll-feed
