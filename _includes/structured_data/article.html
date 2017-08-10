@@ -1,0 +1,37 @@
+<script type="application/ld+json">
+{
+   "@context":"http://schema.org",
+   "@type":"BlogPosting",
+   "headline":"{{ include.headline }}",
+   "url":"https://www.madajczyk.com/{{ include.link }}",
+   "datePublished":"{{ include.date | | date: '%Y-%m-%d' }}",
+   "author":{
+     "@type": "Person",
+     "name": "Lee Madajczyk",
+     "sameAs": [
+         "https://twitter.com/lmadajczyk",
+         "https://github.com/madajczyk",
+         "https://plus.google.com/+LeeMadajczyk"
+      ]
+   },
+   "publisher":{
+     "@type": "Person",
+     "name": "Lee Madajczyk",
+     "sameAs": [
+         "https://twitter.com/lmadajczyk",
+         "https://github.com/madajczyk",
+         "https://plus.google.com/+LeeMadajczyk"
+      ],
+      "logo": {
+  		"@type": "ImageObject",
+  		"contentUrl": "https://www.gravatar.com/avatar/a178ce88ccb7317c57bc90fbb3360d80.jpg?s=320",
+  		  "url": "https://www.madajczyk.com/"
+    }
+   },
+   "mainEntityOfPage":{
+      "@type":"WebPage",
+      "@id":"https://www.madajczyk.com{{ include.link }}"
+   },
+   "articleBody":"{{ include.content | strip_html | xml_escape | normalize_whitepace | strip_newlines | strip }}"
+}
+</script>
