@@ -1,8 +1,9 @@
 ---
 layout: default
 ---
-
 {% assign index = true %}
+{% include structured_data/index.html %}
+
 <div itemscope itemtype="http://schema.org/Blog">
 {% for post in paginator.posts %}
 {% assign content = post.content %}
