@@ -3,8 +3,13 @@ layout: default
 ---
 
 <article class="page">
-    {% if page.title %}
-    <h1 class="title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
-    {% endif %}
+  {% capture pageurl %}{{ page.url }}{% endcapture %}
+  {% if page.title %}
+    {% assign pagetitle = page.title %}
+  {% else %}
+    {% assign pagetitle = site.title %}
+  {% endif %}
+  
+    <h1 class="title" itemprop="headline name"><a href="{{ pageurl }}">{{ pagetitle }}</a></h1>
     <div class="entry-content">{{ content }}</div>
 </article>
