@@ -1,21 +1,30 @@
 <script type="text/javascript">
-  function downloadJSAtOnload() {
-    var element = document.createElement("script");
-      element.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js";
-      document.body.appendChild(element);
-    var element = document.createElement("script");
-      element.src = "/js/jquery.unveil.min.js";
-      document.body.appendChild(element);
-    var element = document.createElement("script");
-      element.src = "/js/image_handling.js";
-      document.body.appendChild(element);
-  }
-  if (window.addEventListener)
-    window.addEventListener("load", downloadJSAtOnload, false);
-  else if (window.attachEvent)
-    window.attachEvent("onload", downloadJSAtOnload);
-  else window.onload = downloadJSAtOnload;
+  (function() {
+      function getScript(url,success){
+        var script=document.createElement('script');
+        script.src=url;
+        var head=document.getElementsByTagName('head')[0],
+            done=false;
+        script.onload=script.onreadystatechange = function(){
+          if ( !done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete') ) {
+            done=true;
+            //if(success && getScript().call(success) == '[object Function]') { success(); }
+            if(success && typeof success  === 'function') success();
+            script.onload = script.onreadystatechange = null;
+            head.removeChild(script);
+          }
+        };
+        head.appendChild(script);
+      }  // function() line 2
 
+  // Load jquery libary first, then retrieve the dependent libraries.
+  getScript('//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js',function(){
+      getScript("/js/jquery.unveil.min.js");
+      getScript("/js/image_handling.js");
+    });
+  })();
+
+  // serviceWorker instantiation
   if ('serviceWorker' in navigator) {
       var promiseService = navigator.serviceWorker.register('/serviceworker.js');
       promiseService.then(function(reg) {
@@ -24,5 +33,4 @@
           console.log( "Worker Register failed.", err);
       });
   }
-
 </script>
