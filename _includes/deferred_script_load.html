@@ -15,4 +15,14 @@
   else if (window.attachEvent)
     window.attachEvent("onload", downloadJSAtOnload);
   else window.onload = downloadJSAtOnload;
+
+  if ('serviceWorker' in navigator) {
+      var promiseService = navigator.serviceWorker.register('/serviceworker.js');
+      promiseService.then(function(reg) {
+          console.log( "Worker Register successfully.", reg);
+      }).catch(function(err) {
+          console.log( "Worker Register failed.", err);
+      });
+  }
+
 </script>
