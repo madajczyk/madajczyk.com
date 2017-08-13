@@ -22,6 +22,7 @@
 
 	<link rel="alternate" href="/atom.xml" title="{{site.title}}" type="application/atom+xml">
 	<link rel="alternate" href="/feed.json" title="{{site.title}}" type="application/json" />
+  <link href="/opensearch.xml" rel="search" title="madajczyk.com search" type="application/opensearchdescription+xml">
 
 	{% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' }}{% endif %}{% endcapture %}
 	<link rel="canonical" href="{{ canonical }}">
