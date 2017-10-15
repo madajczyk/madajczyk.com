@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Now"
-date: 2017-08-30 -0500
+date: 2017-10-15 -0500
 comments: false
 categories: [personal]
 ---
@@ -13,7 +13,7 @@ regional bank that you most likely haven't heard of.  I loved working there,
 but it seems that my love wasn't reciprocated.
 
 I'm continuing to work on updating this website, as I haven't really paid much
-attention to it over the last couple of years.  You can see the updates in the 
+attention to it over the last couple of years.  You can see the updates in the
 [GitHub repository][3].  Just don't look too
 closely.  I'm not really good at this.
 
@@ -22,14 +22,16 @@ darned if I can remember what it was.  I've been consumed lately by podcasts, so
 I'm finding it harder and harder to find time to read.  I should consume the
 Goodreads feed in a better way, but right now, here's the [raw view][4].
 
-The next semester has started at [Fort Hays State University][1], and I'm trying
-to take 9 credits this time.  This might be too much, we'll see how it goes.
+Still attending [Fort Hays State University][1], and I'm halfway through
+a semester where I'm taking 9 credits.  One is a 16-week class, Macroeconomics,
+and then two 8-week classes.  I just finished Management 301 on Friday, and then
+Marketing 301 starts tomorrow.
 
 If you'd like to reach out, I'd love to hear from you.  Send a message to my
 pretentious email address - <lee@madajczyk.com>.
 
 The addition of this page was inspired by [Derek Sivers][2].  This was last
-updated on August 30th, 2017.
+updated on Sunday, October 15th, 2017.
 
 [1]: https://www.fhsu.edu/
 [2]: https://sivers.org/now
