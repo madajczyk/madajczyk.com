@@ -1,39 +1,33 @@
 ---
 layout: page
 title: "Now"
-date: 2017-10-15 -0500
+date: 2018-1-1 -0500
 comments: false
 categories: [personal]
 ---
 
-I find myself living (again!) just outside of Green Bay, WI.  I work in the IT
-department for an insurance company that you've probably heard of.  I have been
-employed there for the past handful of years.  Previously, I worked for a large
-regional bank that you most likely haven't heard of.  I loved working there,
-but it seems that my love wasn't reciprocated.
+I'm just wrapping up a decently long vacation, and will be returning to work
+tomorrow.  With the holiday celebrations, the first part of the vacation was
+a little hectic, but that's probably to be expected.
 
-I'm continuing to work on updating this website, as I haven't really paid much
-attention to it over the last couple of years.  You can see the updates in the
-[GitHub repository][3].  Just don't look too
-closely.  I'm not really good at this.
+I finished reading True Faith and Allegiance from Mark Greaney, which is an
+extension of the [Ryanverse][3] even though the book isn't listed.
 
-I really enjoy reading.  I recently finished reading something or other, but
-darned if I can remember what it was.  I've been consumed lately by podcasts, so
-I'm finding it harder and harder to find time to read.  I should consume the
-Goodreads feed in a better way, but right now, here's the [raw view][4].
+For a good portion of the vacation, I purposely stayed away from the keyboard,
+but I've spent the last few days trying to get back into the swing of things. I
+did some work on the [Raspberry Pi][4], and I'm really enjoying the platform.
 
-Still attending [Fort Hays State University][1], and I'm halfway through
-a semester where I'm taking 9 credits.  One is a 16-week class, Macroeconomics,
-and then two 8-week classes.  I just finished Management 301 on Friday, and then
-Marketing 301 starts tomorrow.
+I am definitely still enjoying the winter break from [Fort Hays State University][1],
+and finished up another semester a few weeks ago.  I'm now about one-third of
+the way done with the credits for this go-around.
 
 If you'd like to reach out, I'd love to hear from you.  Send a message to my
 pretentious email address - <lee@madajczyk.com>.
 
-The addition of this page was inspired by [Derek Sivers][2].  This was last
-updated on Sunday, October 15th, 2017.
+The addition of this page was inspired by [Derek Sivers][2].  I last updated
+it on Monday, January 1st, 2018.
 
 [1]: https://www.fhsu.edu/
 [2]: https://sivers.org/now
-[3]: https://github.com/madajczyk/madajczyk.com/commits/gh-pages
-[4]:  https://www.goodreads.com/review/list_rss/51904610?key=0zCxSFNLoWQ3rnSC1_MMVWRzvXAcEdilCfTv9yDIm0ISVmwx&shelf=currently-reading
+[3]: https://en.wikipedia.org/wiki/Ryanverse
+[4]: http://www.raspberrypi.org/
