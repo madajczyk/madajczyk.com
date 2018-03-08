@@ -1,15 +1,17 @@
 ---
 layout: default
 ---
+    {% capture pageurl %}{{ page.url }}{% endcapture %}
+    {% if page.title %}{% assign pagetitle = page.title %}{% else %}{% assign pagetitle = site.title %}{% endif %}
 
-<article class="page">
-  {% capture pageurl %}{{ page.url }}{% endcapture %}
-  {% if page.title %}
-    {% assign pagetitle = page.title %}
-  {% else %}
-    {% assign pagetitle = site.title %}
-  {% endif %}
-  
-    <h1 class="title" itemprop="headline name"><a href="{{ pageurl }}">{{ pagetitle }}</a></h1>
-    <div class="entry-content">{{ content }}</div>
-</article>
+<section class="articles">
+    <article>
+        <div class="column is-8 is-offset-2">
+            <h1 class="title">{{ pagetitle }}</h1>
+            <hr />
+            <div class="content article-body">
+                {{ content }}
+            </div>    
+        </div>
+    </article>
+</section>

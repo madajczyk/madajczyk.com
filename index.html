@@ -7,8 +7,10 @@ layout: default
 <div itemscope itemtype="http://schema.org/Blog">
 {% for post in paginator.posts %}
 {% assign content = post.content %}
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-        {% include article.html %}
+    <article class="articles" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="column is-8 is-offset-2">
+                {% include article.html %}
+        </div>
     </article>
 {% endfor %}
 </div>

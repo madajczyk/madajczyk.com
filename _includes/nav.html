@@ -1,0 +1,53 @@
+<nav class="navbar is-fixed-top is-info" role="navigation" aria-label="main navigation">
+	<div class="navbar-brand">
+		<a class="navbar-item brand-text" href="/">Lee Madajczyk</a>
+		<div class="navbar-burger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<div class="navbar-menu">
+		<div class="navbar-end">
+			<a class="navbar-item" href="/archive">Archives</a>
+			<a class="navbar-item" href="/now">Now</a>
+			<a class="navbar-item" href="/about">About</a>
+			<div class="navbar-item has-dropdown is-hoverable">
+				<a class="navbar-link">Elsewhere</a>
+				<div class="navbar-dropdown is-boxed">
+					{% if site.github_user %}
+					<a class="navbar-item" href="https://github.com/{{ site.github_user }}" aria-label="GitHub">
+						<span class="icon" style="color: #000000; padding-right: 8px;"><i class="fab fa-lg fa-github"></i></span>
+						GitHub
+					</a>
+					{% endif %}
+					{% if site.linkedin_user %}
+					<a class="navbar-item" href="http://www.linkedin.com/in/{{ site.linkedin_user }}" aria-label="LinkedIn">
+						<span class="icon" style="color: #2777bf; padding-right: 8px;"><i class="fab fa-lg fa-linkedin"></i></span>
+						LinkedIn
+					</a>
+					{% endif %}
+					{% if site.twitter_user %}
+					<a class="navbar-item" href="http://twitter.com/{{ site.twitter_user }}" aria-label="Twitter">
+						<span class="icon" style="color: #55acee; padding-right: 8px;"><i class="fab fa-lg fa-twitter"></i></span>
+						Twitter
+					</a>
+					{% endif %}
+					{% if site.google_user %}
+					<a class="navbar-item" href="https://plus.google.com/+{{ site.google_user }}?rel=author" rel="author" aria-label="Google+">
+						<span class="icon" style="color: #ea4335; padding-right: 8px;"><i class="fab fa-google-plus-g"></i></span>
+						Google+
+					</a>
+					{% endif %}
+					{% if site.email %}
+					<hr class="navbar-divider">
+					<a class="navbar-item" href="mailto:{{ site.email }}" aria-label="Email">
+						<span class="icon" style="color: #000000; padding-right: 8px;"><i class="fab fa-lg fa-email"></i></span>
+						Email
+					</a>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>

@@ -4,8 +4,8 @@
 	{% capture pageurl %}{{ page.url }}{% endcapture %}
   {% capture pagetitle %}{{ page.title  }}{% endcapture %}
 
-  <h1 class="title" itemprop="headline name"><a href="{{ pageurl }}">{{ pagetitle }}</a></h1>
+	<h1 class="title" itemprop="headline name">{{ pagetitle }}</h1>
+	<hr />
 	{% include structured_data/article.html %}
 {% endif %}
-	{% include post/meta.html %}
-	<div class="entry-content" itemprop="articleBody">{{ content }}</div>
+	<div class="content article-body" itemprop="articleBody">{{ content }}</div>

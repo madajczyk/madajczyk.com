@@ -3,7 +3,13 @@ layout: default
 single: true
 ---
 
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">{% include article.html %}</article>
+<article class="articles" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="column is-8 is-offset-2">
+                {% include article.html %}
+        </div>
+</article>
+
+<!--
 <div id="page-navigation">
         <div class="previous">
         {% if page.previous.url %}
@@ -19,3 +25,4 @@ single: true
         {% endif %}
         </div>
 </div>
+-->
