@@ -6,7 +6,11 @@ comments: false
 categories: [personal]
 ---
 
-*TODO*: This is one hell of a neglected page that really needs some updating.
+<article class="message is-info">
+  <div class="message-body">
+    *TODO*: This is one hell of a neglected page that really needs some updating.
+  </div>
+</article>
 
 I really float back and forth here.  If you wanted to know me, you would.  But,
 some folks _think_ they know me, but they don't.  Quite the enigma, isn't it?
