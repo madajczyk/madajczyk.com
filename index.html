@@ -14,12 +14,10 @@ layout: default
     </article>
 {% endfor %}
 </div>
-<nav id="pagenavi">
-    {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' | replace: 'index.html', '' }}" class="prev">Prev</a>
-    {% endif %}
-    {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="next">Next</a>
-    {% endif %}
-    <div class="center"><a href="/archive">Site Archive</a></div>
-</nav>
+
+<div class="column is-8 is-offset-2">
+    <nav class="pagination" role="navigation" aria-label="pagination">
+        <a class="pagination-previous" title="Previous Page" {% if paginator.previous_page %} href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' | replace: 'index.html', '' }}" {% else %}disabled{% endif %}>Previous page</a>
+        <a class="pagination-next" title="Next Page" {% if paginator.next_page %} href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"{% else %}disabled{% endif %}>Next page</a>
+    </nav>
+</div>
