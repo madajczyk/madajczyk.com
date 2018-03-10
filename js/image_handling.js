@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	// Append caption after pictures
-	$('.entry-content img').each(function(i) {
+	$('.content img').each(function(i) {
 		var alt = this.alt;
 		var parent = $(this).parent();
 
@@ -16,7 +16,7 @@ $(document).ready(function() {
 			$(this).wrap('<a href="'+this.src+'" title="'+alt+'" />');
 		}
 	});
-  $(".entry-content img").unveil(50, function() {
+  $(".content img").unveil(50, function() {
     $(this).load(function() {
       console.log(this.src + " loaded");
     });
