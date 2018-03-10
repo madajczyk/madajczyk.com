@@ -15,7 +15,11 @@ and you're stuck supporting that bad boy.
 better understand how they were using the software.  One of the primary insights
 they learned?
 
-> Documentation is highly valued, but often overlooked.
+<article class="message is-dark">
+  <div class="message-body">
+    "Documentation is highly valued, but often overlooked."
+  </div>
+</article>
 
 I just recently finished listening to [Ponzi Supernova][3].  This
 podcast provides some interesting backstory around the [Bernie Madoff investment
@@ -37,16 +41,20 @@ various audits:
 So the pair resorted to what any normal RPG programmers would do: They added
 comments to the code.
 
-> "The programmers nicely commented the code, which made explaining some things
-> easier, because they said this is what they’re doing," Diedrich says. The jury
-> didn’t have to try to read the code. They said ‘This is how we’re generating
-> these numbers.'"
->
-> Perez and O’Hara also added comments to ensure their audit preparation was up to
-> snuff. "There were comments in the code hat indicated, for this kind of audit we
-> need this kind of information," Diedrich says. "The code would say, ‘We don’t
-> need this for this audit,’ so they commented it out from the code at times,
-> then they would put it back in for the other audits."
+<article class="message is-dark">
+  <div class="message-body">
+    "The programmers nicely commented the code, which made explaining some things
+    easier, because they said this is what they’re doing," Diedrich says. The jury
+    didn’t have to try to read the code. They said ‘This is how we’re generating
+    these numbers.'"<br />
+    <br />
+    Perez and O’Hara also added comments to ensure their audit preparation was up to
+    snuff. "There were comments in the code hat indicated, for this kind of audit we
+    need this kind of information," Diedrich says. "The code would say, ‘We don’t
+    need this for this audit,’ so they commented it out from the code at times,
+    then they would put it back in for the other audits."
+  </div>
+</article>
 
 So, there you have it.  Code comments are important to everyone, because you
 never know when you'll be involved in a high stakes Ponzi scheme designed to
