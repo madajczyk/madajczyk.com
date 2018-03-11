@@ -48,3 +48,4 @@ plugins:
 
 algolia:
   application_id: a8844ad6848fe599bac0fea247e39d50
+  index_name: madajczyk.com
