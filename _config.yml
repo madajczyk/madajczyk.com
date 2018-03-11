@@ -47,5 +47,5 @@ plugins:
   - jekyll-feed
 
 algolia:
-  application_id: a8844ad6848fe599bac0fea247e39d50
+  application_id: WKO5G7WGJH
   index_name: madajczyk.com
