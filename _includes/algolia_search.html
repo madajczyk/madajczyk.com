@@ -1,23 +1,22 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-<script type="text/javascript">
-    docsearch({
-    apiKey: 'a8844ad6848fe599bac0fea247e39d50',
-    indexName: 'madajczyk.com',
-    inputSelector: '<YOUR_INPUT_DOM_SELECTOR>'
-    });
-</script>
-
 <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/algoliasearch-helper@2.24.0/dist/algoliasearch.helper.min.js"></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch-theme-algolia.min.css">
 
 <script>
 const search = instantsearch({
-  appId: 'WKO5G7WGJH',
-  apiKey: 'a8844ad6848fe599bac0fea247e39d50',
-  indexName: 'madajczyk.com',
+  appId: '{{ site.algolia.application_id }}',
+  apiKey: '{{ site.algolia.search_only_api_key }}',
+  indexName: '{{ site.algolia.index_name }}',
+
+  searchFunction: function (helper) {
+    if (helper.state.query === '') {
+        document.querySelector('#search-hits').innerHTML = '';
+        return;
+    }
+    helper.search();
+  },
   searchParameters: {
     restrictSearchableAttributes: [
       'title',
@@ -37,19 +36,18 @@ const hitTemplate = function(hit) {
   const content = hit._highlightResult.html.value;
 
   return `
-    <div class="post-item">
-      <span class="post-meta">${date}</span>
-      <h2><a class="post-link" href="${url}">${title}</a></h2>
-      <div class="post-snippet">${content}</div>
-    </div>
+    <article class="searchresult">
+      <p class="title is-3"><a href="${url}">${title}</a></p>
+      <p class="subtitle is-5">${date}</p>
+      <div class="content">${content}</div>
+    </article>
   `;
 }
-
 
 search.addWidget(
   instantsearch.widgets.searchBox({
     container: '#search-searchbar',
-    placeholder: 'Search into posts...',
+    placeholder: 'Search site',
     poweredBy: true // This is required if you're on the free Community plan
   })
 );
@@ -58,7 +56,8 @@ search.addWidget(
   instantsearch.widgets.hits({
     container: '#search-hits',
     templates: {
-      item: hitTemplate
+      item: hitTemplate,
+      empty: "<div class=\"notification is-danger\"><i class=\"fas fa-exclamation-triangle\"></i> No results found for the search term you provided.</div>"
     }
   })
 );
@@ -71,16 +70,17 @@ search.start();
   max-width: 100%;
   margin-bottom: 15px;
 }
-.post-item {
+article .searchresult {
   margin-bottom: 30px;
 }
-.post-link .ais-Highlight {
-  color: #111;
+
+.title .ais-Highlight {
+  background: #ff0;
   font-style: normal;
   text-decoration: underline;
 }
-.post-snippet .ais-Highlight {
-  color: #2a7ae2;
+.content .ais-Highlight {
+  background: #ff0;
   font-style: normal;
   font-weight: bold;
 }
