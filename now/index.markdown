@@ -1,31 +1,33 @@
 ---
 layout: page
 title: "Now"
-date: 2018-1-24 -0500
 comments: false
 categories: [personal]
 ---
 
-Back to work.
+<article class="message is-info">
+  <div class="message-body">
+    The addition of this page was inspired by <a href="https://sivers.org/now">Derek Sivers</a>.
+    Great idea!  I've last updated it on {{ "now" | date: "%A, %d %B %Y" }}
+    (<a href="https://github.com/madajczyk/madajczyk.com/commits/master/now/index.markdown">see older updates</a>)
+  </div>
+</article>
 
-During my break, I was able to finally get caught up with Season 3 of Netflix's
-excellent show [Narcos][5].  I also  found some time to do some digging into
-[MongoDB][6], as well as start heading down one of the learning paths offered via
-[Microsoft's AI School][7].
+Lots of changes here on the site, although hardly anybody will notice..  Completely
+revamped the format, using a new template I built based on [Bulma][3]. Finally
+implemented a number of features I've been meaning to add, including an improved
+[search][4] courtesy of [Algolia][5].
 
-I've started up the next semester at [Fort Hays State University][1].  I'm taking
-nine more credits, and I should be about halfway done once I get through with it.
+Almost halfway through the semester at [Fort Hays State University][1].  I'm taking
+nine more credits, which I think I finally am starting to get dialed in on.  When I
+finish, I should be about halfway through the [BGS][2] degree program.  Woot!
 
-If you'd like to reach out, I'd love to hear from you.  Send a message to my
-pretentious email address - <lee@madajczyk.com>.
-
-The addition of this page was inspired by [Derek Sivers][2].  I last updated
-it on Monday, January 24th, 2018.
+If you'd like to reach out, I'd love to hear from you.  Feel free to send a message to
+my (probably) pretentious email address: 
+<a href='mailto&#58;l&#101;&#37;65%40m&#97;d%6&#49;jcz%&#55;9&#107;&#46;c&#111;&#109;'>le&#101;&#64;&#109;&#97;dajcz&#121;&#107;&#46;com</a>.  Cheers!
 
 [1]: https://www.fhsu.edu/
-[2]: https://sivers.org/now
-[3]: https://en.wikipedia.org/wiki/Ryanverse
-[4]: https://www.raspberrypi.org/
-[5]: https://www.netflix.com/title/80025172
-[6]: https://www.mongodb.com/
-[7]: https://aischool.microsoft.com/
+[2]: https://www.fhsu.edu/bgs/
+[3]: https://bulma.io/
+[4]: /search
+[5]: https://www.algolia.com
