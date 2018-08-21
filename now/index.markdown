@@ -13,14 +13,14 @@ categories: [personal]
   </div>
 </article>
 
-Lots of changes here on the site, although hardly anybody will notice..  Completely
-revamped the format, using a new template I built based on [Bulma][3]. Finally
-implemented a number of features I've been meaning to add, including an improved
-[search][4] courtesy of [Algolia][5].
+It's been a busy few months, and summer is already starting to draw to a close.
+Boo.  It's amazing how quickly the time can pass if you're not actively
+keeping tracking of it, isn't it?
 
-Almost halfway through the semester at [Fort Hays State University][1].  I'm taking
-nine more credits, which I think I finally am starting to get dialed in on.  When I
-finish, I should be about halfway through the [BGS][2] degree program.  Woot!
+Starting my next semester at [Fort Hays State University][1].  I'm only taking
+six credits this time around.  I managed to burn myself out in the Spring
+semester, to the point that I almost didn't want to return.  But, I don't want
+to give up yet on finishing my [BGS][2] degree.
 
 If you'd like to reach out, I'd love to hear from you.  Feel free to send a message to
 my (probably) pretentious email address: 
@@ -28,6 +28,3 @@ my (probably) pretentious email address:
 
 [1]: https://www.fhsu.edu/
 [2]: https://www.fhsu.edu/bgs/
-[3]: https://bulma.io/
-[4]: /search
-[5]: https://www.algolia.com
