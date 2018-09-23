@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "About"
-date: 2017-05-23 -0600
+date: 2017-05-23 00:00:00 -0600
 comments: false
 categories: [personal]
 ---
