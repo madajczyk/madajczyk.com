@@ -8,19 +8,18 @@ categories: [personal]
 <article class="message is-info">
   <div class="message-body">
     The addition of this page was inspired by <a href="https://sivers.org/now">Derek Sivers</a>.
-    Great idea!  I've last updated it on {{ "now" | date: "%A, %d %B %Y" }}
-    (<a href="https://github.com/madajczyk/madajczyk.com/commits/master/now/index.markdown">see older updates</a>)
+    Great idea!  I've last updated it on Friday, 28 December 2018
+    (<a href="https://github.com/madajczyk/madajczyk.com/commits/master/now/index.markdown">see older updates</a>).
   </div>
 </article>
 
-It's been a busy few months, and summer is already starting to draw to a close.
-Boo.  It's amazing how quickly the time can pass if you're not actively
-keeping tracking of it, isn't it?
+Finished the winter semester at [Fort Hays State University][1] a few weeks ago.  Still feeling
+burned out, but realized that I'm not that far from earning my [BGS][2] degree, so I guess I'll
+power through it.
 
-Starting my next semester at [Fort Hays State University][1].  I'm only taking
-six credits this time around.  I managed to burn myself out in the Spring
-semester, to the point that I almost didn't want to return.  But, I don't want
-to give up yet on finishing my [BGS][2] degree.
+Just poking around on the site, fixing a few things that have been bothering me.  I think it's
+time to set some goals and figure out what I should focus on in 2019, including setting a
+writing and publishing schedule for this site.
 
 If you'd like to reach out, I'd love to hear from you.  Feel free to send a message to
 my (probably) pretentious email address: 
