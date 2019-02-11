@@ -27,7 +27,7 @@ function updateStaticCache() {
             ].concat(offlinePages));
             // These items must be cached for the Service Worker to complete installation
             return cache.addAll([
-                '/icons/manifest.json',
+                '/icons/site.webmanifest',
                 '/js/jquery.unveil.min.js',
                 '/js/image_handling.js'
             ]);
