@@ -1,5 +1,5 @@
 {% if index %}
-	<h1 class="title" itemprop="headline name"><a href="{{ post.url }}" itemprop="url mainEntityOfPage">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a></h1>
+	<h1 class="title p-name" itemprop="headline name"><a href="{{ post.url }}" itemprop="url mainEntityOfPage">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a></h1>
 {% else %}
 	{% capture pageurl %}{{ page.url }}{% endcapture %}
   {% capture pagetitle %}{{ page.title  }}{% endcapture %}
@@ -7,10 +7,13 @@
 	{% capture has_date %}{{ date | size }}{% endcapture %}
 	<h1 class="title" itemprop="headline name">{{ pagetitle }}</h1>
 	{% if has_date != '0' %}
-		<p class="subtitle"><time datetime="{{ date | datetime | date_to_xmlschema }}" itemprop="datePublished">{{ date | date: "%B %e, %Y" }}</time></p>
+		<p class="subtitle">
+			<time datetime="{{ date | datetime | date_to_xmlschema }}" itemprop="datePublished">{{ date | date: "%B %e, %Y" }}</time>
+			<span class="dt-published">{{ date }}</span>
+		</p>
 	{% endif %}
 
 	<hr />
 	{% include structured_data/article.html %}
 {% endif %}
-	<div class="content article-body" itemprop="articleBody">{{ content }}</div>
+	<div class="content article-body e-content" itemprop="articleBody">{{ content }}</div>
