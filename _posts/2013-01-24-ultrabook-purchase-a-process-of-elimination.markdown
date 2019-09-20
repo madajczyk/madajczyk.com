@@ -31,7 +31,7 @@ I ended up passing on the MacBook Air for two main reasons: the interface hurdle
 
 On Tuesday morning I ordered the ultrabook and picked it up within about an hour or so.  I’ve captured a number of first impressions on the device and intend to share them as soon as I can get them complied.  Short answer is that as a developer, I find this to be a great machine.  As long as the hardware keeps up, this should serve me well for quite a while.  I’ll be putting it through its paces over the coming weekend and will share anything that I might learn.
 
-[1]: http://www.madajczyk.com/archive/2013/01/11/changes-in-my-technology-purchase-habits/
+[1]: https://madajczyk.com/archive/2013/01/11/changes-in-my-technology-purchase-habits/
 [2]: http://www.apple.com/macbookair/
 [3]: http://zenbook.asus.com/
 [4]: http://www.dell.com/us/p/xps-12-l221x/pd?c=us&cs=19&l=en&s=dhs&~ck=mn

@@ -24,4 +24,4 @@ Other web musings on this include this general one on mnot's site, and also this
 [3]: http://www.mnot.net/blog/2005/11/18/tripsense
 [4]: http://www.mnot.net/blog/2005/11/18/tripsense
 [5]: http://www.elecdesign.com/Articles/Index.cfm?AD=1&ArticleID=8663
-[6]: http://www.madajczyk.com/archive/2006/01/08/booted-from-tripsense/
+[6]: http://madajczyk.com/archive/2006/01/08/booted-from-tripsense/

@@ -3,7 +3,7 @@
    "@context":"http://schema.org",
    "@type":"BlogPosting",
    "headline":"{{ include.headline }}",
-   "url":"https://www.madajczyk.com/{{ include.link }}",
+   "url":"https://madajczyk.com/{{ include.link }}",
    "datePublished":"{{ include.date | | date: '%Y-%m-%d' }}",
    "author":{
      "@type": "Person",
@@ -25,12 +25,12 @@
       "logo": {
   		"@type": "ImageObject",
   		"contentUrl": "https://www.gravatar.com/avatar/a178ce88ccb7317c57bc90fbb3360d80.jpg?s=320",
-  		  "url": "https://www.madajczyk.com/"
+  		  "url": "https://madajczyk.com/"
     }
    },
    "mainEntityOfPage":{
       "@type":"WebPage",
-      "@id":"https://www.madajczyk.com{{ include.link }}"
+      "@id":"https://madajczyk.com{{ include.link }}"
    },
    "articleBody":"{{ include.content | strip_html | xml_escape | normalize_whitepace | strip_newlines | strip }}"
 }
