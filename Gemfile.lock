@@ -80,6 +80,3 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 3.6)
   jekyll-algolia
-
-BUNDLED WITH
-   2.1.4
