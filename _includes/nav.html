@@ -10,8 +10,7 @@
 	<div class="navbar-menu">
 		<div class="navbar-end">
 			<a class="navbar-item" href="/search" aria-label="Search">
-				<span class="icon" style="padding-right: 5px;"><i class="fas fa-search"></i></span>
-				Search
+				<svg class="icon" style="fill: #FFFFFF; padding-right: 5px;"><use xlink:href="#icon-search"></use></svg><span class="name"> Search</svg>
 			</a>
 			<a class="navbar-item" href="/archive">Archive</a>
 			<a class="navbar-item" href="/now">Now</a>
@@ -21,27 +20,17 @@
 				<div class="navbar-dropdown is-boxed">
 					{% if site.github_user %}
 					<a class="navbar-item" href="https://github.com/{{ site.github_user }}" aria-label="GitHub">
-						<span class="icon" style="color: #000000; padding-right: 8px;"><i class="fab fa-lg fa-github"></i></span>
-						GitHub
+						<svg class="icon" style="fill: #000000; padding-right: 5px;"><use xlink:href="#icon-github"></use></svg><span class="name"> GitHub</svg>
 					</a>
 					{% endif %}
 					{% if site.linkedin_user %}
 					<a class="navbar-item" href="http://www.linkedin.com/in/{{ site.linkedin_user }}" aria-label="LinkedIn">
-						<span class="icon" style="color: #2777bf; padding-right: 8px;"><i class="fab fa-lg fa-linkedin"></i></span>
-						LinkedIn
+						<svg class="icon" style="fill: #2777bf; padding-right: 5px;"><use xlink:href="#icon-linkedin"></use></svg><span class="name"> LinkedIn</svg>
 					</a>
 					{% endif %}
 					{% if site.twitter_user %}
 					<a class="navbar-item" href="http://twitter.com/{{ site.twitter_user }}" aria-label="Twitter">
-						<span class="icon" style="color: #55acee; padding-right: 8px;"><i class="fab fa-lg fa-twitter"></i></span>
-						Twitter
-					</a>
-					{% endif %}
-					{% if site.email %}
-					<hr class="navbar-divider">
-					<a class="navbar-item" href="mailto:{{ site.email }}" aria-label="Email">
-						<span class="icon" style="color: #000000; padding-right: 8px;"><i class="fab fa-lg fa-email"></i></span>
-						Email
+						<svg class="icon" style="fill: #55acee; padding-right: 5px;"><use xlink:href="#icon-twitter"></use></svg><span class="name"> Twitter</svg>
 					</a>
 					{% endif %}
 				</div>
