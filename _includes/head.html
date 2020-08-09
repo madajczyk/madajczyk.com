@@ -9,14 +9,13 @@
 	<meta name="description" content="{{ description }}">
 	{% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
 
-	<!-- http://t.co/dKP3o1e -->
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="alternate" href="/atom.xml" title="{{site.title}}" type="application/atom+xml">
 	<link rel="alternate" href="/feed.json" title="{{site.title}}" type="application/json" />
-  <link href="/search.xml" rel="search" title="madajczyk.com search" type="application/opensearchdescription+xml">
+	<link href="/search.xml" rel="search" title="madajczyk.com search" type="application/opensearchdescription+xml">
 
 	{% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' }}{% endif %}{% endcapture %}
 	<link rel="canonical" href="{{ canonical }}">
@@ -58,8 +57,6 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
 	</noscript>
 
-
-  <!-- favicon -->
 	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/icons/apple-touch-icon-57x57.png" />
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/icons/apple-touch-icon-114x114.png" />
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/icons/apple-touch-icon-72x72.png" />
@@ -81,8 +78,7 @@
 	<meta name="msapplication-wide310x150logo" content="/icons/mstile-310x150.png" />
 	<meta name="msapplication-square310x310logo" content="/icons/mstile-310x310.png" />
 
-	<!-- Chrome for Android - UI Color -->
-  <meta name="theme-color" content="#333">
+	<meta name="theme-color" content="#333">
 	<link rel="manifest" href="/icons/site.webmanifest">
 	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.15.2/lazyload.min.js"></script>
 </head>
