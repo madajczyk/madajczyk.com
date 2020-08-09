@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://madajczyk.com/sitemap.xml
+Sitemap: https://madajczyk.com/sitemap.xml
