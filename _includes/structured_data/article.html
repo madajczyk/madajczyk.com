@@ -1,9 +1,12 @@
+
 <script type="application/ld+json">
    {
       "@context":"http://schema.org",
       "@type":"BlogPosting",
       "headline":"{{ pagetitle }}",
       "url":"{{ site.url }}{{ pageurl }}",
+      "image": "{% if post.showcaseimage %}{{site.url}}{{ post.showcaseimage }}{% else %}{{site.url}}{{ site.defaultshowcaseimage }}{% endif %}",
+      "dateModified":"{{ date | | date: '%Y-%m-%d' }}",
       "datePublished":"{{ date | | date: '%Y-%m-%d' }}",
       "author":{
        "@type": "Person",

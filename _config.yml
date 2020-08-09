@@ -6,6 +6,8 @@ description: Lee Madajczyk
 url: https://madajczyk.com
 title: Lee Madajczyk
 subtitle:
+defaultshowcaseimage: /icons/favicon-196x196.png
+
 # Github repositories
 github_user: madajczyk
 github_repo_url: https://github.com/madajczyk/madajczyk.com/
