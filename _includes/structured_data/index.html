@@ -1,19 +1,23 @@
-<script type="application/ld+json">
-{ "@context": "http://schema.org",
- "@type": "Blog",
- "keywords": "software engineering agile refactoring c# ruby javascript dotnet",
- "url": "https://madajczyk.com/",
+<script type="application/ld+json">{
+ "@context": "http://schema.org",
+ "@type": "WebSite",
+ "keywords": "software,engineering,agile,DevOps,refactoring,c#,ruby,javascript,dotnet",
+ "url": "{{ site.url }}",
+ "sameAs": [ "https://twitter.com/lmadajczyk",
+             "https://github.com/madajczyk" ],
  "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://madajczyk.com/"
+    "@id": "{{ site.url }}"
   },
  "author": {
     "@type": "Person",
     "name": "Lee Madajczyk",
-    "sameAs": [
-        "https://twitter.com/lmadajczyk",
-        "https://github.com/madajczyk"
-    ]
-  }
+    "sameAs": [ "https://twitter.com/lmadajczyk",
+                "https://github.com/madajczyk" ]
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{{ site.url }}/search?query={search_term}",
+    "query-input": "required name=search_term"
  }
 </script>

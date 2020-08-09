@@ -1,35 +1,34 @@
 <script type="application/ld+json">
-{
-   "@context":"http://schema.org",
-   "@type":"BlogPosting",
-   "headline":"{{ include.headline }}",
-   "url":"https://madajczyk.com/{{ include.link }}",
-   "datePublished":"{{ include.date | | date: '%Y-%m-%d' }}",
-   "author":{
-     "@type": "Person",
-     "name": "Lee Madajczyk",
-     "sameAs": [
-         "https://twitter.com/lmadajczyk",
-         "https://github.com/madajczyk"
-      ]
-   },
-   "publisher":{
-     "@type": "Person",
-     "name": "Lee Madajczyk",
-     "sameAs": [
-         "https://twitter.com/lmadajczyk",
-         "https://github.com/madajczyk"
-      ],
-      "logo": {
-  		"@type": "ImageObject",
-  		"contentUrl": "https://www.gravatar.com/avatar/a178ce88ccb7317c57bc90fbb3360d80.jpg?s=320",
-  		  "url": "https://madajczyk.com/"
-    }
-   },
-   "mainEntityOfPage":{
-      "@type":"WebPage",
-      "@id":"https://madajczyk.com{{ include.link }}"
-   },
-   "articleBody":"{{ include.content | strip_html | xml_escape | normalize_whitepace | strip_newlines | strip }}"
-}
-</script>
+   {
+      "@context":"http://schema.org",
+      "@type":"BlogPosting",
+      "headline":"{{ pagetitle }}",
+      "url":"{{ site.url }}{{ pageurl }}",
+      "datePublished":"{{ date | | date: '%Y-%m-%d' }}",
+      "author":{
+       "@type": "Person",
+       "name": "Lee Madajczyk",
+       "sameAs": [
+          "https://twitter.com/lmadajczyk",
+          "https://github.com/madajczyk"
+        ],
+        url: "{{ site.url }}"
+      },
+      "publisher":{
+       "@type": "Organization",
+       "name": "Lee Madajczyk",
+       "logo": {
+            "@type": "ImageObject",				  
+            "url": "{{ site.url }}/icons/madajczyk-512.jpg",
+            "width":"512",
+            "height":"512"
+         },
+      url: "{{ site.url }}"
+      },
+      "mainEntityOfPage":{
+        "@type":"WebPage",
+        "@id":"{{ site.url }}{{ include.link }}"
+      },
+      "articleBody":{{ page.content | strip_html | jsonify | normalize_whitepace | strip_newlines | strip }}
+   }
+   </script>
