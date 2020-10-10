@@ -1,36 +1,14 @@
 ---
 layout: page
 title: "About"
-date: 2017-05-23 00:00:00 -0600
+date: 2020-10-10 00:00:00 -0600
 comments: false
 categories: [personal]
 ---
 
-<article class="message is-info">
-  <div class="message-body">
-    *TODO*: This is one hell of a neglected page that really needs some updating.
-  </div>
-</article>
+Just another guy who does various and important things. Or at least that's what I tell myself.
 
-I really float back and forth here.  If you wanted to know me, you would.  But,
-some folks _think_ they know me, but they don't.  Quite the enigma, isn't it?
+More details available on [my GitHub profile][profile].  The repo for [this site][site-repo] is available there as well.
 
-I've dabbled in a number of things at various times:
-
-* Hourly Employee
-* College Dropout
-* Renter
-* IT consultant
-* Developer
-* Father
-* Business owner
-* Home owner
-* College enrollee
-* Marriage
-* Employee
-* College graduate
-* Agile evangelist
-* Divorcee
-* Scrum Master
-
-Some have stuck, others... not so much.
+[profile]: https://github.com/madajczyk
+[site-repo]: https://github.com/madajczyk/madajczyk.com
