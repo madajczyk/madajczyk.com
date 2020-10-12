@@ -26,7 +26,7 @@ All said and done, I really enjoy using the desk.  I've written this entire arti
 
 But I need at least a month before I make a decision either way.
 
-[1]: {% post_url 2015-02-11-back-pain %}
+[1]: /archive/2015/02/11/back-pain/
 [2]: http://www.verlo.com/
 [3]: http://www.varidesk.com
 [4]: http://www.varidesk.com/varidesk-pro-plus-48
