@@ -12,9 +12,3 @@ When I arrived home this evening, I noticed that my neighbors across the street 
 In the past 90 minutes, a minimum of 4 people have stopped to pick through the pile of debris. Now, Packerland Drive isn't exactly a quiet street, but isn't that a bit much? And it's not like I was staring out the window the whole time, either.
 
 I'm all about not wasting things, but I leave the trash digging to others.
-
-> Comment by Michelle Miesbauer: 
-
-> Hey there sexy. I was screwing around on the internet and came across your site. Very cool. I miss you. How have you been? Jeremy and I talk all the time. 
-
-> By the way, people dig in garbage in Wausau all the time.
