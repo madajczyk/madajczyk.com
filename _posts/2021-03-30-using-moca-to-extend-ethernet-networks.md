@@ -21,7 +21,7 @@ which was exactly what I needed.  I ended up spending more time tracing and labe
 getting the adapters up and running.  Because I had access to all of the Coax drops, I was able to reconnect everything
 to suit my needs.  Below is a diagram I worked up in Mermaid; any unlabeled connections are Ethernet.
 
-![](){: data-src="/assets/2021/2021-03-30-using-moca-to-extend-ethernet-networks-diagram.svg"}
+![](/assets/2021/2021-03-30-using-moca-to-extend-ethernet-networks-diagram.svg)
 
 The marketing site for goCoax boasts a data rate of up to 2.5 Gbps.  I haven't tested extensively tested this, nor will
 I.  I have no need.  I don't see any blatant latency, and since I'm limited to gigabit for wired and obviously less for

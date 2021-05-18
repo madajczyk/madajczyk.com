@@ -1,6 +1,6 @@
 'use strict';
 
-const version = 'v1.02::';
+const version = 'v1.03::';
 const staticCacheName = version + 'static';
 const pagesCacheName = 'pages';
 const imagesCacheName = 'images';
@@ -26,9 +26,7 @@ function updateStaticCache() {
             ].concat(offlinePages));
             // These items must be cached for the Service Worker to complete installation
             return cache.addAll([
-                '/icons/site.webmanifest',
-                '/js/jquery.unveil.min.js',
-                '/js/image_handling.js'
+                '/icons/site.webmanifest'
             ]);
         });
 }

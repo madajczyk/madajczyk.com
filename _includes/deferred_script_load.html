@@ -16,12 +16,6 @@
         };
         head.appendChild(script);
       }  // function() line 2
-
-  // Load jquery libary first, then retrieve the dependent libraries.
-  getScript('//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js',function(){
-      getScript("/js/jquery.unveil.min.js");
-      getScript("/js/image_handling.js");
-    });
   })();
 
   // serviceWorker instantiation

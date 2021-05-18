@@ -51,7 +51,7 @@ tin.  Below is a screenshot of Ventoy running in Linux KVM, booted from my USB d
 kvm -hdb /dev/sdb
 {% endhighlight %}
 
-![](){: data-src="/assets/2021/paving-over-computers-ventoy.png"}
+![](/assets/2021/paving-over-computers-ventoy.png)
 
 The installation instructions on the site are fairly comprehensive, providing an EXE for Windows usage, a standard
 script for Linux, and even a neat little Web UI that can be used on Linux as well.  Provide a standard USB disk and run
