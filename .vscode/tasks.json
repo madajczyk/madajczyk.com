@@ -12,8 +12,10 @@
         },
         {
             "label": "Jekyll (Development)",
-            "command": "jekyll",
+            "command": "bundle",
             "args": [
+                "exec",
+                "jekyll",
                 "serve",
                 "-w",
                 "-D",
@@ -24,8 +26,10 @@
         },
         {
             "label": "Jekyll",
-            "command": "jekyll",
+            "command": "bundle",
             "args": [
+                "exec",
+                "jekyll",
                 "serve",
                 "-w"
             ],
