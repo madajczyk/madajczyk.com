@@ -15,7 +15,7 @@ Built on the C2 platform and using tried and true hybrid and EcoBoost options.  
 
 Sure, it's not a full-sized truck, and many of the folks who have one of those probably don't see the need for this.  They're hauling stuff regularly, or towing big trailers.  But there's a reason people liked Subaru Bajas and Chevy El Caminos.  There's a reason a lot of folks were excited about the Pontiac G8 Sport Truck rumors based on the Holden Commodore, up until GM killed Pontiac.
 
-I hope to see an option added to select AWD with the hybrid engine.  Not sure why this wasn't an option out of the gate considering AWD is all the hotness.  There's a reason why more and more manufacturers are going this direction, especially for areas that get 
+I hope to see an option added to select AWD with the hybrid engine.  Not sure why this wasn't an option out of the gate considering AWD is all the hotness.  There's a reason why more and more manufacturers are going this direction, especially for areas that get lots of snow.
 
 But more importantly, if they add a plug-in hybrid option in the future to allow you to do a few miles all electric?  Crazypants.  And sure, the PHEV option could add cost, but if you couple that to electric vehicle incentives?  Most folks who could use this vehicle are only hauling stuff every once in a while.  Zipping around town for basic errands like it's a Prius Prime?  Sounds pretty compelling to me.
 
