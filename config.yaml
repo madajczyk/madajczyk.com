@@ -1,0 +1,17 @@
+baseURL: https://madajczyk.com
+disablePathToLower: true
+languageCode: en-us
+title: Lee Madajczyk
+theme: site
+disablePathToLower: false
+
+permalinks:
+  archive: /archive/:year/:month/:day/:slug
+
+params:
+  author: Lee Madajczyk
+  sitedescription: Cloud, Development, DevOps, Technology
+  logo: images
+  github: madajczyk
+  linkedin: madajczyk
+  twitter: lmadajczyk
