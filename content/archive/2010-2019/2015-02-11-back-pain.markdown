@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Back Pain"
-date: 2015-02-11 -0600
 comments: false
+date: "2015-02-11T00:00:00Z"
+title: Back Pain
 ---
 
 I have struggled with various levels of back pain for years.  Sometimes there's none at all.  Other times, it's been so bad that I can't even get out of bed.  Granted, usually that seems to happen after I've done something pretty stupid, but that's besides the point.

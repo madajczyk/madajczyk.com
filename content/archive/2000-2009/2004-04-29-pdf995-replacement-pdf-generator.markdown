@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "PDF995 - Replacement PDF Generator"
-date: 2004-04-29 -0600
 comments: false
+date: "2004-04-29T00:00:00Z"
+title: PDF995 - Replacement PDF Generator
 ---
 
 > This article was originally posted via Squarespace on a domain name I no longer utilize.  I am consolidating all of my ramblings and drabble here.

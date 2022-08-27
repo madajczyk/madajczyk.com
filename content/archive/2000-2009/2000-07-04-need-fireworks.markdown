@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Need Fireworks"
-date: 2000-07-04 -0600
 comments: false
+date: "2000-07-04T00:00:00Z"
+title: Need Fireworks
 ---
 
 > This article was originally posted via Blogger on a domain name I no longer own.  I am consolidating all of my ramblings and drabble here.

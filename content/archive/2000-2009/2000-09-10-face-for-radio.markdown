@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Face For Radio"
-date: 2000-09-10 -0600
 comments: false
+date: "2000-09-10T00:00:00Z"
+title: Face For Radio
 ---
 
 > This article was originally posted via Blogger on a domain name I no longer own.  I am consolidating all of my ramblings and drabble here.

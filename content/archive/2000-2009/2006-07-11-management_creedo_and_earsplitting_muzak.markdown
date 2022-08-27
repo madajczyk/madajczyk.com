@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2006-07-11T00:00:00Z"
 title: Management Creedo and Ear-splitting Muzak
-comments: 'false'
 ---
 
 <p>Nobody reads this crap.</p>

@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2008-07-02T00:00:00Z"
 title: Resurrection
-comments: 'false'
 ---
 <p>Wow, it's been almost a year since I posted last.  Shut up, I've been busy.</p>
 <p>Here's a list of crap that has changed or happened in the past 9 months:</p>

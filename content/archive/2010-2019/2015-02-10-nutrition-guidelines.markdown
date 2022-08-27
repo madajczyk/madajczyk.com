@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Nutrition Guidelines"
-date: 2015-02-10 -0600
 comments: false
+date: "2015-02-10T00:00:00Z"
+title: Nutrition Guidelines
 ---
 
 According to a just published [Washington Post article][1], it appears that the [Dietary Guidelines Advisory Committee][2], which is the primary panel tasked with providing nutrition advisories on behalf of the United States government, is on the cusp of reversing a long standing policy regarding cholesterol. (This policy was introduced in response to a [paper published in 1961][4] in conjunction with the [American Heart Association][5]).

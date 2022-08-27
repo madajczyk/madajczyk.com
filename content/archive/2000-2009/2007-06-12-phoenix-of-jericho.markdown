@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2007-06-12T00:00:00Z"
 title: Phoenix of Jericho
-comments: 'false'
 ---
 <p>On May 16th, <a href="http://www.cbs.com/">CBS</a> cancelled <a href="http://www.cbs.com/primetime/jericho">Jericho</a>, which I really liked, but wasn't sure was going to make it through the first season.</p>
 <p>Beginning almost immediately thereafter, in a tie-in to the season finale, over 20 tons of nuts were shipped to CBS in protest of the cancellation.</p>

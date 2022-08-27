@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2007-09-24T00:00:00Z"
 title: A Collective WTF
-comments: 'false'
 ---
 <p>I was at today's spectacular <a  href="http://www.packers.com/">Green Bay Packers</a> game (thanks Brian!) against the <a  href="http://www.chargers.com/">San Diego Chargers</a> and watched the two teams battle it out.</p>
 <p>I expect that there are three things I will remember from this game for quite a while:</p>

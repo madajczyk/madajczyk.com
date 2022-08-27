@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Parasite Detection"
-date: 2003-01-24 -0600
 comments: false
+date: "2003-01-24T00:00:00Z"
+title: Parasite Detection
 ---
 
 > This article was originally posted via Squarespace on a domain name I no longer utilize.  I am consolidating all of my ramblings and drabble here.

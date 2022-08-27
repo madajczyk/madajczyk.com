@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2008-07-19T00:00:00Z"
 title: Movies and Such
-comments: 'false'
 ---
 <p>I've managed to see two movies in the theatre in the past few months, which is amazing because I hardly go out to movies anymore thanks to <a href="http://www.netflix.com/">Netflix</a>... there just isn't a need anymore.</p>
 <p>But, I ended up making an exception for two movies.  I went to see <a href="http://www.sonypictures.com/movies/hancock/">Hancock</a> about a week ago with F.. although it wasn't exactly what I thought it was going to be, it was all right.  Will Smith did a pretty good job of playing a jackass.</p>

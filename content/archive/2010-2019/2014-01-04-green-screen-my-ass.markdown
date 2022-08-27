@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Green Screen My Ass"
-date: 2014-01-04 -0600
 comments: false
+date: "2014-01-04T00:00:00Z"
+title: Green Screen My Ass
 ---
 
 Why is it that I can always pick up when things are superimposed?  For example, see this snapshot from [Amazon.com's Alpha House][1]:

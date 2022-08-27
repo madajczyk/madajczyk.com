@@ -1,5 +1,5 @@
 ---
-layout: default
+date: "2006-03-05T00:00:00Z"
 title: Version 5
 ---
 

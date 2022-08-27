@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Goodbye Lingo, Hello Vonage!"
-date: 2005-05-13 -0600
 comments: false
+date: "2005-05-13T00:00:00Z"
+title: Goodbye Lingo, Hello Vonage!
 ---
 
 > This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.

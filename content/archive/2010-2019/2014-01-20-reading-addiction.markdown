@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Reading Addiction"
-date: 2014-01-20 -0600
 comments: false
+date: "2014-01-20T00:00:00Z"
+title: Reading Addiction
 ---
 
 For as long as I can remember, I have been addicted to reading.  I mean, it's not like I was born with a book in my hand.  That would be gross.

@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2008-12-03T00:00:00Z"
 title: Changing Jobs
-comments: 'false'
 ---
 After five and a half years working for Associated Bank, it feels like it is time for a change.  I have decided to take a position with <a href="http://www.tushaus.com" >Tushaus Computer Services</a>, working as a consultant geared primarily towards enterprise design and engineer services.
 

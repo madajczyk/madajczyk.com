@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Solo Haiku"
-date: 2014-07-22 -0600
 comments: false
+date: "2014-07-22T00:00:00Z"
+title: Solo Haiku
 ---
 
 I, myself, am here

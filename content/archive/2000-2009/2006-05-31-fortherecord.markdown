@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2006-05-31T00:00:00Z"
 title: For The Record
-comments: 'false'
 ---
 <p>I'm getting tired of having to put things back together in my life.</p>
 <p>In the past year, much of my life has been uprooted, and I've been the one who has held it all together.  Don't get me wrong: I've had support from friends and family, and I'm very grateful for it, but the final determination of sink or swim would be on how well I managed to keep on with life.</p>

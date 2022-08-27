@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2008-10-13T00:00:00Z"
 title: Stupid Wasps
-comments: 'false'
 ---
 <p>So I brought the boys home this evening and noticed a dark spot on the mini-blinds.  A closer inspection revealed it was a wasp, although a fairly tranquil one.</p>
 <p>I went to get a flyswatter to take care of the intruder, but when I returned, I saw two dark spots.  Bugger.  Before I could act, the second dark spot hid behind the blinds.</p>

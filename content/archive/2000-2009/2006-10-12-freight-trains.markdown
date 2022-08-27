@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2006-10-12T00:00:00Z"
 title: Freight Trains
-comments: 'false'
 ---
 <p>Ever feel like you got hit by a freight train?  Or maybe even a few of them?</p>
 <p>I got to work this morning feeling fine.  Within half an hour it all went downhill and I haven't felt OK since.</p>

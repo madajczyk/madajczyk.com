@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Twenty Years of DNS"
-date: 2003-06-22 -0600
 comments: false
+date: "2003-06-22T00:00:00Z"
+title: Twenty Years of DNS
 ---
 
 > This article was originally posted via Squarespace on a domain name I no longer utilize.  I am consolidating all of my ramblings and drabble here.

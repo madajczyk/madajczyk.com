@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Conversion"
-date: 2006-02-19 -0600
 comments: false
+date: "2006-02-19T00:00:00Z"
+title: Conversion
 ---
 
 > This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.

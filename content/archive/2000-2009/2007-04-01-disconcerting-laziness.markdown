@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2007-04-01T00:00:00Z"
 title: Disconcerting Laziness
-comments: 'false'
 ---
 <p>Ashwaubenon schools are closed for spring break next week.  This means that Carter and Toliver are staying at their Mom's house at her request.</p>
 <p>I haven't decided how I feel about this yet.  It's great that they can spend some good quality time with their mother, and I know that I can use the break, but it just seems weird when they're not here.  My place is obviously designed for a family, and it's disconcerting when the majority of the family isn't around.</p>

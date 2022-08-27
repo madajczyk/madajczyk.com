@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2006-10-21T00:00:00Z"
 title: 70 Days
-comments: 'false'
 ---
 <p>Procrastination is king.</p>
 <p>It's been over two months now since I've moved in to my house, which came complete with pool table.  The number of pool tournaments held?  Zip.  Zilch.</p>

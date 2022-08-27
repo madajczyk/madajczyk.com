@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2007-05-05T00:00:00Z"
 title: Viral Algorithm
-comments: 'false'
 ---
 <a href="http://xkcd.com/">THE ALGORITHM CONSTANTLY FINDS JESUS</a>
 

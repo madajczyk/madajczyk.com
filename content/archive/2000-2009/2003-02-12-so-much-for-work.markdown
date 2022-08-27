@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "So Much for Work"
-date: 2003-02-12 -0600
 comments: false
+date: "2003-02-12T00:00:00Z"
+title: So Much for Work
 ---
 
 > This article was originally posted via Squarespace on a domain name I no longer utilize.  I am consolidating all of my ramblings and drabble here.

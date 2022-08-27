@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "RSS Aggregators"
-date: 2003-04-03 -0600
 comments: false
+date: "2003-04-03T00:00:00Z"
+title: RSS Aggregators
 ---
 
 > This article was originally posted via Squarespace on a domain name I no longer utilize.  I am consolidating all of my ramblings and drabble here.

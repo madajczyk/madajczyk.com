@@ -1,9 +1,10 @@
 ---
-layout: post
-title: "Resume from Hibernation"
-date: 2014-01-02 -0600
+categories:
+- personal
+- tech
 comments: false
-categories: [personal,tech]
+date: "2014-01-02T00:00:00Z"
+title: Resume from Hibernation
 ---
 
 After an entire year of slacking, it's time I get this site spun back up.

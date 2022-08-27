@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "SBC and Early Termination Fees"
-date: 2004-09-05 -0600
 comments: false
+date: "2004-09-05T00:00:00Z"
+title: SBC and Early Termination Fees
 ---
 
 > This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.

@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "My Technology Interests"
-date: 2020-10-11 -0500
 comments: false
+date: "2020-10-11T00:00:00Z"
+title: My Technology Interests
 ---
 
 I started out with a Commodore VIC-20 when I was really young (8 or 9, maybe?), and I was hooked.  I transcribed a kaleidoscope program from a "Learning to Program" book.  It was awesome, but there was a fatal flaw.  Once it started, I couldn't figure out how to stop it.  I hadn't saved it to the attached cassette tape drive (and I can't even remember if it was an option, actually).  I remember leaving the computer running for as long as I possibly could, until my parents finally told me to shut it off.  I was sad and happy at the same time; sad I lost the program (that I typed, didn't create), but able to start working on new stuff.  Eventually as I got older, we moved up to the 64, and even got to work on other friends' 128 systems.  We ended up getting a modem, and I subscribed to services like Q-Link and Prodigy over time.  Q-Link eventually became AOL, but that wasn't my fault.

@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Site Changes"
-date: 2004-08-01 -0600
 comments: false
+date: "2004-08-01T00:00:00Z"
+title: Site Changes
 ---
 
 > This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.

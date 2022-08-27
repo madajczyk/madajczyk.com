@@ -1,10 +1,10 @@
 ---
-layout: post
-title: "Ultrabook Purchase: A Process of Elimination"
-date: 2013-01-24 -0600
+categories:
+- tech
 comments: false
-categories: [tech]
+date: "2013-01-24T00:00:00Z"
 redirect_from: /ultrabook-purchase-a-process-of-elimination/
+title: 'Ultrabook Purchase: A Process of Elimination'
 ---
 
 As forecast by [my previous article][1], I’ve purchased a new ultrabook.  Or as I’ve heard they say in England, I’ve purchased a new piece of kit.

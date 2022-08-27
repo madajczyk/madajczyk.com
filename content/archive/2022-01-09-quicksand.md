@@ -1,9 +1,8 @@
 ---
-layout: post
-title: "Quicksand"
-date: 2022-01-09 -0600
 comments: false
+date: "2022-01-09T00:00:00Z"
 tags: site
+title: Quicksand
 ---
 
 Every once in a while, I sit down to make updates to this site. But, before I

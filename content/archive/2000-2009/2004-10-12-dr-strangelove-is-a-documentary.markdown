@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Dr. Strangelove is a Documentary?"
-date: 2004-10-12 -0600
 comments: false
+date: "2004-10-12T00:00:00Z"
+title: Dr. Strangelove is a Documentary?
 ---
 
 > This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.

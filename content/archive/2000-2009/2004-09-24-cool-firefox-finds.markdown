@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Cool Firefox Finds"
-date: 2004-09-24 -0600
 comments: false
+date: "2004-09-24T00:00:00Z"
+title: Cool Firefox Finds
 ---
 
 > This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.

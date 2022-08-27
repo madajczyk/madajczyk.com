@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Linksys DVD Player"
-date: 2004-01-07 -0600
 comments: false
+date: "2004-01-07T00:00:00Z"
+title: Linksys DVD Player
 ---
 
 > This article was originally posted via Squarespace on a domain name I no longer utilize.  I am consolidating all of my ramblings and drabble here.

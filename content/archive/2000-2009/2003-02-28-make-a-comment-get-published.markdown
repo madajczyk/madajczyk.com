@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Make a comment, get published."
-date: 2003-02-28 -0600
 comments: false
+date: "2003-02-28T00:00:00Z"
+title: Make a comment, get published.
 ---
 
 > This article was originally posted via Squarespace on a domain name I no longer utilize.  I am consolidating all of my ramblings and drabble here.

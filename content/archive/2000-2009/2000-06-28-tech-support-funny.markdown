@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Tech Support Funny"
-date: 2000-06-28 -0600
 comments: false
+date: "2000-06-28T00:00:00Z"
+title: Tech Support Funny
 ---
 
 > This article was originally posted via Blogger on a domain name I no longer own.  I am consolidating all of my ramblings and drabble here.

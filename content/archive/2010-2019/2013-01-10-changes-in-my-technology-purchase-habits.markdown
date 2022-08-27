@@ -1,10 +1,10 @@
 ---
-layout: post
-title: "Changes in My Technology Purchase Habits"
-date: 2013-01-10 -0600
+categories:
+- tech
 comments: false
-categories: [tech]
+date: "2013-01-10T00:00:00Z"
 redirect_from: /changes-technology-purchase-habits/
+title: Changes in My Technology Purchase Habits
 ---
 
 I’ve had a serious problem that I’ve been able to repress for quite a long time.  I’m a technology junkie.  I used to  make purchases all the time.  I’ve been able to keep that at bay for quite a while, but the urge is coming back.

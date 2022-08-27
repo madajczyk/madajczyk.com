@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2006-08-02T00:00:00Z"
 title: Miniskirts Sell
-comments: 'false'
 ---
 
 <p>Knock knock.</p>

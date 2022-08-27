@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "This is not brought to you by the letter P"
-date: 2003-05-21 -0600
 comments: false
+date: "2003-05-22T00:00:00Z"
+title: This is not brought to you by the letter P
 ---
 
 > This article was originally posted via Squarespace on a domain name I no longer utilize.  I am consolidating all of my ramblings and drabble here.

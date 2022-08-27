@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2006-10-30T00:00:00Z"
 title: I Remember Everything
-comments: 'false'
 ---
 <p>I was engaged to my ex for a little over two years.  Turns out that I stopped being interesting and important to her right around the time I asked her to marry me.</p>
 <p>Oops.</p>

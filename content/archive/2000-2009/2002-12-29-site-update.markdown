@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Site Update"
-date: 2002-12-29 -0600
 comments: false
+date: "2002-12-29T00:00:00Z"
+title: Site Update
 ---
 
 > This article was originally posted via Squarespace on a domain name I no longer utilize.  I am consolidating all of my ramblings and drabble here.

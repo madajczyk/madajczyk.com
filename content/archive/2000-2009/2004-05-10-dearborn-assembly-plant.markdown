@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Dearborn Assembly Plant"
-date: 2004-05-10 -0600
 comments: false
+date: "2004-05-10T00:00:00Z"
+title: Dearborn Assembly Plant
 ---
 
 > This article was originally posted via Squarespace on a domain name I no longer utilize.  I am consolidating all of my ramblings and drabble here.

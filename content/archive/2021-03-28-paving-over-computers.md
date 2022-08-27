@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Paving Over Computers"
-date: 2021-03-28 -0500
 comments: false
+date: "2021-03-28T00:00:00Z"
+title: Paving Over Computers
 ---
 
 I rebuild my various computers regularly, possibly even far too often.  It's actually pretty rare nowadays that I have a
@@ -47,9 +46,9 @@ Ohmygoodness why didn't I find this sooner?  It's like dependency injection for 
 the ISO to the USB drive, select from the menu, and you're golden?  I tested it out, and it does what it says on the
 tin.  Below is a screenshot of Ventoy running in Linux KVM, booted from my USB drive with the following command:
 
-{% highlight ruby %}
+{{< highlight ruby >}}
 kvm -hdb /dev/sdb
-{% endhighlight %}
+{{< / highlight >}}
 
 ![](/assets/2021/2021-03-28-paving-over-computers-ventoy.webp)
 

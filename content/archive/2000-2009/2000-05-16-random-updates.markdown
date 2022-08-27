@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Random Anger"
-date: 2000-05-16 -0600
 comments: false
+date: "2000-05-16T00:00:00Z"
+title: Random Anger
 ---
 
 > This article was originally posted via Blogger on a domain name I no longer own.  I am consolidating all of my ramblings and drabble here.

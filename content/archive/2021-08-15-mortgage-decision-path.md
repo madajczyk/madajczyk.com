@@ -1,9 +1,8 @@
 ---
-layout: post
-title: "Mortgage Decision Path"
-date: 2021-08-15 -0500
 comments: false
+date: "2021-08-15T00:00:00Z"
 tags: house, mortgage
+title: Mortgage Decision Path
 ---
 
 ## History

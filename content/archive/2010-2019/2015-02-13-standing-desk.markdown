@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Standing Desk"
-date: 2015-02-13 -0600
 comments: false
+date: "2015-02-13T00:00:00Z"
+title: Standing Desk
 ---
 
 As [I stated in an earlier post][1], I've been struggling with back pain for quite a long time.  Last year, I purchased a new mattress from [Verlo][2], and that definitely helped.  But I knew I could do more.  I decided that I needed to figure out a way to try the option of working at a standing desk to see if that helped.

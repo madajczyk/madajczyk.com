@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2006-03-17T00:00:00Z"
 title: The Perplexity of Being Single
-comments: 'false'
 ---
 <p>So, here is the general cluster I am pondering right now.</p>
 <p>First off, being single pretty much sucks.  On a daily basis most people run into a number of single, eligible members of the opposite sex.  That's great, but you never know what they're thinking.</p>

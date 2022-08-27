@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2006-03-27T00:00:00Z"
 title: Optical Zoom
-comments: 'false'
 ---
 <p>The optical zoom on today's digital cameras is just friggin' phenomenal.</p>
 <p>I purchased a <a href="http://www.dpreview.com/news/0504/05042201canons2is.asp">Canon S2 IS</a> over the weekend with a 1 GB memory card.  Of the many features it offers, one includes a 12x optical zoom lens.</p>

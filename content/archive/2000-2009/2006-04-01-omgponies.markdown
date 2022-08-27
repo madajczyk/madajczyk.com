@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2006-04-01T00:00:00Z"
 title: OMG!!1!  Ponies!
-comments: 'false'
 ---
 <p>Ah, yes, it's that time of year again.  I always look forward to April 1st to see who has the most fun.</p>
 <p><a href="http://slashdot.org/article.pl?sid=06/03/31/1644225">Slashdot goes pink</a></p>

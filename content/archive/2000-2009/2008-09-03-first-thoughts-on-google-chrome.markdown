@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2008-09-03T00:00:00Z"
 title: First Thoughts on Google Chrome
-comments: 'false'
 ---
 In a word: responsive.
 

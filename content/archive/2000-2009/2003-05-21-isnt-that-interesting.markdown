@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Isn't that interesting?"
-date: 2003-05-21 -0600
 comments: false
+date: "2003-05-21T00:00:00Z"
+title: Isn't that interesting?
 ---
 
 > This article was originally posted via Squarespace on a domain name I no longer utilize.  I am consolidating all of my ramblings and drabble here.

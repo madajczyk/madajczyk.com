@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2006-06-25T00:00:00Z"
 title: Hollywood Annoys
-comments: 'false'
 ---
 
 <p>Time to get a post up here; it's been a few days since I've posted.</p>

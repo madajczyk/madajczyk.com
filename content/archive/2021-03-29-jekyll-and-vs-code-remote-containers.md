@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Jekyll and VS Code Remote Containers"
-date: 2021-03-29 -0500
 comments: false
+date: "2021-03-29T00:00:00Z"
+title: Jekyll and VS Code Remote Containers
 ---
 
 I really, really enjoy using static web site generation systems like [Jekyll].

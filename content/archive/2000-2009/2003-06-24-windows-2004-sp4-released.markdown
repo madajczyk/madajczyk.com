@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Windows 2000 SP4 Released"
-date: 2003-06-24 -0600
 comments: false
+date: "2003-06-24T00:00:00Z"
+title: Windows 2000 SP4 Released
 ---
 
 > This article was originally posted via Squarespace on a domain name I no longer utilize.  I am consolidating all of my ramblings and drabble here.

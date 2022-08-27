@@ -1,9 +1,10 @@
 ---
-layout: post
-title: "The First Day"
-date: 2014-01-03 -0600
+categories:
+- personal
+- writing
 comments: false
-categories: [personal,writing]
+date: "2014-01-03T00:00:00Z"
+title: The First Day
 ---
 
 I begin walking towards the building filled with a mixture of fear and self-doubt. This is my first time, and there is nobody here to help me. I am completely on my own, and the outcome of this visit is entirely in my own hands. The backpack that I carry seems oddly out of place, but nobody seems to pay much attention. Can they see the trepidation on my face? Are they ignoring me out of pity or indifference?

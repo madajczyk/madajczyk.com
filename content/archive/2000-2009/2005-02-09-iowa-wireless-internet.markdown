@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Iowa Wireless Internet"
-date: 2005-02-09 -0600
 comments: false
+date: "2005-02-09T00:00:00Z"
+title: Iowa Wireless Internet
 ---
 
 > This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.

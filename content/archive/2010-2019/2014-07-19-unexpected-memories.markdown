@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Unexpected Memories"
-date: 2014-07-19 -0600
 comments: false
+date: "2014-07-19T00:00:00Z"
+title: Unexpected Memories
 ---
 
 Everything in my mind appears to reminds me of something else as of late.  Birthdays.  Independance Day.  Green Bay Restaurant Week.  Nurses.  Rock USA.  Fireworks.

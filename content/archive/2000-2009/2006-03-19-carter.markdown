@@ -1,6 +1,6 @@
 ---
-layout: post
+comments: "false"
+date: "2006-03-19T00:00:00Z"
 title: Carter Madajczyk
-comments: 'false'
 ---
 This is an article about Carter.

@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Microwave Popcorn"
-date: 2014-01-10 -0600
 comments: false
+date: "2014-01-10T00:00:00Z"
+title: Microwave Popcorn
 ---
 
 As time goes on, I remember less and less about the details, but I remember the general idea.

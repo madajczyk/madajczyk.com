@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Shuttle Columbia Lost"
-date: 2003-01-31 -0600
 comments: false
+date: "2003-01-31T00:00:00Z"
+title: Shuttle Columbia Lost
 ---
 
 > This article was originally posted via Squarespace on a domain name I no longer utilize.  I am consolidating all of my ramblings and drabble here.

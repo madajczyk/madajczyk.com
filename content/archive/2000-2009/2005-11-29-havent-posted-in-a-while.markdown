@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Haven't posted in a while..."
-date: 2005-11-29 -0600
 comments: false
+date: "2005-11-29T00:00:00Z"
+title: Haven't posted in a while...
 ---
 
 > This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.

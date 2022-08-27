@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2007-09-26T00:00:00Z"
 title: Philanthropy by Wristband
-comments: 'false'
 ---
 <p>Okay, seriously.  The wristband fad is over.</p>
 <p>Firstly, I'm tired of trying to figure out what the different colors mean.  Secondly, yeah sure, it's nice that you support a cause or a charity or something else that helps people out.  That makes you feel good.  It eases your conscience, makes you feel about yourself, and an angel may even get its wings.</p>

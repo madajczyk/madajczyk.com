@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Dell 30 monitor"
-date: 2005-12-21 -0600
 comments: false
+date: "2005-12-21T00:00:00Z"
+title: Dell 30 monitor
 ---
 
 > This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.

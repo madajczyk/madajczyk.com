@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Ballad of Moving"
-date: 2000-08-24 -0600
 comments: false
+date: "2000-08-21T00:00:00Z"
+title: Ballad of Moving
 ---
 
 > This article was originally posted via Blogger on a domain name I no longer own.  I am consolidating all of my ramblings and drabble here.

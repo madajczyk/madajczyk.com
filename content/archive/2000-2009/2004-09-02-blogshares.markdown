@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "BlogShares"
-date: 2004-09-02 -0600
 comments: false
+date: "2004-09-02T00:00:00Z"
+title: BlogShares
 ---
 
 > This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.

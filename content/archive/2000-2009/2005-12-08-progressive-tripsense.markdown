@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Progressive Tripsense"
-date: 2005-12-08 -0600
 comments: false
+date: "2005-12-08T00:00:00Z"
+title: Progressive Tripsense
 ---
 
 > This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.

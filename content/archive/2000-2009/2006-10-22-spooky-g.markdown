@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2006-10-22T00:00:00Z"
 title: Spooky G
-comments: 'false'
 ---
 <p>Today the boys and I found ourselves down at <a href="http://www.lambeaufield.com/">Lambeau Field</a> for their Spooktacular event.  The event itself was OK but nothing great.  Howard and his 2-year-old son Sam were also in attendance.</p>
 <p>At one point we found some staff who were handing out stickers with the Packers logo on it.  Howard's son insisted on wearing the logo immediately, so Howard put it on his shirt.</p>

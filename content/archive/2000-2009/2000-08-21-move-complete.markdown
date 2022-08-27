@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Move Complete"
-date: 2000-09-05 -0600
 comments: false
+date: "2000-08-21T00:00:00Z"
+title: Move Complete
 ---
 
 > This article was originally posted via Blogger on a domain name I no longer own.  I am consolidating all of my ramblings and drabble here.

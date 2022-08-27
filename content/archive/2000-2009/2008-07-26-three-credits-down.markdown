@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2008-07-26T00:00:00Z"
 title: Three Credits Down
-comments: 'false'
 ---
 <p>About damn time.</p>
 <p>I completed my last test today, so I have earned three credits from <a href="http://www.fhsu.edu">Fort Hays State University</a>.  I enrolled in April in order to obtain a bachelor's degree, although I am currently undecided as to my major.  While this may not be a big deal to you, it is to me.</p>

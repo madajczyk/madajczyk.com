@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "There can be only one."
-date: 2006-01-04 -0600
 comments: false
+date: "2006-01-04T00:00:00Z"
+title: There can be only one.
 ---
 
 > This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.

@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Using MoCA to Extend Ethernet Networks"
-date: 2021-03-30 -0500
 comments: false
+date: "2021-03-30T00:00:00Z"
+title: Using MoCA to Extend Ethernet Networks
 ---
 
 I've made some pretty significant upgrades to my home network in the past few years.  As the homelab bug started to bite

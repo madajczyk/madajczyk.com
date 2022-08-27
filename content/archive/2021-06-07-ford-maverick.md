@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Ford Maverick"
-date: 2021-06-07 -0500
 comments: false
+date: "2021-06-07T00:00:00Z"
+title: Ford Maverick
 ---
 
 Ford released the details on their new Maverick compact pickup truck today.  Honestly, I barely remembered they were even working on it, honestly.  I basically dismissed it after being a little disappointed with the way the reintroduced Ranger came about.

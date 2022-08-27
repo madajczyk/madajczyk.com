@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2008-09-03T00:00:00Z"
 title: Foo Fighters and Three Days Grace
-comments: 'false'
 ---
 On Friday, August 29th, a bunch of us headed down to Milwaukee to see Foo Fighters and Three Days Grace play.  It was an awesome concert.
 

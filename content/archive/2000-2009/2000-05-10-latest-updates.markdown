@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Latest Updates"
-date: 2000-05-10 -0600
 comments: false
+date: "2000-05-10T00:00:00Z"
+title: Latest Updates
 ---
 
 > This article was originally posted via Blogger on a domain name I no longer own.  I am consolidating all of my ramblings and drabble here.

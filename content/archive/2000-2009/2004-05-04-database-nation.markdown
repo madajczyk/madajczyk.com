@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Database Nation"
-date: 2004-05-04 -0600
 comments: false
+date: "2004-05-04T00:00:00Z"
+title: Database Nation
 ---
 
 > This article was originally posted via Squarespace on a domain name I no longer utilize.  I am consolidating all of my ramblings and drabble here.

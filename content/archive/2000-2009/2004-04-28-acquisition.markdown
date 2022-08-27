@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Acquisition"
-date: 2004-04-28 -0600
 comments: false
+date: "2004-04-28T00:00:00Z"
+title: Acquisition
 ---
 
 > This article was originally posted via Squarespace on a domain name I no longer utilize.  I am consolidating all of my ramblings and drabble here.

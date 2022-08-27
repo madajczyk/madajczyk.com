@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Spirit Rover Reboots"
-date: 2004-02-06 -0600
 comments: false
+date: "2004-02-06T00:00:00Z"
+title: Spirit Rover Reboots
 ---
 
 > This article was originally posted via Squarespace on a domain name I no longer utilize.  I am consolidating all of my ramblings and drabble here.

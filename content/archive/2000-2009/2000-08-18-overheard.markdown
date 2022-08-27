@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Overheard"
-date: 2000-08-10 -0600
 comments: false
+date: "2000-08-18T00:00:00Z"
+title: Overheard
 ---
 
 **Person 1:** I'm so bored I'm playing with my sugar. 

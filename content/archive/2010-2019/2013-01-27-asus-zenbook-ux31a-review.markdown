@@ -1,10 +1,10 @@
 ---
-layout: post
-title: "Asus Zenbook UX31A Review"
-date: 2013-01-27 -0600
+categories:
+- tech
 comments: false
-categories: [tech]
+date: "2013-01-27T00:00:00Z"
 redirect_from: /asus-zenbook-ux31a-review/
+title: Asus Zenbook UX31A Review
 ---
 
 I’d like to start by stating that the Asus Zenbook UX31A is a spectacular machine. Although I’ve only owned it for about a week, I wanted to detail some thoughts about this Ultrabook in case anybody is considering it and would like some hands-on information about the overall experience.

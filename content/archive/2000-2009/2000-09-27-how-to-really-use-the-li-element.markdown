@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "How to REALLY use the LI element"
-date: 2000-09-27 -0600
 comments: false
+date: "2000-09-27T00:00:00Z"
+title: How to REALLY use the LI element
 ---
 
 > This article was originally posted via Blogger on a domain name I no longer own.  I am consolidating all of my ramblings and drabble here.

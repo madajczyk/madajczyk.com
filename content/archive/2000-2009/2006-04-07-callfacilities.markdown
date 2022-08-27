@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2006-04-07T00:00:00Z"
 title: Call Facilities!
-comments: 'false'
 ---
 
 		<p>"Somebody call facilities... Dave is stuck on the coat hanger!"</p>

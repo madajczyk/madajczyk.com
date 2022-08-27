@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "I must have one of these."
-date: 2005-02-17 -0600
 comments: false
+date: "2005-02-17T00:00:00Z"
+title: I must have one of these.
 ---
 
 > This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.

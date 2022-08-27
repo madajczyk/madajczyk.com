@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2006-06-20T00:00:00Z"
 title: Foreign Objects
-comments: 'false'
 ---
 
 <p>This just happened a minute ago.  I decided to watch a movie, specifically <a href="http://en.wikipedia.org/wiki/Lock,_Stock_and_Two_Smoking_Barrels">Lock, Stock, and Two Smoking Barrels</a> tonight once I had the boys down.</p>

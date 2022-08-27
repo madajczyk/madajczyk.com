@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Booted from Tripsense"
-date: 2006-01-08 -0600
 comments: false
+date: "2006-01-08T00:00:00Z"
+title: Booted from Tripsense
 ---
 
 > This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.

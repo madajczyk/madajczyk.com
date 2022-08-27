@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2007-09-21T00:00:00Z"
 title: Passive FTP and Firewalls
-comments: 'false'
 ---
 <p>For the last few months, I've been receiving complaints from some of my customers that they were having trouble with the FTP services being offered through <a  href="https://www.cartoli.com/refer/madajczyk.com">Cartoli</a>.  Problems included being immediately disconnect from the server upon connection, fast timeouts, occasional problems with file transfers, etc.  In other words, the transfer portion of File Transfer Protocol wasn't working so hot.</p>
 <p>The one thing that remained constant is that I could get transfers to work when the firewall was shut down.  Obviously not a permanent solution, it at least allowed the FTP services to be useful again.  As always, it's the firewall that's causing the damn problem.</p>

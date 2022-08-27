@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Ponzi Schemes Need Docs Too"
-date: 2017-06-12 -0500
 comments: false
+date: "2017-06-12T00:00:00Z"
+title: Ponzi Schemes Need Docs Too
 ---
 
 Documentation in code is extremely important, even if developers hate doing it.

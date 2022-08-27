@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Photos Section Finally Working"
-date: 2004-10-10 -0600
 comments: false
+date: "2004-10-10T00:00:00Z"
+title: Photos Section Finally Working
 ---
 
 > This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.

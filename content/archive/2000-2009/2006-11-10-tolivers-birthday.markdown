@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2006-11-10T00:00:00Z"
 title: Toliver's Birthday
-comments: 'false'
 ---
 Toliver had a great 3rd birthday today, although I definitely found myself a bit frustrated.  Of course, it was completely my fault.
 

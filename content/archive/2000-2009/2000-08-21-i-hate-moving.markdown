@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "I Hate Moving"
-date: 2000-08-21 -0600
 comments: false
+date: "2000-08-21T00:00:00Z"
+title: I Hate Moving
 ---
 
 > This article was originally posted via Blogger on a domain name I no longer own.  I am consolidating all of my ramblings and drabble here.

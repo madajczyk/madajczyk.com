@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Endings and Beginnings"
-date: 2005-12-17 -0600
 comments: false
+date: "2005-12-17T00:00:00Z"
+title: Endings and Beginnings
 ---
 
 > This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.

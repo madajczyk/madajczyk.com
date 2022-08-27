@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Doubling Down"
-date: 2018-12-31 -0500
 comments: false
+date: "2018-12-31T00:00:00Z"
+title: Doubling Down
 ---
 
 Simply by adding an article now, I've created double of what I've posted to this site last year.

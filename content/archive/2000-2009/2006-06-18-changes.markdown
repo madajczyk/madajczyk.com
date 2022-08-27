@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2006-06-18T00:00:00Z"
 title: Changes
-comments: 'false'
 ---
 
 <p>Made some design changes to the blog yesterday and today.  I'll probably make a few more changes, but since I'm not quite sure what look I'm going for yet, I don't know when I'll get it changed.</p>

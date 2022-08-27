@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Anybody remember Q-Link?"
-date: 2005-05-16 -0600
 comments: false
+date: "2005-05-16T00:00:00Z"
+title: Anybody remember Q-Link?
 ---
 
 > This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.

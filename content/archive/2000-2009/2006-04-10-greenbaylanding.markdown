@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2006-04-10T00:00:00Z"
 title: Green Bay Landing
-comments: 'false'
 ---
 <p>Get the hell out of my way, <a href="http://www.imdb.com/name/nm0000231/">Oliver Stone</a>.   </p>
 <p>I uploaded a video to <a href="http://video.google.com/">Google Video</a> of a landing that Howard made into Austin Straubel on March 26th.  The vid was pretty good quality to start with, and I'm actually impressed with how good it transferred over.</p>

@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2008-07-15T00:00:00Z"
 title: Woodgrain Just Sucks
-comments: 'false'
 ---
 <p>Am I the only one in the world who hates vehicles with woodgrain interiors??</p>
 <p>I've been doing a bit of research on cars and I just can't stand seeing that stupid woodgrain accent trim go around the cabin.  Or worse... some vehicles are put it on the steering wheels or gearshift!!</p>

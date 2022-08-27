@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2006-12-25T00:00:00Z"
 title: Christmas Is Here
-comments: 'false'
 ---
 I've been accused recently of being a bit morose.  True enough, but things have been a bit... hectic, lately.
 

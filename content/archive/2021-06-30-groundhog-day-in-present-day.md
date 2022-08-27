@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Groundhog Day in Present Day"
-date: 2021-06-30 -0500
 comments: false
+date: "2021-06-30T00:00:00Z"
+title: Groundhog Day in Present Day
 ---
 
 Toliver had me watch a [YouTube video][carb-video] today that demonstrated how carburetors work through the construction of a transparent one.  It was really good, but then [another video][deleted-scene] of a deleted scene from the movie [Groundhog Day][imdb] was recommended that got me thinking.

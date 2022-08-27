@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2006-08-07T00:00:00Z"
 title: Moving in, moving up...
-comments: 'false'
 ---
 
 <p>What the hell do I know about furniture?</p>

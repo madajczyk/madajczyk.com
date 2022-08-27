@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Amazon and AWS"
-date: 2018-12-28 -0500
 comments: false
+date: "2018-12-28T00:00:00Z"
+title: Amazon and AWS
 ---
 
 There have been a lot of rumblings over the past year or two suggesting that [Amazon][2] needs to spin off [Amazon Web Services (AWS)][1].  These rumblings have

@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Referrer Etiquette"
-date: 2000-07-02 -0600
 comments: false
+date: "2000-07-02T00:00:00Z"
+title: Referrer Etiquette
 ---
 
 > This article was originally posted via Blogger on a domain name I no longer own.  I am consolidating all of my ramblings and drabble here.

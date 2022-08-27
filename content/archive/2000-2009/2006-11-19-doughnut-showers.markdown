@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2006-11-19T00:00:00Z"
 title: Doughnut Showers
-comments: 'false'
 ---
 On Friday, the boys and I decided to treat ourselves to a weekend of decidedly unhealthy breakfasts in the form of Krispy Kreme doughnuts.  Sometimes as I need to rely on incentive to positively reinforce behaviors.  Yeah, that's gotta be it -- definitely not because I have a sweet tooth too.
 

@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "New Blog"
-date: 2004-12-04 -0600
 comments: false
+date: "2004-12-04T00:00:00Z"
+title: New Blog
 ---
 
 > This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.

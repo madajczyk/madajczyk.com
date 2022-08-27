@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Send 2005 to Hell"
-date: 2005-12-31 -0600
 comments: false
+date: "2005-12-31T00:00:00Z"
+title: Send 2005 to Hell
 ---
 
 > This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.

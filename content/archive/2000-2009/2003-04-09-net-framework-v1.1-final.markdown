@@ -1,8 +1,7 @@
 ---
-layout: post
-title: ".NET Framework v1.1 Final"
-date: 2003-04-09 -0600
 comments: false
+date: "2003-04-09T00:00:00Z"
+title: .NET Framework v1.1 Final
 ---
 
 > This article was originally posted via Squarespace on a domain name I no longer utilize.  I am consolidating all of my ramblings and drabble here.

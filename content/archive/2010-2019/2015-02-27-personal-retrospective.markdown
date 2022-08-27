@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Personal Retrospective"
-date: 2015-02-27 -0600
 comments: false
+date: "2015-02-27T00:00:00Z"
+title: Personal Retrospective
 ---
 
 As part of Agile development, one of the many important processes is the Retrospective.  This is a meeting held by the team at the end of a sprint or a release or some such other important milestone. The intent is to allow the persons involved the ability to comment on what went well, what went poorly, and offer suggestions on what could be done to improve things in the future.

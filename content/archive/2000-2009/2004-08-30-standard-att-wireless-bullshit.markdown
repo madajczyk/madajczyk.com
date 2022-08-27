@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Standard AT&T Wireless Bullshit"
-date: 2004-08-30 -0600
 comments: false
+date: "2004-08-30T00:00:00Z"
+title: Standard AT&T Wireless Bullshit
 ---
 
 > This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.

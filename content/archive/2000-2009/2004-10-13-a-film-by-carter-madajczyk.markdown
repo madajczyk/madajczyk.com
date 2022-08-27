@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "A Film by Carter Madajczyk"
-date: 2004-10-13 -0600
 comments: false
+date: "2004-10-13T00:00:00Z"
+title: A Film by Carter Madajczyk
 ---
 
 > This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.

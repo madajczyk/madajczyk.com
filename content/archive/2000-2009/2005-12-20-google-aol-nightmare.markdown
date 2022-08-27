@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Google + AOL = Nightmare"
-date: 2005-12-20 -0600
 comments: false
+date: "2005-12-20T00:00:00Z"
+title: Google + AOL = Nightmare
 ---
 
 > This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.

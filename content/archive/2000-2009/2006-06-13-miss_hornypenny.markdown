@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2006-06-13T00:00:00Z"
 title: Miss Hornypenny
-comments: 'false'
 ---
 
 <p>Had an interesting telephone call this evening.  While speaking with a female friend of mine, she happened to mention that was horny.  Very horny.  Not necessarily with me in mind or anything, but just in general.</p>

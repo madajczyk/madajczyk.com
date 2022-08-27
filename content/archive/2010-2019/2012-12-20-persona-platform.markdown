@@ -1,10 +1,10 @@
 ---
-layout: post
-title: "Persona Platform"
-date: 2012-12-20 -0600
+categories:
+- tech
 comments: false
-categories: [tech]
+date: "2012-12-20T00:00:00Z"
 redirect_from: /persona-platform/
+title: Persona Platform
 ---
 After a multi-year hiatus, I’ve decided it’s time to begin rebuilding my online persona again.
 

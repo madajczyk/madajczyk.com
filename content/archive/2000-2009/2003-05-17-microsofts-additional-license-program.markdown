@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Microsoft's Additional License Program"
-date: 2003-05-17 -0600
 comments: false
+date: "2003-05-17T00:00:00Z"
+title: Microsoft's Additional License Program
 ---
 
 > This article was originally posted via Squarespace on a domain name I no longer utilize.  I am consolidating all of my ramblings and drabble here.

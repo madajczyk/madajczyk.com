@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Crossroads"
-date: 2014-03-08 -0600
 comments: false
+date: "2014-03-08T00:00:00Z"
+title: Crossroads
 ---
 
 I feel as if I have arrived at a crossroads.  There appears to be multiple paths, and each leads off in a different direction.  Everything past the crossroads is foggy and cannot be seen.  Cryptic signs appear next to each of the paths, but not enough information is provided to help with the decision process.

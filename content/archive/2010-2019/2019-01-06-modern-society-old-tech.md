@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Modern Society, Old Tech"
-date: 2019-01-06 -0500
 comments: false
+date: "2019-01-06T00:00:00Z"
+title: Modern Society, Old Tech
 ---
 ### Society Depends on Old Tech
 

@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Stomach Recollections"
-date: 2014-01-25 -0600
 comments: false
+date: "2014-01-25T00:00:00Z"
+title: Stomach Recollections
 ---
 
 The following represents thoughts of the past based upon the remembrances of my stomach.  This doesn't mean that it was the best, but personal recollections might very well override the otherwise shitty presentation of the sustenance.  Perhaps.

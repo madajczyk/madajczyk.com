@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2006-11-22T00:00:00Z"
 title: The Elmo Experience
-comments: 'false'
 ---
 A few weeks ago I made a decision that I felt may have been hazardous to my health.  I opted to purchase tickets for the boys and I to Sesame Street Live - Elmo Makes Music.  I knew that no good could come from it, but I decided to press forward.  For the boys, I say!
 

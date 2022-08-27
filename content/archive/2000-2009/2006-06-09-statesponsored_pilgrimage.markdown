@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2006-06-09T00:00:00Z"
 title: State-sponsored Pilgrimage
-comments: 'false'
 ---
 
 <p>Every 8 years in Wisconsin, most adults make a pilgrimage.</p>

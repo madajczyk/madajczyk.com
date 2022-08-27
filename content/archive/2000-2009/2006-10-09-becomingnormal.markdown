@@ -1,7 +1,7 @@
 ---
-layout: post
+comments: "false"
+date: "2006-10-09T00:00:00Z"
 title: Am I... Becoming Normal?
-comments: 'false'
 ---
 <p>It suddenly hit me over the weekend.  I think I'm on my way to becoming normal.  Which is odd, because, well, I never used to be normal.  I thought I was normal, but everybody thought different.  Here are a few examples:</p>
 <ul>

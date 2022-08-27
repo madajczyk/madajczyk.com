@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Merry Christmas"
-date: 2005-12-25 -0600
 comments: false
+date: "2005-12-25T00:00:00Z"
+title: Merry Christmas
 ---
 
 > This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.

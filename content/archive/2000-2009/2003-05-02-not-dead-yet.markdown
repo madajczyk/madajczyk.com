@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Not Dead Yet"
-date: 2003-05-02 -0600
 comments: false
+date: "2003-05-02T00:00:00Z"
+title: Not Dead Yet
 ---
 
 > This article was originally posted via Squarespace on a domain name I no longer utilize.  I am consolidating all of my ramblings and drabble here.
