@@ -14,6 +14,10 @@ params:
   github: madajczyk
   linkedin: madajczyk
   twitter: lmadajczyk
+  algolia:
+    appId: WKO5G7WGJH
+    apiKey: a8844ad6848fe599bac0fea247e39d50
+    indexName: madajczyk.com
 
 outputFormats:
   jsonfeed:
