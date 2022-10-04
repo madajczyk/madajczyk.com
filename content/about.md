@@ -4,6 +4,7 @@ title: "About"
 date: 2020-10-10 00:00:00 -0600
 comments: false
 categories: [personal]
+subtitle: false
 ---
 
 Just another guy who does various and important things. Or at least that's what I tell myself.
