@@ -9,7 +9,9 @@
 	<meta name="MobileOptimized" content="320">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="alternate" href="/atom.xml" title="madajczyk.com" type="application/atom+xml">
+	{{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+	{{ end -}}
 	<link rel="alternate" href="/feed.json" title="madajczyk.com" type="application/json" />
 	<link href="/search.xml" rel="search" title="madajczyk.com search" type="application/opensearchdescription+xml">
 
