@@ -1,15 +1,17 @@
 {{ define "main" }}
 <section id="main">
-  <h1 id="title">{{ .Title }}</h1>
   <div>
         <article id="content">
           <div class="column is-8 is-offset-2">
             <h1 class="title p-name" itemprop="headline name">{{ .Title }}</h1>
+            {{ $showSubtitle := .Params.subtitle | default "true" }}
+            {{ if $showSubtitle }}
             <p class="subtitle">
               <time datetime="{{ .Date.UTC }}" itemprop="datePublished">{{ .Date.Format "January 2, 2006" }}</time>
               <span class="dt-published" style="display: none;">{{ .Date }}</span>
               - {{ .WordCount }} Words
             </p>
+            {{ end }}
             <hr />
             <div class="content article-body e-content" itemprop="articleBody">
               {{ .Content }}
