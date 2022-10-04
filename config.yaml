@@ -14,3 +14,17 @@ params:
   github: madajczyk
   linkedin: madajczyk
   twitter: lmadajczyk
+
+outputFormats:
+  jsonfeed:
+    mediaType: "application/json"
+    baseName: "feed"
+    isPlainText: true
+
+outputs:
+  home:
+    - "html"
+    - "rss"
+    - "jsonfeed"
+  page:
+    - "html"
