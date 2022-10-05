@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $featured_image := partial "func/GetFeaturedImage.html" . }}
 <section id="main">
   <div>
         <article id="content">
@@ -13,6 +14,9 @@
             </p>
             {{ end }}
             <hr />
+            {{ if $featured_image }}
+            <img src="{{ $featured_image }}" class="img" alt="image from {{ .Title }}">
+            {{ end }}
             <div class="content article-body e-content" itemprop="articleBody">
               {{ .Content }}
             </div>
