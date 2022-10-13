@@ -4,7 +4,7 @@
   <div>
         <article id="content">
           <div class="column is-8 is-offset-2">
-            <h1 class="title p-name" itemprop="headline name">{{ .Title }}</h1>
+            <h1 class="title" itemprop="headline name">{{ .Title }}</h1>
             {{ $showSubtitle := .Params.subtitle | default "true" }}
             {{ if $showSubtitle }}
             <p class="subtitle">
@@ -15,7 +15,9 @@
             {{ end }}
             <hr />
             {{ if $featured_image }}
-            <img src="{{ $featured_image }}" class="img" alt="image from {{ .Title }}">
+            <div class="card-image has-text-centered">
+              <img src="{{ $featured_image }}" class="img" alt="image from {{ .Title }}">
+            </div>
             {{ end }}
             <div class="content article-body e-content" itemprop="articleBody">
               {{ .Content }}
