@@ -1,8 +1,11 @@
 ---
 comments: false
 date: "2021-08-15T00:00:00Z"
-tags: house, mortgage
+tags:
+  - house
+  - mortgage
 title: Mortgage Decision Path
+description: Weighing out the decisions available when deciding where to get a mortgage.
 ---
 
 ## History

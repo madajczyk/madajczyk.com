@@ -1,8 +1,10 @@
 ---
 comments: false
 date: "2022-01-09T00:00:00Z"
-tags: site
+tags:
+  - site
 title: Quicksand
+description: Pondering why ideas don't always equal motivation.
 ---
 
 Every once in a while, I sit down to make updates to this site. But, before I

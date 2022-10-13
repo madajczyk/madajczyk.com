@@ -1,8 +1,11 @@
 ---
 comments: false
 date: "2021-08-30T00:00:00Z"
-tags: house, mortgage
+tags:
+  - house
+  - mortgage
 title: Ally Mortgage Review
+description: Walks through the process of getting a mortgage through Ally.
 ---
 
 > Update in 2022: Not long after I wrote this up, Better.com had two different rounds of layoffs, and neither resulted
