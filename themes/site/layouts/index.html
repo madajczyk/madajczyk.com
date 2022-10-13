@@ -20,7 +20,7 @@
   </div>
 
 <div class="column is-10 is-offset-1">
-  <main aria-role="main">
+  <main role="main">
     {{/* Define a section to pull recent posts from. For Hugo 0.20 this will default to the section with the most number of pages. */}}
     {{ $mainSections := .Site.Params.mainSections | default (slice "post") }}
     {{/* Create a variable with that section to use in multiple places. */}}
@@ -45,7 +45,7 @@
                   <time datetime="{{ .Date.UTC }}" itemprop="datePublished">{{ .Date.Format "January 2, 2006" }}</time> - Tagged:&nbsp;
                   {{- if .Params.tags -}} 
                       {{- range $key, $tag := .Params.tags }} 
-                          {{- if ne $key 0 }}, {{ end }}<span><a href='/tags/{{ $tag | urlize }}'>{{ $tag }}</a></span>
+                          {{- if ne $key 0 }}, {{ end }}<span><a href="/tags/{{ $tag | urlize }}" aria-label="{{ $tag }}" >{{ $tag }}</a></span>
                       {{- end -}}
                     {{- else -}}
                         None
@@ -77,7 +77,7 @@
                 <time datetime="{{ .Date.UTC }}" itemprop="datePublished">{{ .Date.Format "January 2, 2006" }}</time> - Tagged:&nbsp;
                 {{- if .Params.tags -}} 
                     {{- range $key, $tag := .Params.tags }} 
-                        {{- if ne $key 0 }}, {{ end }}<span><a href='/tags/{{ $tag | urlize }}'>{{ $tag }}</a></span>
+                        {{- if ne $key 0 }}, {{ end }}<span><a href="/tags/{{ $tag | urlize }}">{{ $tag }}</a></span>
                     {{- end -}}
                   {{- else -}}
                       None
@@ -89,11 +89,6 @@
         {{ end }}
         </div>
 
-        {{/* As above, Use $section_name to get the section title, and URL. Use "with" to only show it if it exists */}}
-        {{ with .Site.GetPage "section" $section_name }}
-          <a href="{{ .RelPermalink }}" class="link db f6 pa2 br3 bg-mid-gray white dim w4 tc">{{ i18n "allTitle" . }}</a>
-        {{ end }}
-
       </section>
       {{ end }}
 
@@ -101,7 +96,7 @@
   {{ end }}
   </main>
   <div class="has-text-centered">
-    <a class="button is-info">See Older Posts</a>
+    <a class="button is-info" href="/archive" aria-label="See Older Posts">See Older Posts</a>
   </div>
 
 </div>
