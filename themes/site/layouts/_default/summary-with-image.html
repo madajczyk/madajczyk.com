@@ -4,7 +4,7 @@
     <div class="">
       {{ if $featured_image }}
           {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
-        <div>
+        <div class="card-image has-text-centered">
           <a href="{{.RelPermalink}}">
             <img src="{{ $featured_image }}" class="img" alt="image from {{ .Title }}">
           </a>
@@ -17,9 +17,8 @@
             </a>
         </h1>
         <div>
-          {{ .Summary }}
+          {{ .Summary }}.. <i><a href="{{.RelPermalink}}">read more</a></i>
         </div>
-          <a href="{{.RelPermalink}}">read more</a>
       </div>
     </div>
   </div>
