@@ -74,9 +74,7 @@
                   </a>
                 </h2>
                 <p>{{ .Description }}</p>
-                <time datetime="{{ .Date.UTC }}" itemprop="datePublished">{{ .Date.Format "January 2, 2006" }}</time>
-                <br/>
-                Tags:&nbsp;
+                <time datetime="{{ .Date.UTC }}" itemprop="datePublished">{{ .Date.Format "January 2, 2006" }}</time> - Tagged:&nbsp;
                 {{- if .Params.tags -}} 
                     {{- range $key, $tag := .Params.tags }} 
                         {{- if ne $key 0 }}, {{ end }}<span><a href='/tags/{{ $tag | urlize }}'>{{ $tag }}</a></span>
