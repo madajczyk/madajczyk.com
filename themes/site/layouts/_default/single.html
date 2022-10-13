@@ -15,9 +15,17 @@
             {{ end }}
             <hr />
             {{ if $featured_image }}
-            <div class="card-image has-text-centered">
-              <img src="{{ $featured_image }}" class="img" alt="image from {{ .Title }}">
+            <div class="has-text-centered pb-4">
+              <figure class="image is-fullwidth">
+                <img src="{{ $featured_image }}" class="img" alt="image from {{ .Title }}">
+              </figure>
+              {{ with .Params.imagecredit }}
+              <div class="content is-small is-italic has-text-right">
+                Image Credit: {{ .  }}
+              </div>
+              {{ end }}
             </div>
+
             {{ end }}
             <div class="content article-body e-content" itemprop="articleBody">
               {{ .Content }}

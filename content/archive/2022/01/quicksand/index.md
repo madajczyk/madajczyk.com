@@ -5,6 +5,7 @@ tags:
   - site
 title: Quicksand
 description: Pondering why ideas don't always equal motivation.
+imagecredit: Aubrey Odom-Mabey / Unsplash
 ---
 
 Every once in a while, I sit down to make updates to this site. But, before I
