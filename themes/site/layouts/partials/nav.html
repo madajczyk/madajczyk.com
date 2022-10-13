@@ -1,31 +1,33 @@
-<nav class="navbar is-fixed-top is-info" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-        <a class="navbar-item brand-text has-text-weight-bold" aria-label="Lee Madajczyk" href="/">Lee Madajczyk</a>
-        <div class="navbar-burger burger" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active'); document.querySelector('.navbar-burger').classList.toggle('is-active');">
-            <span></span>
-            <span></span>
-            <span></span>
+<section class="section">
+    <nav class="navbar is-fixed-top is-info" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item brand-text has-text-weight-bold" aria-label="Lee Madajczyk" href="/">Lee Madajczyk</a>
+            <div class="navbar-burger burger" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active'); document.querySelector('.navbar-burger').classList.toggle('is-active');">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-    </div>
-    <div class="navbar-menu">
-        <div class="navbar-end">
-            <a class="navbar-item" href="/search" aria-label="Search">Search</a>
-			<a class="navbar-item" href="/archive" aria-label="Archive">Archive</a>
-			<a class="navbar-item" href="/about" aria-label="About">About</a>
-			<div class="navbar-item has-dropdown is-hoverable">
-				<a class="navbar-link" aria-label="Elsewhere">Elsewhere</a>
-				<div class="navbar-dropdown is-boxed">
-                    {{ if isset .Site.Params "github" }}
-					<a class="navbar-item" href="https://github.com/{{ .Site.Params.github }}" aria-label="GitHub">GitHub</a>
-                    {{ end }}
-                    {{ if isset .Site.Params "linkedin" }}
-					<a class="navbar-item" href="http://www.linkedin.com/in/{{ .Param "linkedin" }}" aria-label="LinkedIn">LinkedIn</a>
-                    {{ end }}
-                    {{ if isset .Site.Params "twitter" }}
-					<a class="navbar-item" href="http://twitter.com/{{ .Param "twitter" }}" aria-label="Twitter">Twitter</a>
-                    {{ end }}
-				</div>
-			</div>
-		</div>
-	</div>
-</nav>
+        <div class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="/search" aria-label="Search">Search</a>
+                <a class="navbar-item" href="/archive" aria-label="Archive">Archive</a>
+                <a class="navbar-item" href="/about" aria-label="About">About</a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" aria-label="Elsewhere">Elsewhere</a>
+                    <div class="navbar-dropdown is-boxed">
+                        {{ if isset .Site.Params "github" }}
+                        <a class="navbar-item" href="https://github.com/{{ .Site.Params.github }}" aria-label="GitHub">GitHub</a>
+                        {{ end }}
+                        {{ if isset .Site.Params "linkedin" }}
+                        <a class="navbar-item" href="http://www.linkedin.com/in/{{ .Param "linkedin" }}" aria-label="LinkedIn">LinkedIn</a>
+                        {{ end }}
+                        {{ if isset .Site.Params "twitter" }}
+                        <a class="navbar-item" href="http://twitter.com/{{ .Param "twitter" }}" aria-label="Twitter">Twitter</a>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</section>
