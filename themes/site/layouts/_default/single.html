@@ -7,13 +7,20 @@
             <h1 class="title" itemprop="headline name">{{ .Title }}</h1>
             {{ $showSubtitle := .Params.subtitle | default "true" }}
             {{ if $showSubtitle }}
-            <p class="subtitle">
+            <p class="subtitle mb-3">
               <time datetime="{{ .Date.UTC }}" itemprop="datePublished">{{ .Date.Format "January 2, 2006" }}</time>
               <span class="dt-published is-hidden">{{ .Date }}</span>
               - {{ .WordCount }} Words
             </p>
-            {{ end }}
+            {{- if .Params.tags -}} 
+            <p class="mb-3">
+              {{- range $key, $tag := .Params.tags }} 
+                <a href="/tags/{{ $tag | urlize }}" aria-label="{{ $tag }}" class="is-info"><span class="tag is-success is-light">{{ $tag }}</span></a>
+              {{- end -}}
+            {{- else -}}
             <hr />
+            {{- end -}}
+            {{ end }}
             {{ if $featured_image }}
             <div class="has-text-centered pb-4">
               <figure class="image is-fullwidth">

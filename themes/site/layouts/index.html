@@ -42,10 +42,10 @@
                   {{ .Render "summary-with-image" }}
                 </div>
                 <div class="pt-3">
-                  <time datetime="{{ .Date.UTC }}" itemprop="datePublished">{{ .Date.Format "January 2, 2006" }}</time> - Tagged:&nbsp;
+                  <time datetime="{{ .Date.UTC }}" itemprop="datePublished">{{ .Date.Format "January 2, 2006" }}</time><span class="mx-1"></span>
                   {{- if .Params.tags -}} 
                       {{- range $key, $tag := .Params.tags }} 
-                          {{- if ne $key 0 }}, {{ end }}<span><a href="/tags/{{ $tag | urlize }}" aria-label="{{ $tag }}" >{{ $tag }}</a></span>
+                          <a href="/tags/{{ $tag | urlize }}" aria-label="{{ $tag }}" class="is-info"><span class="tag is-success is-light">{{ $tag }}</span></a>
                       {{- end -}}
                     {{- else -}}
                         None
@@ -73,10 +73,10 @@
                     </a>
                   </h2>
                   <p>{{ .Description }}</p>
-                  <time datetime="{{ .Date.UTC }}" itemprop="datePublished">{{ .Date.Format "January 2, 2006" }}</time> - Tagged:&nbsp;
+                  <time datetime="{{ .Date.UTC }}" itemprop="datePublished">{{ .Date.Format "January 2, 2006" }}</time><span class="mx-1"></span>
                   {{- if .Params.tags -}} 
                       {{- range $key, $tag := .Params.tags }} 
-                          {{- if ne $key 0 }}, {{ end }}<span><a href="/tags/{{ $tag | urlize }}">{{ $tag }}</a></span>
+                          <a href="/tags/{{ $tag | urlize }}" aria-label="{{ $tag }}" class="is-info"><span class="tag is-success is-light">{{ $tag }}</span></a>
                       {{- end -}}
                     {{- else -}}
                         None
