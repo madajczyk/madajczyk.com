@@ -61,34 +61,33 @@
 
       {{ if ge $section_count (add $n_posts 1) }}
       <section>
-        <div class="columns">
-
-        {{ range (first 3 (after $n_posts $section))  }}
-        <div class="column is-flex">
-          <div class="card">
-            <div class="card-content">
-              <div class="content">
-                <h2>
-                  <a href="{{ .RelPermalink }}">
-                    {{ .Title }}
-                  </a>
-                </h2>
-                <p>{{ .Description }}</p>
-                <time datetime="{{ .Date.UTC }}" itemprop="datePublished">{{ .Date.Format "January 2, 2006" }}</time> - Tagged:&nbsp;
-                {{- if .Params.tags -}} 
-                    {{- range $key, $tag := .Params.tags }} 
-                        {{- if ne $key 0 }}, {{ end }}<span><a href="/tags/{{ $tag | urlize }}">{{ $tag }}</a></span>
-                    {{- end -}}
-                  {{- else -}}
-                      None
-                {{- end -}}
+        <div class="tile is-ancestor">
+          <div class="tile is-horizontal">
+            {{ range (first 3 (after $n_posts $section))  }}
+            <div class="tile is-parent">
+              <div class="tile is-child box">
+                <div class="content">
+                  <h2>
+                    <a href="{{ .RelPermalink }}">
+                      {{ .Title }}
+                    </a>
+                  </h2>
+                  <p>{{ .Description }}</p>
+                  <time datetime="{{ .Date.UTC }}" itemprop="datePublished">{{ .Date.Format "January 2, 2006" }}</time> - Tagged:&nbsp;
+                  {{- if .Params.tags -}} 
+                      {{- range $key, $tag := .Params.tags }} 
+                          {{- if ne $key 0 }}, {{ end }}<span><a href="/tags/{{ $tag | urlize }}">{{ $tag }}</a></span>
+                      {{- end -}}
+                    {{- else -}}
+                        None
+                  {{- end -}}
+                </div>
               </div>
             </div>
+
+            {{ end }}
           </div>
         </div>
-        {{ end }}
-        </div>
-
       </section>
       {{ end }}
 
