@@ -15,4 +15,4 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self' data: cdnjs.cloudflare.com cdn.jsdelivr.net https://*.algolia.net https://*.algolianet.com 'unsafe-inline';"
+    Content-Security-Policy = "default-src 'self' data: webpack: cdnjs.cloudflare.com cdn.jsdelivr.net https://*.algolia.net https://*.algolianet.com 'unsafe-inline';"
