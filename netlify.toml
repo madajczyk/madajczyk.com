@@ -15,4 +15,4 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self' cdnjs.cloudflare.com;"
+    Content-Security-Policy = "default-src 'self' data: cdnjs.cloudflare.com;"
