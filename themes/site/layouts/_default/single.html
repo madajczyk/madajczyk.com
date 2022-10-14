@@ -9,7 +9,7 @@
             {{ if $showSubtitle }}
             <p class="subtitle">
               <time datetime="{{ .Date.UTC }}" itemprop="datePublished">{{ .Date.Format "January 2, 2006" }}</time>
-              <span class="dt-published" style="display: none;">{{ .Date }}</span>
+              <span class="dt-published is-hidden">{{ .Date }}</span>
               - {{ .WordCount }} Words
             </p>
             {{ end }}

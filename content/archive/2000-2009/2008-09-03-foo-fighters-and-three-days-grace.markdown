@@ -5,7 +5,7 @@ title: Foo Fighters and Three Days Grace
 ---
 On Friday, August 29th, a bunch of us headed down to Milwaukee to see Foo Fighters and Three Days Grace play.  It was an awesome concert.
 
-Parking was a small nightmare.   Thankfully Proton had the GPS unit <span style="text-decoration: line-through;">that I won and he stole from me</span> installed so we were able to navigate around.  We found some parking and walked through the park, down a steep hill, and then headed to the concert site.
+Parking was a small nightmare.   Thankfully Proton had the GPS unit (that I won and he stole from me) installed so we were able to navigate around.  We found some parking and walked through the park, down a steep hill, and then headed to the concert site.
 
 We got there early enough that we had some extra time to kill before the gates opened up.  When we headed in, we each received a wristband that granted access to the 200 feet or so closest to the stage.
 
