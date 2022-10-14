@@ -12,7 +12,7 @@ description: Walks through the process of getting a mortgage through Ally.
 > in a great look for the company.  I don't think it changes what I wrote, as the people I interacted during this 
 > process were pretty great.  But, now I'm not so sure I'd do business with this company again.
 
-As [I captured]({% post_url 2021-08-15-mortgage-decision-path %}) on deciding which company to use for a mortgage, I
+As [I captured]({{< ref "2021-08-15-mortgage-decision-path" >}}) on deciding which company to use for a mortgage, I
 elected to go with Ally.  They don't offer mortgages directly, but instead partner with better.com to drive the process.
 They provide an incentive to existing customers to select their option.  In my case, it ended up with no lender fees
 as well as a $500 credit towards closing costs.  Win!

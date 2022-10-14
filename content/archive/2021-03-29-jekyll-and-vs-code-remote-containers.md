@@ -53,7 +53,8 @@ I've only begun to scratch the surface on where I can plug this into my workflow
 into the possibilities that the remote containers feature of VS Code offers.
 
 [Jekyll]: https://jekyllrb.com/
-[Pave Over]: {% post_url 2021-03-28-paving-over-computers %}
+
+[Pave Over]: {{< ref "2021-03-28-paving-over-computers" >}}
 [GitHub Pages]: https://pages.github.com/
 [Netlify]: https://www.netlify.com/
 [Hugo]: https://gohugo.io/
