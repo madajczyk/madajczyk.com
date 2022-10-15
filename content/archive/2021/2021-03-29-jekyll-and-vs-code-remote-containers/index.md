@@ -39,11 +39,11 @@ on, but I for sure want this checked in.
 
 | Using the extension | |
 |-|-|
-| Adding the extension gives you this cute little green panel in the lower right hand corner: | ![](/assets/2021/2021-03-29-jekyll-and-vs-code-remote-containers-standard.webp) |
-| When you open a folder that the extension thinks can be containerized, it will prompt you: | ![](/assets/2021/2021-03-29-jekyll-and-vs-code-remote-containers-reopen-folder.webp) |
-| After opening in the container, the green panel lets you know that you're connected to a remote container: | ![](/assets/2021/2021-03-29-jekyll-and-vs-code-remote-containers-in-dev-container.webp) |
-| Clicking the green panel gives you additional options in the command palette: | ![](/assets/2021/2021-03-29-jekyll-and-vs-code-remote-containers-command-palette.webp) |
-| Running the configured tasks from the Command Palette: | ![](/assets/2021/2021-03-29-jekyll-and-vs-code-remote-containers-run-task.webp) |
+| Adding the extension gives you this cute little green panel in the lower right hand corner: | {{< figure src="jekyll-and-vs-code-remote-containers-standard.webp" >}} |
+| When you open a folder that the extension thinks can be containerized, it will prompt you: | {{< figure src="jekyll-and-vs-code-remote-containers-reopen-folder.webp" >}} |
+| After opening in the container, the green panel lets you know that you're connected to a remote container: | {{< figure src="jekyll-and-vs-code-remote-containers-in-dev-container.webp" >}} | 
+| Clicking the green panel gives you additional options in the command palette: | {{< figure src="jekyll-and-vs-code-remote-containers-command-palette.webp" >}} |
+| Running the configured tasks from the Command Palette: | {{< figure src="jekyll-and-vs-code-remote-containers-run-task.webp" >}} |
 
 And, uh, that's about it.  I was able to clone the [repo for this site][SiteRepo] to a fresh Linux box, and after a few
 minutes of restoration, everything just worked with zero monkeying around.  I didn't test on a Windows machine, but I
