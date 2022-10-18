@@ -10,7 +10,7 @@ permalinks:
 
 params:
   author: Lee Madajczyk
-  logo: images
+  logo: icons/favicon-96x96.png
   github: madajczyk
   linkedin: madajczyk
   twitter: lmadajczyk
