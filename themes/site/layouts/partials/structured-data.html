@@ -17,20 +17,18 @@
         "logo": {
           "@type": "ImageObject",
           "url": {{ .Site.Params.logo }}
-        }
+        },
+        "description": {{ .Summary | plainify | safeHTML }},
       },
-      "description": {{ .Summary | plainify | safeHTML }},
-    }
-    {{ if eq .Section "posts" }}
-    {{ end }}
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": {{ .Site.Params.author }},
-      "url": {{ .Site.BaseURL }},
-      "sameAs": [
-        "https://twitter.com/{{ .Site.Params.twitter }}",
-        "https://github.com/{{ .Site.Params.github }}"
-      ]
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": {{ .Site.Params.author }},
+        "url": {{ .Site.BaseURL }},
+        "sameAs": [
+          "https://twitter.com/{{ .Site.Params.twitter }}",
+          "https://github.com/{{ .Site.Params.github }}"
+        ]
+      }
     }
 </script>
