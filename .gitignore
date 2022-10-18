@@ -1,8 +1,9 @@
-# Jekyll specific
-_site/
-.sass-cache/
-.jekyll-metadata
-.jekyll-cache
+# Hugo specific
+.hugo_build.lock
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
 
 # Windows image file caches
 Thumbs.db

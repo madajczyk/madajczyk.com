@@ -1,0 +1,34 @@
+baseURL: https://madajczyk.com
+disablePathToLower: true
+languageCode: en-us
+title: Lee Madajczyk
+theme: site
+disablePathToLower: false
+
+permalinks:
+  archive: /archive/:year/:month/:day/:slug
+
+params:
+  author: Lee Madajczyk
+  logo: images
+  github: madajczyk
+  linkedin: madajczyk
+  twitter: lmadajczyk
+  algolia:
+    appId: BU11P89KFS
+    apiKey: 8fff41700b5a29938a2b09440b70f5d1
+    indexName: madajczyk.com
+
+outputFormats:
+  jsonfeed:
+    mediaType: "application/json"
+    baseName: "feed"
+    isPlainText: true
+
+outputs:
+  home:
+    - "html"
+    - "rss"
+    - "jsonfeed"
+  page:
+    - "html"

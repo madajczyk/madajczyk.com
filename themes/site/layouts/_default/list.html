@@ -1,0 +1,33 @@
+{{ define "main" }}
+<main>
+    <div>
+        <article id="content">
+            <div class="column is-8 is-offset-2">
+                <header>
+                    <h1 class="title p-name" itemprop="headline name">{{ .Title | title }}</h1>
+                </header>
+                <hr />
+            <!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
+            {{.Content}}
+            <div class="content">
+                <div class="archives" itemscope itemtype="http://schema.org/Blog">
+                    <!-- Ranges through content/posts/*.md -->
+                    {{ .Scratch.Set "currentYear" "2088" }}
+                    {{ range .Pages }}
+                        {{ if ne ($.Scratch.Get "currentYear") (.Date.Format "2006") }}
+                            <h2 class="year">{{ .Date.Format "2006" }}</h2>
+                            {{ $.Scratch.Set "currentYear" ( .Date.Format "2006") }}
+                        {{ end }}
+                        <ul>
+                        <li>
+                            <h3 class="title"><a href="{{.Permalink}}">{{.Title}}</a></h3>
+                        </li>
+                    </ul>
+                    {{ end }}
+                </div>
+            </div>
+        </article>
+    </div>
+
+</main>
+{{ end }}

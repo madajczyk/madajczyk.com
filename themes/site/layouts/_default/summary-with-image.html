@@ -1,0 +1,25 @@
+{{ $featured_image := partial "func/GetFeaturedImage.html" . }}
+<article>
+  <div>
+    <div class="">
+      {{ if $featured_image }}
+          {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
+        <div class="card-image has-text-centered">
+          <a href="{{.RelPermalink}}" aria-label="{{ .Title }}">
+            <img src="{{ $featured_image }}" class="img" alt="image from {{ .Title }}">
+          </a>
+        </div>
+      {{ end }}
+      <div>
+        <h2>
+          <a href="{{.RelPermalink}}" aria-label="{{ .Title }}">
+            {{ .Title }}
+            </a>
+        </h1>
+        <div>
+          {{ .Summary }}.. <i><a href="{{.RelPermalink}}" aria-label="read more from {{ .Title }}">read more from {{ .Title }}</a></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>

@@ -1,0 +1,12 @@
+---
+comments: false
+date: "2005-09-14T00:00:00Z"
+title: Office 12 UI
+---
+
+> This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.
+
+[Bink.nu][2] has an entry with screenshots of the [new user interface for Office 12][2].  Very interesting ideas... I like what they did with the Save dialog, both the current and proposed.
+
+[1]: http://www.bink.nu/
+[2]: http://bink.nu/photos/news_article_images/category1015.aspx
