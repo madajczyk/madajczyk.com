@@ -18,6 +18,7 @@ params:
     appId: BU11P89KFS
     apiKey: 8fff41700b5a29938a2b09440b70f5d1
     indexName: netlify_8b085eeb-98b3-4315-8341-ff2d7b1d7326_main_all
+    siteId: 8b085eeb-98b3-4315-8341-ff2d7b1d7326
 
 outputFormats:
   jsonfeed:

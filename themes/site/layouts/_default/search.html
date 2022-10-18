@@ -14,92 +14,17 @@
     </div>
 </section>
 
-<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/algoliasearch-helper@2.24.0/dist/algoliasearch.helper.min.js"></script>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.css">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch-theme-algolia.min.css">
-
-<script>
-const search = instantsearch({
-  appId: '{{ .Site.Params.algolia.appid }}',
-  apiKey: '{{ .Site.Params.algolia.apikey }}',
-  indexName: '{{ .Site.Params.algolia.indexname }}',
-
-  searchFunction: function (helper) {
-    if (helper.state.query === '') {
-        document.querySelector('#search-hits').innerHTML = '';
-        return;
-    }
-    helper.search();
-  },
-  searchParameters: {
-    restrictSearchableAttributes: [
-      'title',
-      'content'
-    ]
-  },
-  urlSync: 'true'
-});
-
-const hitTemplate = function(hit) {
-  let date = '';
-  if (hit.date) {
-    date = new Date(hit.date*1000).toLocaleDateString('en-us', { day:"numeric", year:"numeric", month:"long"})
-  }
-  const url = hit.url;
-  const title = hit._highlightResult.title.value;
-  const content = hit._highlightResult.html.value;
-
-  return `
-    <article class="searchresult">
-      <p class="title is-3"><a href="${url}">${title}</a></p>
-      <p class="subtitle is-5">${date}</p>
-      <div class="content">${content}</div>
-    </article>
-  `;
-}
-
-search.addWidget(
-  instantsearch.widgets.searchBox({
-    container: '#search-searchbar',
-    placeholder: 'Search site',
-    poweredBy: true // This is required if you're on the free Community plan
-  })
-);
-
-search.addWidget(
-  instantsearch.widgets.hits({
-    container: '#search-hits',
-    templates: {
-      item: hitTemplate,
-      empty: "<div class=\"notification is-danger\"><i class=\"fas fa-exclamation-triangle\"></i> No results found for the search term you provided.</div>"
-    }
-  })
-);
-
-search.start();
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+<script type="text/javascript">
+  algoliasearchNetlify({
+    appId: '{{ .Site.Params.algolia.appid }}',
+    apiKey: '{{ .Site.Params.algolia.apikey }}',
+    siteId: '{{ .Site.Params.algolia.siteid }}',
+    branch: 'main',
+    selector: 'div#search-searchbar',
+  });
 </script>
-
-<style>
-.ais-search-box {
-  max-width: 100%;
-  margin-bottom: 15px;
-}
-article .searchresult {
-  margin-bottom: 30px;
-}
-
-.title .ais-Highlight {
-  background: #ff0;
-  font-style: normal;
-  text-decoration: underline;
-}
-.content .ais-Highlight {
-  background: #ff0;
-  font-style: normal;
-  font-weight: bold;
-}
-</style>
 
 
 {{ end }}
