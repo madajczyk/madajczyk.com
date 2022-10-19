@@ -1,11 +1,8 @@
 ---
-comments: false
 date: "2004-01-07T00:00:00Z"
 title: Linksys DVD Player
+oldsitenotice: Squarespace
 ---
-
-> This article was originally posted via Squarespace on a domain name I no longer utilize.  I am consolidating all of my ramblings and drabble here.
-
 Provided by a co-worker:
 
 [Linksys Unveils New DVD Player/Digital Media Adapter][1]

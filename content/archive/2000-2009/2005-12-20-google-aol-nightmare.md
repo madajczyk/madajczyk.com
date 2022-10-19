@@ -1,11 +1,7 @@
 ---
-comments: false
 date: "2005-12-20T00:00:00Z"
 title: Google + AOL = Nightmare
 ---
-
-> This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.
-
 Everything [AOL][1] touches turns to crap.
 
 I think that the idea behind AOL is simple: make things easy to use and available to everybody.  That's not a bad thought in general, but AOL manages to do it in a way that ticks me off... every time.

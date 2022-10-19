@@ -1,5 +1,4 @@
 ---
-comments: false
 date: "2020-10-11T00:00:00Z"
 title: My Technology Interests
 ---

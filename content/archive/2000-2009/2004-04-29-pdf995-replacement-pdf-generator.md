@@ -1,11 +1,8 @@
 ---
-comments: false
 date: "2004-04-29T00:00:00Z"
 title: PDF995 - Replacement PDF Generator
+oldsitenotice: Squarespace
 ---
-
-> This article was originally posted via Squarespace on a domain name I no longer utilize.  I am consolidating all of my ramblings and drabble here.
-
 Jeremy Surma just sent me this link: [http://www.pdf995.com][1].
 
 Available on this site are three tools to create PDF documents for free or very low price (to remove advertisements). There’s also instructions on how to share the PDF generator across a network... took me about two minutes to do. Very nice.

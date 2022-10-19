@@ -1,7 +1,6 @@
 ---
 categories:
 - tech
-comments: false
 date: "2013-01-24T00:00:00Z"
 redirect_from: /ultrabook-purchase-a-process-of-elimination/
 title: 'Ultrabook Purchase: A Process of Elimination'

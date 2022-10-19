@@ -1,11 +1,7 @@
 ---
-comments: false
 date: "2006-01-08T00:00:00Z"
 title: Booted from Tripsense
 ---
-
-> This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.
-
 I've been kicked from the [Progressive TripSense][1] research program.
 
 It appears that my car, a 2000 Pontiac Grand Prix, is no longer considered compatible with the TripSense program.  I received this e-mail over the weekend:

@@ -1,14 +1,13 @@
 ---
 categories:
 - tech
-comments: false
 date: "2012-12-20T00:00:00Z"
 redirect_from: /persona-platform/
 title: Persona Platform
 ---
 After a multi-year hiatus, I’ve decided it’s time to begin rebuilding my online persona again.
 
-![Site Capture from 2009 through 2012]({{ site.url }}/assets/madajczyk.com-hiatus-300x201.jpg)
+{{< figure src="madajczyk.com-hiatus-300x201.webp" title="Site Capture from 2009 through 2012" >}}
 
 I started posting content my first website in 1998.  I’ve had a love-hate relationship with online publishing ever since.  Some people do a great job of creating fresh content and posting new information on a regular basis.  I, on the other hand, have been somewhat hit or miss.
 

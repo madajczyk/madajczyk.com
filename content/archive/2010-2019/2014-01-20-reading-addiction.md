@@ -1,5 +1,4 @@
 ---
-comments: false
 date: "2014-01-20T00:00:00Z"
 title: Reading Addiction
 ---

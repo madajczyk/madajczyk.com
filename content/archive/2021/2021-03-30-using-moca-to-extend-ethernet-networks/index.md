@@ -1,5 +1,4 @@
 ---
-comments: false
 date: "2021-03-30T00:00:00Z"
 title: Using MoCA to Extend Ethernet Networks
 ---

@@ -1,5 +1,4 @@
 ---
-comments: false
 date: "2021-03-28T00:00:00Z"
 title: Paving Over Computers
 ---

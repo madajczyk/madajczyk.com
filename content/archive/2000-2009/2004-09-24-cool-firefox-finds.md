@@ -1,11 +1,7 @@
 ---
-comments: false
 date: "2004-09-24T00:00:00Z"
 title: Cool Firefox Finds
 ---
-
-> This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.
-
 I've been using Mozilla Firefox for over a year now. I've seen a lot of feature enhancements, product name changes, and cool new features. I wanted to post some of the interesting things I've found, both for my own archive and also for the enjoyment of others.
 
 Firstly, for anybody who doesn't know it, Firefox allows you to download extensions, or plug-ins, to make the browser do all kinds of cool things. I would love to produce a plug-in, but honestly, everytime I have an idea, I'm able to find a plug-in that's already available and mature…. it's simply amazing!

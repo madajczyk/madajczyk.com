@@ -1,7 +1,6 @@
 ---
 categories:
 - tech
-comments: false
 date: "2013-01-27T00:00:00Z"
 redirect_from: /asus-zenbook-ux31a-review/
 title: Asus Zenbook UX31A Review

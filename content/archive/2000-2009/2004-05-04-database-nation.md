@@ -1,11 +1,8 @@
 ---
-comments: false
 date: "2004-05-04T00:00:00Z"
 title: Database Nation
+oldsitenotice: Squarespace
 ---
-
-> This article was originally posted via Squarespace on a domain name I no longer utilize.  I am consolidating all of my ramblings and drabble here.
-
 I was listening to National Public Radio this afternoon during my lunch break when I [heard an interesting story][1] come over the air.
 
 [Reason magazine][2], whom I had not heard of before, is publishing their June 2004 issue with customized covers on the front. Apparently, each of their 40,000 subscribers will receive a copy of the magazine with their name on it in large font, the words "They know where you are...", and an aerial photo of the address to which the magazine is addressed.

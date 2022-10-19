@@ -1,11 +1,7 @@
 ---
-comments: false
 date: "2004-10-13T00:00:00Z"
 title: A Film by Carter Madajczyk
 ---
-
-> This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.
-
 At my fiancée's request, I yanked all of the pictures from my digital camera off because the CF card was full. I wasn't really sure why, but I'm not one to argue (too much).
 
 While I was transferring the pics, I noticed that there seemed to be a few movies on there. No, not live shots of Paris Hilton… but it wasn't anything I had taken either.

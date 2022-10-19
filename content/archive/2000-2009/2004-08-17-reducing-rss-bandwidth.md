@@ -1,11 +1,7 @@
 ---
-comments: false
 date: "2004-08-17T00:00:00Z"
 title: Reducing RSS Bandwidth
 ---
-
-> This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.
-
 RSS is a cool bit of technology, there's no doubt about it. But larger sites definitely run into issues when it comes to lots of people consistently polling the RSS data feed to find updates.
 
 What can possibly be done?

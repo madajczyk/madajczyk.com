@@ -1,11 +1,7 @@
 ---
-comments: false
 date: "2005-02-14T00:00:00Z"
 title: Robbed... again?
 ---
-
-> This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.
-
 You know it's time to sell a branch when it keeps getting robbed... even when the customers can't go inside!
 
 > A bank that has been robbed so many times it bans customers from coming inside was held up again anyway on Friday.

@@ -1,5 +1,4 @@
 ---
-comments: false
 date: "2021-08-15T00:00:00Z"
 tags:
   - house

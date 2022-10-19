@@ -1,11 +1,8 @@
 ---
-comments: false
 date: "2004-07-02T00:00:00Z"
 title: Visual Studio 2005 Express
+oldsitenotice: Squarespace
 ---
-
-> This article was originally posted via Squarespace on a domain name I no longer utilize.  I am consolidating all of my ramblings and drabble here.
-
 Microsoft recently released the [Visual Studio 2005 Express tools][1] (currently in Beta). This is really a good idea... provide entry-level coding tools to developers who don’t need all of the frills and features. More important is the cost, which is free. The biggest question is... how long will that last? It’s important to provide the tools to get more developers to try them, which allows more exposure to the newest technologies.
 
 I’ll happily relate my experiences in [.NET programming][2] to anyone who will listen, but the big point to be made is this: Microsoft IS making it easier and faster to produce code, and the code appears to be more bulletproof that what earlier tools could produce.

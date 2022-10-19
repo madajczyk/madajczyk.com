@@ -1,11 +1,8 @@
 ---
-comments: false
 date: "2000-09-27T00:00:00Z"
 title: How to REALLY use the LI element
+oldsitenotice: Blogger
 ---
-
-> This article was originally posted via Blogger on a domain name I no longer own.  I am consolidating all of my ramblings and drabble here.
-
 **Submitted by Jeremy Surma**
 
 The best thing about doing a resume in HTML is the _li_ element. I finally figured out what it means. But there is one question..... why don't they just let you spell the word lie out all the way?

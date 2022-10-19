@@ -2,7 +2,6 @@
 categories:
 - personal
 - writing
-comments: false
 date: "2014-01-03T00:00:00Z"
 title: The First Day
 ---

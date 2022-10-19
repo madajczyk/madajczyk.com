@@ -1,11 +1,7 @@
 ---
-comments: false
 date: "2006-01-04T00:00:00Z"
 title: There can be only one.
 ---
-
-> This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.
-
 So my kids came back to my house yesterday and informed me that they have two Dads.
 
 Bullshit.

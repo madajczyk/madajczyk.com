@@ -35,6 +35,13 @@
 
             {{ end }}
             <div class="content" itemprop="articleBody">
+              {{ $showOldSiteNotice := .Params.oldsitenotice | default "" }}
+              {{ if ne $showOldSiteNotice ""  }}
+              <div class="notification is-success is-light">
+                Note: This article was originally posted via {{ $showOldSiteNotice }} on a domain name I no longer own.  I am consolidating all of my ramblings and drabble here.
+              </div>
+              {{ end }}
+              
               {{ .Content }}
             </div>
           </div>

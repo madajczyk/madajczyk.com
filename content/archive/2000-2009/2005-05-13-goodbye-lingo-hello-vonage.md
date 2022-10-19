@@ -1,11 +1,7 @@
 ---
-comments: false
 date: "2005-05-13T00:00:00Z"
 title: Goodbye Lingo, Hello Vonage!
 ---
-
-> This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.
-
 Awww, the hell with it.
 
 I'm fed up.  I've had Lingo's VoIP service since September 2004.  For $19.95 a month with unlimited calling, it was a pretty good deal, especially when you stack it up against the offerings from SBC and other providers.  It was actually working pretty well…

@@ -1,11 +1,8 @@
 ---
-comments: false
 date: "2003-04-09T00:00:00Z"
 title: .NET Framework v1.1 Final
+oldsitenotice: Squarespace
 ---
-
-> This article was originally posted via Squarespace on a domain name I no longer utilize.  I am consolidating all of my ramblings and drabble here.
-
 No surprises here. In time with the forthcoming release of [Visual Studio.NET 2003][1], the final version of the .NET Framework v1.1 has been released on MDSN. Here’s some of the highlights, paraphrased from Microsoft’s propaganda:
 
 Support for IPv6

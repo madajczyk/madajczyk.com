@@ -1,5 +1,4 @@
 ---
-comments: "false"
 date: "2008-12-03T00:00:00Z"
 title: Changing Jobs
 ---

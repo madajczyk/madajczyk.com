@@ -1,11 +1,8 @@
 ---
-comments: false
 date: "2000-06-28T00:00:00Z"
 title: Tech Support Funny
+oldsitenotice: Blogger
 ---
-
-> This article was originally posted via Blogger on a domain name I no longer own.  I am consolidating all of my ramblings and drabble here.
-
 When I was at work yesterday, I ran across this paragraph in a technical support knowledgebase: 
 
 "ProductName" has no recommended settings for DCOM properties. Any reasonable computer professional, however, should be able to determine whether or not specific settings within these screens are causing the errors launching applications that are noted. 

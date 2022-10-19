@@ -2,7 +2,6 @@
 categories:
 - personal
 - tech
-comments: false
 date: "2014-01-02T00:00:00Z"
 title: Resume from Hibernation
 ---

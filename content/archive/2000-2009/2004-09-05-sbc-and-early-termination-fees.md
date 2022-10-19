@@ -1,11 +1,7 @@
 ---
-comments: false
 date: "2004-09-05T00:00:00Z"
 title: SBC and Early Termination Fees
 ---
-
-> This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.
-
 *sigh*
 
 Yet another FUBAR company to deal with. Yuk. I currently have SBC DSL service, from which I pull 1.3mb down, 70k up. Not awesome, but acceptable at $27 a month.

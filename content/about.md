@@ -2,7 +2,6 @@
 layout: page
 title: "About"
 date: 2020-10-10 00:00:00 -0600
-comments: false
 categories: [personal]
 subtitle: false
 ---

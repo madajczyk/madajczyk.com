@@ -1,5 +1,4 @@
 ---
-comments: "false"
 date: "2006-11-10T00:00:00Z"
 title: Toliver's Birthday
 ---

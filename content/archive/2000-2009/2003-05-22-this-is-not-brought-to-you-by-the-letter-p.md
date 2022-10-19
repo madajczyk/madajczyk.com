@@ -1,11 +1,8 @@
 ---
-comments: false
 date: "2003-05-22T00:00:00Z"
 title: This is not brought to you by the letter P
+oldsitenotice: Squarespace
 ---
-
-> This article was originally posted via Squarespace on a domain name I no longer utilize.  I am consolidating all of my ramblings and drabble here.
-
 Sesame Street be damned.
 
 On Tuesday, I was called out to a client's site to assist with an e-mail problem. Apparently, their Exchange server got hungry and began eating incoming e-mails. Even worse, messages and contacts were also disappearing at an alarming rate.

@@ -1,11 +1,7 @@
 ---
-comments: false
 date: "2004-08-30T00:00:00Z"
 title: Standard AT&T Wireless Bullshit
 ---
-
-> This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.
-
 Yep.
 
 Just what I thought. Leave it to [AT&T Wireless][1] to really figure out how to stick it to their exiting customers.

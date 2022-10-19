@@ -1,11 +1,7 @@
 ---
-comments: false
 date: "2006-01-31T00:00:00Z"
 title: The Govekian
 ---
-
-> This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.
-
 I recently set up a website / blog on behalf of my friend Mike Govek.
 
 I'll be damned if his traffic hasn't exceeded all of the hits I get on all of my websites combined.

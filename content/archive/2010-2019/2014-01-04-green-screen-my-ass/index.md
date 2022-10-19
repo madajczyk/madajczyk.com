@@ -1,12 +1,11 @@
 ---
-comments: false
 date: "2014-01-04T00:00:00Z"
 title: Green Screen My Ass
 ---
 
 Why is it that I can always pick up when things are superimposed?  For example, see this snapshot from [Amazon.com's Alpha House][1]:
 
-![WTF? Green Screen at its worst.]({{ site.url }}/assets/2014-01-04-Fscking-Superimposed-Me.jpg)
+{{< figure src="2014-01-04-Fscking-Superimposed-Me.webp" title="WTF? Green Screen at its worst." >}}
 
 Adam Sandler's The Goat said it best: "They fucking superimposed me!!"  Seriously.  I like this show, and I know that Netflix doesn't have the powers that other studios have.
 

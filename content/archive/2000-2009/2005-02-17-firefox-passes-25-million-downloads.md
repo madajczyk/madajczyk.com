@@ -1,11 +1,7 @@
 ---
-comments: false
 date: "2005-02-17T00:00:00Z"
 title: Firefox passes 25 million downloads
 ---
-
-> This article was originally posted at this domain name on an old blogging system.  I am consolidating all of my ramblings and drabble here.
-
 Pretty cool news indeed.  Seems that [Firefox][1] just exceed the 25 million download mark recently.  [Slashdot][2] is also [reporting in this article][3] that an interview of Bill Gates by Peter Jennings indicates that he views Firefox to be competition and that he's ensuring that Internet Explorer will continue to be the best available browser, which is why Microsoft has [committed to releasing Internet Explorer 7.0][4].
 
 Of course.  That's why it's been 2 or 3 years since your last major release…  Since I'm sure Microsoft isn't planning on doing much work on the underlying rendering engine, I'm sure we'll have to continue to code around all of the infamous CSS rendering problems.

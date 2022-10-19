@@ -1,5 +1,4 @@
 ---
-comments: "false"
 date: "2006-12-25T00:00:00Z"
 title: Christmas Is Here
 ---

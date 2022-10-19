@@ -1,5 +1,4 @@
 ---
-comments: false
 date: "2014-07-22T00:00:00Z"
 title: Solo Haiku
 ---

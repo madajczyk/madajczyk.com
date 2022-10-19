@@ -1,5 +1,4 @@
 ---
-comments: "false"
 date: "2008-09-03T00:00:00Z"
 title: Foo Fighters and Three Days Grace
 ---
