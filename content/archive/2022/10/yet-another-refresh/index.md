@@ -1,10 +1,11 @@
 ---
-date: "2022-10-17T00:00:00Z"
+date: 2022-10-17T00:00:00Z
 tags:
-  - site
+- site
 title: Yet Another Refresh
-description: Finally landed some signficant updates.
+description: Finally landed some significant updates.
 imagecredit: Ray Hennessy / Unsplash
+
 ---
 Ah, excellent.
 
