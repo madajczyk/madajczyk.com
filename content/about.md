@@ -10,5 +10,8 @@ Just another guy who does various and important things. Or at least that's what 
 
 More details available on [my GitHub profile][profile].  The repo for [this site][site-repo] is available there as well.
 
+I also have a [LinkedIn][linkedin] profile, if you prefer.
+
 [profile]: https://github.com/madajczyk
 [site-repo]: https://github.com/madajczyk/madajczyk.com
+[linkedin]: https://www.linkedin.com/in/madajczyk

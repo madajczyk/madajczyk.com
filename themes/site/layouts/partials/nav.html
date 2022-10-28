@@ -13,17 +13,6 @@
                 <a class="navbar-item" href="/search" aria-label="Search">Search</a>
                 <a class="navbar-item" href="/archive" aria-label="Archive">Archive</a>
                 <a class="navbar-item" href="/about" aria-label="About">About</a>
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link" aria-label="Elsewhere">Elsewhere</a>
-                    <div class="navbar-dropdown is-boxed">
-                        {{ if isset .Site.Params "github" }}
-                        <a class="navbar-item" href="https://github.com/{{ .Site.Params.github }}" aria-label="GitHub">GitHub</a>
-                        {{ end }}
-                        {{ if isset .Site.Params "linkedin" }}
-                        <a class="navbar-item" href="http://www.linkedin.com/in/{{ .Param "linkedin" }}" aria-label="LinkedIn">LinkedIn</a>
-                        {{ end }}
-                    </div>
-                </div>
             </div>
         </div>
     </nav>
