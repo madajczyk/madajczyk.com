@@ -13,7 +13,6 @@ params:
   logo: icons/favicon-96x96.png
   github: madajczyk
   linkedin: madajczyk
-  twitter: lmadajczyk
   algolia:
     appId: BU11P89KFS
     apiKey: 8fff41700b5a29938a2b09440b70f5d1
