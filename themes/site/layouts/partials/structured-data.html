@@ -7,7 +7,14 @@
     "url": "{{ .Site.BaseURL }}",
     "description": "{{ .Site.Params.description }}",
     "thumbnailUrl": "{{ .Site.Params.Logo | absURL }}",
-    "license": "{{ .Site.Params.Copyright }}"
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://madajczyk.com/search/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
 }
 </script>
 {{ else if .IsPage }}

@@ -11,6 +11,7 @@ permalinks:
 params:
   author: Lee Madajczyk
   logo: icons/favicon-96x96.png
+  description: Cloud, Development, DevOps, Technology
   algolia:
     appId: BU11P89KFS
     apiKey: 8fff41700b5a29938a2b09440b70f5d1
