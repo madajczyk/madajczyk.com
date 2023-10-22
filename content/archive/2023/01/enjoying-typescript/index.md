@@ -53,4 +53,4 @@ speed on some tech I hadn't played with before.  I might even try tackling some
 ideas that have been percolating in my head, but didn't finish because I didn't
 want to deal with all of the nightmares of working with the client side.
 
-And I haven't even dug that deeply into Blazor yet
+And I haven't even dug that deeply into Blazor yet.
