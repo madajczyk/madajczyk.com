@@ -13,10 +13,7 @@
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 	{{ end -}}
 	<link rel="alternate" href="/feed.json" title="madajczyk.com" type="application/json" />
-	<link href="/search.xml" rel="search" title="madajczyk.com search" type="application/opensearchdescription+xml">
-
 	<link rel="canonical" href="{{ .Permalink }}">
-
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
 	<link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-touch-icon-57x57.png" />
 	<link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-touch-icon-114x114.png" />
