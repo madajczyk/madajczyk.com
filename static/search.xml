@@ -1,9 +1,0 @@
-<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
-  <ShortName>Search madajczyk.com</ShortName>
-  <Description>Search Lee Madajczyk's Site</Description>
-  <Url type="text/html" method="get" template="https://madajczyk.com/search?query={searchTerms}"/>
-  <Image height="16" width="16" type="image/png">https://madajczyk.com/icons/favicon-16x16.png</Image>
-  <Image height="96" width="96" type="image/png">https://madajczyk.com/icons/favicon-96x96.png</Image>
-  <InputEncoding>UTF-8</InputEncoding>
-  <SearchForm>https://madajczyk.com/</SearchForm>
-</OpenSearchDescription>
