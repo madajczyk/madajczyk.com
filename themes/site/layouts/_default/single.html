@@ -24,7 +24,7 @@
             {{ if $featured_image }}
             <div class="has-text-centered pb-4">
               <figure class="image is-fullwidth">
-                <img src="{{ $featured_image }}" class="img" alt="image from {{ .Title }}">
+                <img src="{{ $featured_image }}" class="img" alt="Image from {{ .Title }}, credit: {{ .  }}">
               </figure>
               {{ with .Params.imagecredit }}
               <div class="content is-small is-italic has-text-right">
@@ -38,7 +38,8 @@
               {{ $showOldSiteNotice := .Params.oldsitenotice | default "" }}
               {{ if ne $showOldSiteNotice ""  }}
               <div class="notification is-success is-light">
-                Note: This article was originally posted via {{ $showOldSiteNotice }} on a domain name I no longer own.  I am consolidating all of my ramblings and drabble here.
+                Note: This article was originally posted via {{ $showOldSiteNotice }} on a domain name I no longer own.
+                I've consolidated all of my earlier ramblings and digressions here.
               </div>
               {{ end }}
               
