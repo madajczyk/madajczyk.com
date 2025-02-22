@@ -14,7 +14,24 @@
 	{{ end -}}
 	<link rel="alternate" href="/feed.json" title="madajczyk.com" type="application/json" />
 	<link rel="canonical" href="{{ .Permalink }}">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+
+	{{ with resources.Get "sass/_index.scss" }}
+	{{ $opts := dict
+	  "enableSourceMap" (not hugo.IsProduction)
+	  "outputStyle" (cond hugo.IsProduction "compressed" "expanded")
+	  "targetPath" "css/main.css"
+	  "transpiler" "dartsass"
+	}}
+	{{ with . | toCSS $opts }}
+	  {{ if hugo.IsProduction }}
+		{{ with . | fingerprint }}
+		  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+		{{ end }}
+	  {{ else }}
+		<link rel="stylesheet" href="{{ .RelPermalink }}">
+	  {{ end }}
+	{{ end }}
+  {{ end }}
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
