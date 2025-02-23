@@ -6,7 +6,7 @@ Ah, yes, it's that time of year again.  I always look forward to April 1st to s
 
 [Slashdot goes pink](https://slashdot.org/story/06/03/31/1644225/slashdot-design-changes-for-wider-appeal)
 
-So does [airliners.net](https://www.airliners.net/) (word is, Howard prefers the new look) </p>
+So does [airliners.net](https://www.airliners.net/) (word is, Howard prefers the new look)
 
 [Cute Overload reacts to Slashdot](http://mfrost.typepad.com/cute_overload/2006/03/co_discovered_b.html)
 

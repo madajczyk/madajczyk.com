@@ -35,12 +35,8 @@ the rates get updated.  Plus, you'll can see the various choices you have for ra
 you want to pay.  These rates update regularly based on the market pricing.  I created a spreadsheet to track the ups
 and downs in order to get the situation I wanted.
 
-<article class="message is-dark">
-  <div class="message-body">
-    Discount points, or mortgage points, are fees that you pay directly to your lender when you close in order to
-    receive a modified rate.
-  </div>
-</article>
+>    Discount points, or mortgage points, are fees that you pay directly to your lender when you close in order to
+>   receive a modified rate.
 
 If you opt to purchase discount points costs, you bring more money to closing (on top of whatever your down payment is)
 but then get a reduced interest rate.  With Ally/better.com, you could also opt for a higher interest rate and get 
