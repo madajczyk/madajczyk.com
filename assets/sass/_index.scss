@@ -1,10 +1,28 @@
-@forward "utilities";
-@forward "themes";
+// Set your brand colors
+$nav: #3e8dcf;
+
+// Override global Sass variables from the /utilities folder
+@use "utilities" with (
+  $family-primary: '"Nunito", sans-serif',
+  $control-border-width: 2px,
+  $info: #3e8dcf
+);
+
+// Override Sass variables from the /form folder
+@use "form" with (
+  $input-shadow: none
+);
+
 @forward "base";
 @forward "elements";
-@forward "form";
 @forward "components";
 @forward "grid";
 @forward "layout";
 @forward "base/skeleton";
 @forward "helpers";
+
+// Import the themes so that all CSS variables have a value
+@forward "themes";
+
+// Import the Google Font
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
