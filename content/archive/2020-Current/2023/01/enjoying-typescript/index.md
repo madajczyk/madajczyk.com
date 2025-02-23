@@ -4,7 +4,7 @@ tags:
   - tech
   - typescript
 title: Enjoying Typescript
-description: 
+description: I remembered I like this stuff.
 imagecredit: Caspar Camille Rubin / Unsplash
 ---
 I realized that I have had a rocky relationship with
