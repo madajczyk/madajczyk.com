@@ -4,7 +4,7 @@ tags:
   - personal
   - insight
 title: Musings
-description: 
+description: I remember that I still have a website, and capture some observations since I last posted
 imagecredit: Ian Schneider / Unsplash
 ---
 
