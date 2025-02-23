@@ -1,9 +1,7 @@
 baseURL: https://madajczyk.com
-disablePathToLower: true
 languageCode: en-us
 title: Lee Madajczyk
 theme: site
-disablePathToLower: false
 
 permalinks:
   archive: /archive/:year/:month/:day/:slug
