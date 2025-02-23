@@ -56,38 +56,37 @@
           </div>
         </div>
       </div>
-      
+
       <p class="pt-4"></p>
 
       {{ if ge $section_count (add $n_posts 1) }}
       <section>
-        <div class="tile is-ancestor">
-          <div class="tile is-horizontal">
-            {{ range (first 3 (after $n_posts $section))  }}
-            <div class="tile is-parent">
-              <div class="tile is-child box">
-                <div class="content">
-                  <h2>
-                    <a href="{{ .RelPermalink }}">
-                      {{ .Title }}
-                    </a>
-                  </h2>
-                  <p>{{ .Description }}</p>
-                  <time datetime="{{ .Date.UTC }}" itemprop="datePublished">{{ .Date.Format "January 2, 2006" }}</time><span class="mx-1"></span>
-                  {{- if .Params.tags -}} 
-                      {{- range $key, $tag := .Params.tags }} 
-                          <a href="/tags/{{ $tag | urlize }}" aria-label="{{ $tag }}" class="is-info"><span class="tag is-success is-light">{{ $tag }}</span></a>
-                      {{- end -}}
-                    {{- else -}}
-                        None
-                  {{- end -}}
-                </div>
+        <div class="fixed-grid has-3-cols">
+        <div class="grid">
+          {{ range (first 3 (after $n_posts $section))  }}
+          <div class="cell">
+            <div class="box">
+              <div class="content">
+                <h2>
+                  <a href="{{ .RelPermalink }}">
+                    {{ .Title }}
+                  </a>
+                </h2>
+                <p>{{ .Description }}</p>
+                <time datetime="{{ .Date.UTC }}" itemprop="datePublished">{{ .Date.Format "January 2, 2006" }}</time><span class="mx-1"></span>
+                {{- if .Params.tags -}} 
+                    {{- range $key, $tag := .Params.tags }} 
+                        <a href="/tags/{{ $tag | urlize }}" aria-label="{{ $tag }}" class="is-info"><span class="tag is-success is-light">{{ $tag }}</span></a>
+                    {{- end -}}
+                  {{- else -}}
+                      None
+                {{- end -}}
               </div>
             </div>
-
-            {{ end }}
           </div>
+          {{ end }}
         </div>
+      </div>
       </section>
       {{ end }}
 
