@@ -6,7 +6,8 @@ categories: [personal]
 subtitle: false
 ---
 
-Just another guy who does various and important things. Or at least that's what I tell myself.
+Just another rando white dude who does various important things. Or at least that's what I tell myself. I sleep just
+fine, why do you ask?
 
 More details available on [my GitHub profile][profile].  The repo for [this site][site-repo] is available there as well.
 
