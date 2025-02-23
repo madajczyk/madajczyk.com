@@ -1,6 +1,9 @@
 madajczyk.com
 =============
 
-madajczyk.com hosting
+Repository for my personal site, madajczyk.com.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8b085eeb-98b3-4315-8341-ff2d7b1d7326/deploy-status)](https://app.netlify.com/sites/madajczyk/deploys)
+## Features
+
+- Built using [Hugo](https://gohugo.io/) static web site generator, with Dart Sass.
+- Styled using [Bulma](https://bulma.io/) in the assets folder, version 1.02.
