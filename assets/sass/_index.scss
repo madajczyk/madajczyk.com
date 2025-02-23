@@ -8,9 +8,9 @@
 );
 
 // Override Sass variables from the /form folder
-@use "form" with (
-  $input-shadow: none
-);
+// @use "form" with (
+//   $input-shadow: none
+// );
 
 // Override Sass variables from the /components folder
 @use "components" with (
