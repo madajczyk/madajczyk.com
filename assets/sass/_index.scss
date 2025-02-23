@@ -1,5 +1,4 @@
 // Set your brand colors
-$nav: #3e8dcf;
 
 // Override global Sass variables from the /utilities folder
 @use "utilities" with (
@@ -13,9 +12,13 @@ $nav: #3e8dcf;
   $input-shadow: none
 );
 
+// Override Sass variables from the /components folder
+@use "components" with (
+  $navbar-burger-color: #ffffff
+);
+
 @forward "base";
 @forward "elements";
-@forward "components";
 @forward "grid";
 @forward "layout";
 @forward "base/skeleton";

@@ -1,12 +1,12 @@
-{{ define "main" }}
-{{ $featured_image := partial "func/GetFeaturedImage.html" . }}
+{{ define "main" -}}
+{{ $featured_image := partial "func/GetFeaturedImage.html" . -}}
 <section id="main">
   <div>
         <article id="content">
           <div class="column is-8 is-offset-2">
             <h1 class="title" itemprop="headline name">{{ .Title }}</h1>
-            {{ $showSubtitle := .Params.subtitle | default "true" }}
-            {{ if $showSubtitle }}
+            {{ $showSubtitle := .Params.subtitle | default "true" -}}
+            {{ if $showSubtitle -}}
             <p class="subtitle mb-3">
               <time datetime="{{ .Date.UTC }}" itemprop="datePublished">{{ .Date.Format "January 2, 2006" }}</time>
               <span class="dt-published is-hidden">{{ .Date }}</span>
@@ -20,8 +20,8 @@
             {{- else -}}
             <hr />
             {{- end -}}
-            {{ end }}
-            {{ if $featured_image }}
+            {{ end -}}
+            {{ if $featured_image -}}
             <div class="has-text-centered pb-4">
               <figure class="image is-fullwidth">
                 <img src="{{ $featured_image }}" class="img" alt="Image from {{ .Title }}">
@@ -35,14 +35,13 @@
 
             {{ end }}
             <div class="content" itemprop="articleBody">
-              {{ $showOldSiteNotice := .Params.oldsitenotice | default "" }}
-              {{ if ne $showOldSiteNotice ""  }}
+              {{ $showOldSiteNotice := .Params.oldsitenotice | default "" -}}
+              {{ if ne $showOldSiteNotice "" -}}
               <div class="notification is-success is-light">
                 Note: This article was originally posted via {{ $showOldSiteNotice }} on a domain name I no longer own.
                 I've consolidated all of my earlier ramblings and digressions here.
               </div>
-              {{ end }}
-              
+              {{ end -}}              
               {{ .Content }}
             </div>
           </div>

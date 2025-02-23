@@ -2,37 +2,32 @@
 	<meta charset="utf-8">
 	<title>{{ .Site.Title }} - {{ .Title | title }}</title>
 	<meta name="author" content="Lee Madajczyk">
-
 	<meta name="description" content="Lee Madajczyk">
-
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
 	{{ with .OutputFormats.Get "rss" -}}
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 	{{ end -}}
 	<link rel="alternate" href="/feed.json" title="madajczyk.com" type="application/json" />
 	<link rel="canonical" href="{{ .Permalink }}">
-
-	{{ with resources.Get "sass/_index.scss" }}
+	{{ with resources.Get "sass/_index.scss" -}}
 	{{ $opts := dict
 	  "enableSourceMap" (not hugo.IsProduction)
 	  "outputStyle" (cond hugo.IsProduction "compressed" "expanded")
 	  "targetPath" "css/main.css"
 	  "transpiler" "dartsass"
-	}}
-	{{ with . | toCSS $opts }}
-	  {{ if hugo.IsProduction }}
-		{{ with . | fingerprint }}
-		  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
-		{{ end }}
-	  {{ else }}
-		<link rel="stylesheet" href="{{ .RelPermalink }}">
-	  {{ end }}
-	{{ end }}
-  {{ end }}
-
+	-}}
+	{{ with . | toCSS $opts -}}
+	  {{ if hugo.IsProduction -}}
+		{{ with . | fingerprint -}}
+	<link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+		{{ end -}}
+	  {{ else -}}
+	<link rel="stylesheet" href="{{ .RelPermalink }}">
+	  {{ end -}}
+	{{ end -}}
+  {{ end -}}
 	<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
@@ -44,6 +39,5 @@
 	<meta name="msapplication-config" content="/icons/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.8.3/lazyload.min.js"></script>
-
 	{{- partial "structured-data.html" . -}}
 </head>
