@@ -5,11 +5,10 @@ tags:
   - mortgage
 title: Ally Mortgage Review
 description: Walks through the process of getting a mortgage through Ally.
+update: "Update in 2022: Not long after I wrote this up, Better.com had two different rounds of layoffs, and neither
+         resulted in a great look for the company.  I don't think it changes what I wrote, as the people I interacted
+         during this process were pretty great.  But, now I'm not so sure I'd do business with this company again."
 ---
-
-> Update in 2022: Not long after I wrote this up, Better.com had two different rounds of layoffs, and neither resulted
-> in a great look for the company.  I don't think it changes what I wrote, as the people I interacted during this 
-> process were pretty great.  But, now I'm not so sure I'd do business with this company again.
 
 As [I captured]({{< ref "2021-08-15-mortgage-decision-path" >}}) on deciding which company to use for a mortgage, I
 elected to go with Ally.  They don't offer mortgages directly, but instead partner with better.com to drive the process.

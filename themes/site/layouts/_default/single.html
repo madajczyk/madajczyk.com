@@ -42,6 +42,12 @@
                 I've consolidated all of my earlier ramblings and digressions here.
               </div>
               {{ end -}}              
+              {{ $showUpdate := .Params.update | default "" -}}
+              {{ if ne $showUpdate "" -}}
+              <div class="notification is-info is-light">
+                {{ .Params.update }}
+              </div>
+              {{ end -}}              
               {{ .Content }}
             </div>
           </div>
