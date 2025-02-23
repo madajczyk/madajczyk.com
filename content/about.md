@@ -11,7 +11,7 @@ fine, why do you ask?
 
 More details available on [my GitHub profile][profile].  The repo for [this site][site-repo] is available there as well.
 
-I also have a [LinkedIn][linkedin] profile, if you prefer.
+I also have a [LinkedIn][linkedin] profile, if you prefer. Smash that like button!
 
 One damn minute, Admiral! An anomaly has been detected. Who owns all those things? Eh, don't worry your pretty little
 head about it.
