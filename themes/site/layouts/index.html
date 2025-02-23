@@ -1,23 +1,21 @@
 {{ define "main" }}
 
-  <div class="column">
-    <div class="level">
-      <div class="level-item">
-        <h1 class="title is-1 pr-4">Hello!</h1>
-      </div>
-      <div class="level-item pr-4 mx-6">
-        <p class="subtitle is-vcentered">
-          Hey there, I'm Lee.  I do a few different nerdy things,<br />
-          and sometimes I remember to capture them here.
-        </p>
-      </div>
-      <div class="level-item">
-        <figure class="image is-128x128">
-          <img src="icons/madajczyk-512.webp" alt="Lee Madajczyk" class="is-rounded">
-        </figure>
-      </div>
-    </div>
+<div class="level">
+  <div class="level-item">
+    <h1 class="title is-1 pr-4">Hello!</h1>
   </div>
+  <div class="level-item pr-4 mx-6">
+    <p class="subtitle is-vcentered">
+      Hey there, I'm Lee.  I do a few different nerdy things,<br />
+      and sometimes I remember to capture them here.
+    </p>
+  </div>
+  <div class="level-item">
+    <figure class="image is-128x128">
+      <img src="icons/madajczyk-512.webp" alt="Lee Madajczyk" class="is-rounded">
+    </figure>
+  </div>
+</div>
 
 <div class="column is-10 is-offset-1">
   <main role="main">
@@ -61,7 +59,7 @@
 
       {{ if ge $section_count (add $n_posts 1) }}
       <section>
-        <div class="fixed-grid has-3-cols">
+        <div class="smart-grid has-3-cols">
         <div class="grid">
           {{ range (first 3 (after $n_posts $section))  }}
           <div class="cell">
