@@ -42,8 +42,8 @@
                   <time datetime="{{ .Date.UTC }}" itemprop="datePublished">{{ .Date.Format "2006-01-02" }}</time><span class="mx-1"></span>
                   {{- if .Params.tags -}} 
                       {{- range $key, $tag := .Params.tags -}} 
-                          <a href="/tags/{{ $tag | urlize }}" aria-label="{{ $tag }}" class="is-info"><span class="tag is-success is-light">{{ $tag }}</span></a>
-                      {{- end -}}
+                          <a href="/tags/{{ $tag | urlize }}" aria-label="{{ $tag }}" class="is-info"><span class="tag is-success is-light">{{ $tag }}</span></a> 
+                      {{ end -}}
                     {{- else -}}
                         None
                   {{- end -}}
