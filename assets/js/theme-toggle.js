@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateIcon(isDark) {
+        if (!toggleButton) return;
         const sunIcon = toggleButton.querySelector('.icon-sun');
         const moonIcon = toggleButton.querySelector('.icon-moon');
         if (isDark) {

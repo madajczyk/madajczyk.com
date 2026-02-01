@@ -1,0 +1,10 @@
+{{- $pages := where .Site.RegularPages "Type" "not in" (slice "page" "json") -}}
+{{- $uniquePages := slice -}}
+{{- $seen := dict -}}
+{{- range $pages -}}
+  {{- if not (index $seen .Permalink) -}}
+    {{- $uniquePages = $uniquePages | append (dict "title" .Title "date" .Date.Local "permalink" .Permalink "content" .Plain "summary" (.Summary | plainify) "tags" .Params.tags "image" .Params.featured_image) -}}
+    {{- $seen = merge $seen (dict .Permalink true) -}}
+  {{- end -}}
+{{- end -}}
+{{- $uniquePages | jsonify -}}

@@ -16,11 +16,16 @@ outputFormats:
     mediaType: "application/json"
     baseName: "feed"
     isPlainText: true
+  SearchIndex:
+    mediaType: "application/json"
+    baseName: "search"
+    isPlainText: true
 
 outputs:
   home:
     - "html"
     - "rss"
     - "jsonfeed"
+    - "SearchIndex"
   page:
     - "html"

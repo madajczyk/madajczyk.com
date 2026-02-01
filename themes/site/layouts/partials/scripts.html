@@ -14,3 +14,19 @@
     <script src="{{ .RelPermalink }}" defer></script>
   {{- end }}
 {{- end }}
+{{- with resources.Get "js/fuse.js" }}
+  {{- if eq hugo.Environment "production" }}
+    {{- $js := . | minify | fingerprint }}
+    <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+  {{- else }}
+    <script src="{{ .RelPermalink }}" defer></script>
+  {{- end }}
+{{- end }}
+{{- with resources.Get "js/search.js" }}
+  {{- if eq hugo.Environment "production" }}
+    {{- $js := . | minify | fingerprint }}
+    <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+  {{- else }}
+    <script src="{{ .RelPermalink }}" defer></script>
+  {{- end }}
+{{- end }}
