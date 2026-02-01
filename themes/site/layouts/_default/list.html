@@ -7,8 +7,9 @@
                 {{.Content}}
             <div class="content mt-6">
                 <div class="archives" itemscope itemtype="http://schema.org/Blog">
+                    {{ $paginator := .Paginate (where .Pages "Type" "in" site.Params.mainSections) }}
                     {{ .Scratch.Set "currentYear" "2088" -}}
-                    {{ range .Pages }}
+                    {{ range $paginator.Pages }}
                         {{ if ne ($.Scratch.Get "currentYear") (.Date.Format "2006") -}}                        
                     <p class="title is-2">{{ .Date.Format "2006" }}</p>
                             {{ $.Scratch.Set "currentYear" ( .Date.Format "2006") -}}
@@ -26,6 +27,7 @@
                         {{- end -}}
                     <hr />
                     {{ end -}}
+                    {{ partial "pagination.html" . }}
                 </div>
             </div>
         </article>

@@ -24,7 +24,12 @@
             {{ if $featured_image -}}
             <div class="has-text-centered pb-4">
               <figure class="image is-fullwidth">
-                <img src="{{ $featured_image }}" class="img" alt="Image from {{ .Title }}">
+                {{ if (reflect.IsResource $featured_image) }}
+                {{ $optimized := $featured_image.Resize "1200x webp" }}
+                <img src="{{ $optimized.RelPermalink }}" alt="Image from {{ .Title }}">
+                {{ else }}
+                <img src="{{ $featured_image }}" alt="Image from {{ .Title }}">
+                {{ end }}
               </figure>
               {{ with .Params.imagecredit }}
               <div class="content is-small is-italic has-text-right">

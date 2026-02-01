@@ -1,23 +1,30 @@
 {{ $featured_image := partial "func/GetFeaturedImage.html" . }}
-              <article>
-                <div>
-                  <div class="">
-                    {{ if $featured_image -}}
-                    {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */ -}}
-                      <div class="card-image has-text-centered">
-                        <a href="{{.RelPermalink}}" aria-label="{{ .Title }}">
-                          <img src="{{ $featured_image }}" class="img" alt="image from {{ .Title }}">
-                        </a>
-                      </div>
-                    {{ end -}}
-                    <div>
-                      <h2>
-                        <a href="{{.RelPermalink}}" aria-label="{{ .Title }}">{{ .Title }}</a>
-                      </h2>
-                      <div>
-                        {{ .Summary }}.. <i><a href="{{.RelPermalink}}" aria-label="read more from {{ .Title }}">read more from {{ .Title }}</a></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </article>
+<article>
+  <div>
+    <div class="">
+      {{ if $featured_image -}}
+      <div class="card-image">
+        <a href="{{.RelPermalink}}" aria-hidden="true" tabindex="-1">
+          <figure class="image is-fullwidth">
+          {{ if (reflect.IsResource $featured_image) }}
+            {{/* Resize to 1200px wide for Hero display, preserving aspect ratio */}}
+            {{ $thumb := $featured_image.Resize "1200x webp" }}
+            <img src="{{ $thumb.RelPermalink }}" alt="{{ .Params.featured_image_alt | default .Title }}" loading="lazy">
+          {{ else }}
+            <img src="{{ $featured_image }}" alt="{{ .Params.featured_image_alt | default .Title }}" loading="lazy">
+          {{ end }}
+          </figure>
+        </a>
+      </div>
+      {{ end -}}
+      <div>
+        <h2 class="title is-2 mt-4">
+          <a href="{{.RelPermalink}}">{{ .Title }}</a>
+        </h2>
+        <div class="content">
+          {{ .Summary }}
+        </div>
+      </div>
+    </div>
+  </div>
+</article>

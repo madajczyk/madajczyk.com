@@ -1,41 +1,25 @@
 {{/* 
 	GetFeaturedImage
-
-	This partial gets the url for featured image for a given page.
-
-	If a featured_image was set in the page's front matter, then that will be used.
-
-	If not set, this will search page resources to find an image that contains the word
-	"cover", and if found, returns the path to that resource.
-
-	If no featured_image was set, and there's no "cover" image in page resources, then
-	this partial returns an empty string (which evaluates to false).
-
-	@return RelPermalink to featured image, or an empty string if not found.
-
+	Returns the image Resource if found in page bundle, or string URL if external/static.
 */}}
-
-{{/* Declare a new string variable, $linkToCover */}}
-{{ $linkToCover := "" }}
+{{ $imageResource := "" }}
 {{ $matches := "feature,cover" }}
-{{/* Use the value from front matter if present */}}
+
 {{ with .Params.featured_image }}
-  {{/* This is the default case, the image lives in the static directory.
-    In which case we'll use the static dir */}}
-  {{ $linkToCover = trim . "/" | absURL }}
-  {{/* If we find a Page Resource matching the exact value, we use it instead. */}}
+  {{/* If specific file named in frontmatter */}}
   {{ with $.Resources.GetMatch . }}
-    {{ $linkToCover = .RelPermalink }}
+    {{ $imageResource = . }}
+  {{ else }}
+     {{/* Fallback to static string if not found in bundle */}}
+    {{ $imageResource = (trim . "/" | absURL) }}
   {{ end }}
-{{/* Find the first image with 'cover' in the name in this page bundle. */}}
 {{ else }}
+  {{/* Search for cover/feature in bundle */}}
   {{ with .Resources.ByType "image" }}
     {{ with .GetMatch (printf "**{%s}*" $matches) }}
-      {{ $linkToCover = .RelPermalink }}
+      {{ $imageResource = . }}
     {{ end }}
   {{ end }}
 {{ end }}
 
-{{/* return either a permalink, or an empty string. Note that partials can only have a single
-return statement, so this needs to be at the end of the partial (and not in the if block) */}}
-{{ return $linkToCover }}
+{{ return $imageResource }}
