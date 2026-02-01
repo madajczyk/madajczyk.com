@@ -1,0 +1,27 @@
+<script>
+  (function() {
+    const storageKey = 'theme';
+    
+    function setClassOnDocumentBody(dark) {
+      document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+    }
+    
+    const preferDarkQuery = '(prefers-color-scheme: dark)';
+    const mql = window.matchMedia(preferDarkQuery);
+    const supportsColorSchemeQuery = mql.media === preferDarkQuery;
+    
+    let localStorageTheme = null;
+    try {
+      localStorageTheme = localStorage.getItem(storageKey);
+    } catch (err) {}
+    
+    let isDarkMode = false;
+    if (localStorageTheme) {
+      isDarkMode = localStorageTheme === 'dark';
+    } else if (supportsColorSchemeQuery) {
+      isDarkMode = mql.matches;
+    }
+    
+    setClassOnDocumentBody(isDarkMode);
+  })();
+</script>
