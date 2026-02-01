@@ -7,5 +7,13 @@ document.addEventListener('DOMContentLoaded', () => {
       burger.classList.toggle('is-active');
       menu.classList.toggle('is-active');
     });
+
+    // Escape key easter egg to close the menu
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && menu.classList.contains('is-active')) {
+        burger.classList.remove('is-active');
+        menu.classList.remove('is-active');
+      }
+    });
   }
 });
