@@ -160,6 +160,9 @@ $grid-container-name: bulma-fixed-grid;
 }
 
 .#{iv.$class-prefix}cell {
+  display: grid;
+  height: 100%;
+
   grid-column-end: span cv.getVar("grid-cell-column-span");
   grid-column-start: cv.getVar("grid-cell-column-start");
   grid-row-end: span cv.getVar("grid-cell-row-span");
