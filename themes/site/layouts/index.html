@@ -1,22 +1,23 @@
 {{ define "main" }}
 
-<div class="level is-flex-wrap-wrap mt-3 has-text-centered-mobile">
-    <div class="level-item">
-      <h1 class="title">Hello!</h1>
-    </div>
-    <div class="level-item">
-      <p class="subtitle is-vcentered mx-6">
-        Hey there, I'm Lee. I do various random things, and sometimes I remember to capture the details here.
-      </p>
-    </div>
-    <div class="level-item">
-      <figure class="image is-128x128 is-inline-block">
-        <img src="/icons/madajczyk-128.webp" alt="Lee Madajczyk" class="is-rounded">
-      </figure>
-    </div>
-</div>
-
 <div class="column is-10 is-offset-1">
+  <section class="mb-6 mt-4">
+    <div class="columns is-vcentered">
+      <div class="column is-narrow has-text-centered-mobile">
+        <figure class="image is-128x128 is-inline-block">
+          <img src="/icons/madajczyk-128.webp" alt="Lee Madajczyk" class="is-rounded shadow" style="border: 2px solid var(--bulma-border-light);">
+        </figure>
+      </div>
+      <div class="column">
+        <h1 class="title is-2">Hello!</h1>
+        <p class="subtitle is-4">
+          Hey there, I'm Lee. I do various random things, and sometimes I remember to capture the details here.
+        </p>
+      </div>
+    </div>
+    <hr>
+  </section>
+
   <main role="main">
     {{/* Define a section to pull recent posts from. For Hugo 0.20 this will default to the section with the most number of pages. */ -}}
     {{ $mainSections := .Site.Params.mainSections | default (slice "post") -}}
