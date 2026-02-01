@@ -10,7 +10,7 @@
             <p class="subtitle mb-3">
               <time datetime="{{ .Date.UTC }}" itemprop="datePublished">{{ .Date.Format "January 2, 2006" }}</time>
               <span class="dt-published is-hidden">{{ .Date }}</span>
-              - {{ .WordCount }} Words
+              &middot; {{ .ReadingTime }} min read
             </p>
             {{- if .Params.tags -}} 
             <p class="mb-3">

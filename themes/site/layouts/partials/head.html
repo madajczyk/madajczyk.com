@@ -38,6 +38,8 @@
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="msapplication-config" content="/icons/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
+	{{- template "_internal/opengraph.html" . -}}
+	{{- template "_internal/twitter_cards.html" . -}}
 	{{- partial "structured-data.html" . -}}
   {{- partial "theme-init.html" . -}}
 </head>
