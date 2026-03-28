@@ -1,0 +1,23 @@
+{{ define "main" -}}
+<main>
+  <div class="mt-4">
+    <article id="content">
+      <div class="columns">
+        <div class="column is-8 is-offset-2">
+          <p class="title is-1" itemprop="headline name">Tags</p>
+          <div class="mt-6" style="display:flex; flex-wrap:wrap; gap:0.5rem;">
+            {{ range .Data.Terms.Alphabetical }}
+              <a href="{{ .Page.Permalink }}">
+                <div class="tags has-addons mb-0">
+                  <span class="tag is-success is-light">{{ .Page.Title }}</span>
+                  <span class="tag is-dark">{{ .Count }}</span>
+                </div>
+              </a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+{{ end -}}
