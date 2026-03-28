@@ -1,5 +1,5 @@
 ---
-title: "Cloud, Development, DevOps, Technology"
+title: "Security Architecture. Cloud. AI."
 menu: "main"
 draft: "false"
 ---
