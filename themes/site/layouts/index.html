@@ -5,7 +5,7 @@
     <div class="columns is-vcentered">
       <div class="column is-narrow has-text-centered-mobile">
         <figure class="image is-128x128 is-inline-block">
-          <img src="/icons/madajczyk-128.webp" alt="Lee Madajczyk" class="is-rounded shadow" style="border: 2px solid var(--bulma-border-light);">
+          <img src="/icons/madajczyk-128.webp" alt="Lee Madajczyk" class="is-rounded shadow home-avatar">
         </figure>
       </div>
       <div class="column">
@@ -32,7 +32,7 @@
       <div class="card">
         <div class="card-content">
           <div class="content">
-            {{ $n_posts := $.Param "recent_posts_number" | default 1 -}}
+            {{ $n_posts := .Site.Params.recentPostsNumber | default 1 -}}
             <section>
               {{/* Range through the first $n_posts items of the section */ -}}
               {{ range (first $n_posts $section) -}}

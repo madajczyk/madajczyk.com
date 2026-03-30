@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function setTheme(isDark) {
         document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
         localStorage.setItem(storageKey, isDark ? 'dark' : 'light');
+        toggleButton.setAttribute('aria-pressed', String(isDark));
+        toggleButton.setAttribute('aria-label', isDark ? 'Switch to light theme' : 'Switch to dark theme');
         updateIcon(isDark);
     }
 
@@ -25,7 +27,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize icon state
     const currentTheme = document.documentElement.getAttribute('data-theme');
+    toggleButton.setAttribute('type', 'button');
     updateIcon(currentTheme === 'dark');
+    toggleButton.setAttribute('aria-pressed', String(currentTheme === 'dark'));
+    toggleButton.setAttribute('aria-label', currentTheme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
 
     toggleButton.addEventListener('click', () => {
         const isDark = document.documentElement.getAttribute('data-theme') === 'dark';

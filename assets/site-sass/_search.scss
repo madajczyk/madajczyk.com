@@ -1,17 +1,30 @@
 #search-modal {
-  .modal-content {
-    width: 90%;
-    max-width: 640px;
-    align-self: flex-start;
-    margin-top: 10vh;
-  }
+  width: min(90vw, 48rem);
+  max-width: 48rem;
+  min-width: min(90vw, 32rem);
+  padding: 0;
+  background: transparent;
+  border: none;
 
-  .modal-background {
+  &::backdrop {
     backdrop-filter: blur(6px);
     background-color: rgba(0, 0, 0, 0.6);
   }
 
+  .modal-content {
+    width: 100%;
+    max-width: none;
+    align-self: flex-start;
+    margin-top: 10vh;
+  }
+
+  &[open] {
+    display: flex;
+    justify-content: center;
+  }
+
   .box {
+    box-sizing: border-box;
     width: 100%;
     padding: 1.5rem;
     border-radius: 8px;
@@ -74,12 +87,14 @@
 
   #search-results {
     margin-top: 1.5rem;
+    overflow-x: hidden;
     overflow-y: auto;
     max-height: 60vh;
     scrollbar-width: thin;
 
     .search-result-item {
       display: block;
+      overflow: hidden;
       text-decoration: none;
       border: 1px solid transparent;
       border-radius: 6px;
@@ -94,6 +109,7 @@
 
       .title {
         color: var(--bulma-text);
+        overflow-wrap: anywhere;
       }
 
       .subtitle {
@@ -107,6 +123,15 @@
       .tag.is-light {
         color: var(--bulma-text);
         background-color: var(--bulma-scheme-main-ter);
+      }
+
+      .columns {
+        margin-right: 0;
+        margin-left: 0;
+      }
+
+      .column {
+        min-width: 0;
       }
     }
   }

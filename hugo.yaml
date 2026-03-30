@@ -10,8 +10,13 @@ params:
   author: Lee Madajczyk
   logo: icons/favicon-96x96.png
   description: Security Architecture. Cloud. AI.
+  copyrightStartYear: 2000
   mainSections:
     - archive
+  recentPostsNumber: 1
+  search:
+    resultLimit: 10
+    threshold: 0.4
 
 outputFormats:
   jsonfeed:

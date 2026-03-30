@@ -8,7 +8,7 @@
           Lee Madajczyk
         </p>
         <p class="subtitle is-6">
-          Security Architecture. Cloud. AI.
+          {{ .Site.Params.description }}
         </p>
         <p class="is-size-7 is-italic mt-4">
           Built with Hugo, Bulma, and an alarming number of browser tabs.
@@ -33,7 +33,7 @@
         <p class="title is-5">License</p>
         <div class="content is-size-7">
           <p xmlns:cc="http://creativecommons.org/ns#">
-            &copy; 2000&ndash;{{ now.Format "2006" }} <a href="/">Lee Madajczyk</a>.
+            &copy; {{ .Site.Params.copyrightStartYear | default 2000 }}&ndash;{{ now.Format "2006" }} <a href="/">Lee Madajczyk</a>.
             <br>
             Unless otherwise noted, content is licensed under 
             <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="license noopener noreferrer">CC BY-NC-SA 4.0</a>.
@@ -48,28 +48,34 @@
   </div>
 </footer>
 
-<div id="search-modal" class="modal">
-  <div class="modal-background"></div>
+<dialog
+  id="search-modal"
+  class="modal search-modal-dialog"
+  role="dialog"
+  aria-labelledby="search-modal-title"
+  aria-modal="true"
+  data-search-result-limit="{{ .Site.Params.search.resultLimit | default 10 }}"
+  data-search-threshold="{{ .Site.Params.search.threshold | default 0.4 }}">
   <div class="modal-content">
     <div class="box p-5">
       <div class="level is-mobile is-vcentered mb-4">
         <div class="level-left">
-          <h2 class="title is-4 mb-0">Search</h2>
+          <h2 id="search-modal-title" class="title is-4 mb-0">Search</h2>
         </div>
         <div class="level-right">
-          <button class="delete is-medium modal-close-trigger" aria-label="close" style="margin-top: -4px;"></button>
+          <button class="delete is-medium modal-close-trigger search-modal-close" aria-label="close"></button>
         </div>
       </div>
       <div class="field">
         <p class="control has-icons-left">
           <input id="search-input" class="input is-large" type="text" placeholder="Type to search..." autofocus>
-          <span class="icon is-medium is-left" style="height: 3rem; width: 3rem;">
+          <span class="icon is-medium is-left search-modal-input-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
           </span>
         </p>
       </div>
       <div id="search-results" class="content mt-5"></div>
-      <div class="level is-mobile mt-5 pt-4" style="border-top: 1px solid var(--bulma-border-light);">
+      <div class="level is-mobile mt-5 pt-4 search-modal-footer">
         <div class="level-left">
            <span class="is-size-7 has-text-grey">Press <kbd class="keyboard-key">ESC</kbd> to close</span>
         </div>
@@ -79,4 +85,4 @@
       </div>
     </div>
   </div>
-</div>
+</dialog>

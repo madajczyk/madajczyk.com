@@ -1,29 +1,29 @@
 <nav class="navbar is-fixed-top is-link" role="navigation" aria-label="Main Navigation">
   <div class="navbar-brand">
     <a class="navbar-item brand-text has-text-weight-bold" aria-label="Lee Madajczyk" href="/">Lee Madajczyk</a>
-    <a class="navbar-burger" aria-label="Menu" aria-expanded="false" aria-controls="navbar-end">
+    <button class="navbar-burger" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navbar-end">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span> 
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
-    </a>
+    </button>
   </div>
-  <div class="navbar-menu">
+  <div class="navbar-menu" id="navbar-end">
     <div class="navbar-end">
       <a class="navbar-item" href="/archive" aria-label="Archive">Archive</a>
       <a class="navbar-item" href="/about" aria-label="About">About</a>
-      <a class="navbar-item" id="search-trigger" aria-label="Search" style="padding-left: 0.75rem; padding-right: 0.75rem;">
+      <button class="navbar-item navbar-search-trigger" id="search-trigger" type="button" aria-haspopup="dialog" aria-controls="search-modal" aria-expanded="false" aria-label="Search">
         <span class="icon">
            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
         </span>
         <span class="is-hidden-desktop ml-2">Search Archives</span>
-      </a>
-      <div class="navbar-item" style="padding-left: 0.25rem;">
-        <button id="theme-toggle" class="button is-text" aria-label="Toggle Dark Mode" style="text-decoration: none; padding: 0; width: auto; min-width: 2.5rem; height: 2.5rem; display: flex; align-items: center; justify-content: center; border: none; background: transparent;">
-          <span class="icon is-small icon-sun" style="display: none; color: #ffd700; margin: 0;">
+      </button>
+      <div class="navbar-item navbar-theme-toggle-item">
+        <button id="theme-toggle" class="button is-text navbar-theme-toggle" type="button" aria-label="Toggle theme">
+          <span class="icon is-small icon-sun navbar-theme-icon navbar-theme-icon-sun">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
           </span>
-          <span class="icon is-small icon-moon" style="display: none; color: #ffffff; margin: 0;">
+          <span class="icon is-small icon-moon navbar-theme-icon navbar-theme-icon-moon">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
           </span>
           <span class="is-hidden-desktop ml-2 has-text-white">Switch Theme</span>

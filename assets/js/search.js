@@ -1,15 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
   const modal = document.getElementById('search-modal');
   const openBtn = document.getElementById('search-trigger');
-  if (!modal || !openBtn) return;
+  if (!modal || !openBtn || typeof modal.showModal !== 'function') return;
 
-  const closeBtn = modal.querySelector('.modal-close');
   const closeTrigger = modal.querySelector('.modal-close-trigger');
-  const bg = modal.querySelector('.modal-background');
   const input = document.getElementById('search-input');
   const resultsDiv = document.getElementById('search-results');
+  const resultLimit = Number.parseInt(modal.dataset.searchResultLimit || '10', 10);
+  const searchThreshold = Number.parseFloat(modal.dataset.searchThreshold || '0.4');
+  let lastFocusedElement = null;
   let fuse;
   let recentSearches = JSON.parse(localStorage.getItem('recentSearches') || '[]');
+
+  const getFocusableElements = () => Array.from(
+    modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')
+  ).filter((element) => !element.hasAttribute('disabled') && !element.getAttribute('aria-hidden'));
 
   const updateRecentSearchesUI = () => {
     if (recentSearches.length === 0) return;
@@ -32,34 +37,86 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
-  const toggleModal = () => {
-    modal.classList.toggle('is-active');
-    if (modal.classList.contains('is-active')) {
-      input.value = '';
-      resultsDiv.innerHTML = '';
-      updateRecentSearchesUI();
-      input.focus();
-      if (!fuse) loadSearch();
+  const openModal = () => {
+    lastFocusedElement = document.activeElement;
+    if (!modal.open) {
+      modal.showModal();
+    }
+
+    modal.classList.add('is-active');
+    openBtn.setAttribute('aria-expanded', 'true');
+    input.value = '';
+    resultsDiv.innerHTML = '';
+    updateRecentSearchesUI();
+    input.focus();
+    if (!fuse) loadSearch();
+  };
+
+  const closeModal = () => {
+    if (!modal.open) return;
+
+    modal.classList.remove('is-active');
+    modal.close();
+    openBtn.setAttribute('aria-expanded', 'false');
+    if (lastFocusedElement instanceof HTMLElement) {
+      lastFocusedElement.focus();
+    } else {
+      openBtn.focus();
     }
   };
+
+  const handleTrapFocus = (event) => {
+    if (event.key !== 'Tab' || !modal.open) return;
+
+    const focusableElements = getFocusableElements();
+    if (focusableElements.length === 0) return;
+
+    const firstElement = focusableElements[0];
+    const lastElement = focusableElements[focusableElements.length - 1];
+
+    if (event.shiftKey && document.activeElement === firstElement) {
+      event.preventDefault();
+      lastElement.focus();
+    } else if (!event.shiftKey && document.activeElement === lastElement) {
+      event.preventDefault();
+      firstElement.focus();
+    }
+  };
+
+  modal.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
+
+  modal.addEventListener('keydown', handleTrapFocus);
+
+  modal.addEventListener('close', () => {
+    modal.classList.remove('is-active');
+    openBtn.setAttribute('aria-expanded', 'false');
+  });
+
+  openBtn.addEventListener('click', openModal);
+  if (closeTrigger) closeTrigger.addEventListener('click', closeModal);
+  
+  document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal.open) {
+          e.preventDefault();
+          closeModal();
+      }
+  });
+
+  if (modal.open) {
+      modal.classList.add('is-active');
+      openBtn.setAttribute('aria-expanded', 'true');
+      if (!fuse) loadSearch();
+  }
 
   const saveSearch = (term) => {
     if (!term || term.length < 3) return;
     recentSearches = [term, ...recentSearches.filter(t => t !== term)].slice(0, 5);
     localStorage.setItem('recentSearches', JSON.stringify(recentSearches));
   };
-
-  openBtn.addEventListener('click', toggleModal);
-  if (closeBtn) closeBtn.addEventListener('click', toggleModal);
-  if (closeTrigger) closeTrigger.addEventListener('click', toggleModal);
-  if (bg) bg.addEventListener('click', toggleModal);
-  
-  // Close on Escape
-  document.addEventListener('keydown', (e) => {
-      if(e.key === "Escape" && modal.classList.contains('is-active')) {
-          toggleModal();
-      }
-  });
 
   async function loadSearch() {
     try {
@@ -72,11 +129,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 { name: 'tags', weight: 0.6 },
                 { name: 'content', weight: 0.3 }
             ],
-            threshold: 0.4,
+            threshold: searchThreshold,
             ignoreLocation: true,
             minMatchCharLength: 3
         };
-        // Ensure Fuse is defined (loaded via CDN)
         if (typeof Fuse !== 'undefined') {
             fuse = new Fuse(data, options);
             
@@ -90,7 +146,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 displayResults(results);
             });
 
-            // Save search term on enter or when a result is clicked
             input.addEventListener('keydown', (e) => {
               if (e.key === 'Enter') saveSearch(input.value);
             });
@@ -107,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
     
-    const html = results.slice(0, 10).map(result => {
+    const html = results.slice(0, resultLimit).map(result => {
         const item = result.item;
         return `
             <a href="${item.permalink}" class="search-result-item box is-shadowless mb-2 p-3">
