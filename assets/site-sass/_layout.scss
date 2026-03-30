@@ -2,7 +2,36 @@
   border: 2px solid var(--bulma-border-light);
 }
 
-.content a:not(.tag):not(.button) {
+.content p a:not(.tag):not(.button),
+.content li a:not(.tag):not(.button),
+.content dd a:not(.tag):not(.button),
+.content blockquote a:not(.tag):not(.button) {
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
+.content h1 a:not(.tag):not(.button),
+.content h2 a:not(.tag):not(.button),
+.content h3 a:not(.tag):not(.button),
+.content h4 a:not(.tag):not(.button),
+.content h5 a:not(.tag):not(.button),
+.content h6 a:not(.tag):not(.button) {
+  text-decoration: none;
+}
+
+.content h1 a:not(.tag):not(.button):hover,
+.content h1 a:not(.tag):not(.button):focus-visible,
+.content h2 a:not(.tag):not(.button):hover,
+.content h2 a:not(.tag):not(.button):focus-visible,
+.content h3 a:not(.tag):not(.button):hover,
+.content h3 a:not(.tag):not(.button):focus-visible,
+.content h4 a:not(.tag):not(.button):hover,
+.content h4 a:not(.tag):not(.button):focus-visible,
+.content h5 a:not(.tag):not(.button):hover,
+.content h5 a:not(.tag):not(.button):focus-visible,
+.content h6 a:not(.tag):not(.button):hover,
+.content h6 a:not(.tag):not(.button):focus-visible {
   text-decoration: underline;
   text-decoration-thickness: 0.08em;
   text-underline-offset: 0.18em;
