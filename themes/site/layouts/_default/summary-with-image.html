@@ -7,11 +7,26 @@
         <a href="{{.RelPermalink}}" aria-hidden="true" tabindex="-1">
           <figure class="image is-fullwidth">
           {{ if (reflect.IsResource $featured_image) }}
-            {{/* Resize to 1200px wide for Hero display, preserving aspect ratio */}}
-            {{ $thumb := $featured_image.Resize "1200x webp" }}
-            <img src="{{ $thumb.RelPermalink }}" alt="{{ .Params.featured_image_alt | default .Title }}" loading="lazy">
+            {{ $small := $featured_image.Resize "480x webp" }}
+            {{ $medium := $featured_image.Resize "800x webp" }}
+            {{ $large := $featured_image.Resize "1200x webp" }}
+            <img
+              src="{{ $medium.RelPermalink }}"
+              srcset="{{ $small.RelPermalink }} 480w, {{ $medium.RelPermalink }} 800w, {{ $large.RelPermalink }} 1200w"
+              sizes="(min-width: 1408px) 960px, (min-width: 1024px) calc(100vw - 24rem), calc(100vw - 4.5rem)"
+              width="{{ $large.Width }}"
+              height="{{ $large.Height }}"
+              alt="{{ .Params.featured_image_alt | default .Title }}"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async">
           {{ else }}
-            <img src="{{ $featured_image }}" alt="{{ .Params.featured_image_alt | default .Title }}" loading="lazy">
+            <img
+              src="{{ $featured_image }}"
+              alt="{{ .Params.featured_image_alt | default .Title }}"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async">
           {{ end }}
           </figure>
         </a>

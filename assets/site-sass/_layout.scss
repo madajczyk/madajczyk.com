@@ -2,6 +2,12 @@
   border: 2px solid var(--bulma-border-light);
 }
 
+.content a:not(.tag):not(.button) {
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
 .terms-tag-list {
   display: flex;
   flex-wrap: wrap;
