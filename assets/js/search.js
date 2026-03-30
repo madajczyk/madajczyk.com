@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const html = results.slice(0, 10).map(result => {
         const item = result.item;
         return `
-            <a href="${item.permalink}" class="search-result-item box is-shadowless mb-2 p-3" onclick="saveSearch('${input.value.replace(/'/g, "\\'")}');">
+            <a href="${item.permalink}" class="search-result-item box is-shadowless mb-2 p-3">
                 <div class="columns is-mobile is-vcentered is-gapless mb-1">
                     <div class="column">
                         <h4 class="title is-6 has-text-weight-bold mb-0">${item.title}</h4>
@@ -125,5 +125,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }).join('');
     
     resultsDiv.innerHTML = html;
+    resultsDiv.querySelectorAll('.search-result-item').forEach((item) => {
+      item.addEventListener('click', () => {
+        saveSearch(input.value);
+      });
+    });
   }
 });

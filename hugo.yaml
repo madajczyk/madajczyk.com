@@ -10,6 +10,8 @@ params:
   author: Lee Madajczyk
   logo: icons/favicon-96x96.png
   description: Security Architecture. Cloud. AI.
+  mainSections:
+    - archive
 
 outputFormats:
   jsonfeed:
