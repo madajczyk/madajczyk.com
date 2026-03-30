@@ -1,0 +1,24 @@
+// Site-owned Bulma entrypoint.
+// Keep vendor Bulma in assets/sass/ and local overrides in assets/site-sass/
+// so framework upgrades are mostly a vendor tree refresh.
+
+@use "sass/utilities" with (
+  $family-primary: '"Nunito", sans-serif',
+  $control-border-width: 2px,
+  $info: #3e8dcf
+);
+
+@use "sass/components" with (
+  $navbar-burger-color: #ffffff
+);
+
+@forward "sass/themes";
+@forward "sass/base";
+@forward "sass/elements";
+@forward "sass/form";
+@forward "sass/components";
+@forward "sass/grid";
+@forward "sass/layout";
+@forward "sass/base/skeleton";
+@forward "sass/helpers";
+@forward "site-sass";

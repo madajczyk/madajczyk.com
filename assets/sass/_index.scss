@@ -1,66 +1,10 @@
-// Set your brand colors
-
-// Override global Sass variables from the /utilities folder
-@use "utilities" with (
-  $family-primary: '"Nunito", sans-serif',
-  $control-border-width: 2px,
-  $info: #3e8dcf
-);
-
-// Override Sass variables from the /form folder
-// @use "form" with (
-//   $input-shadow: none
-// );
-
-// Override Sass variables from the /components folder
-@use "components" with (
-  $navbar-burger-color: #ffffff
-);
-
+@forward "utilities";
+@forward "themes";
 @forward "base";
 @forward "elements";
+@forward "form";
+@forward "components";
 @forward "grid";
 @forward "layout";
 @forward "base/skeleton";
 @forward "helpers";
-
-// Import the themes so that all CSS variables have a value
-@forward "themes";
-
-// local load of fonts - update via https://gwfh.mranftl.com/fonts/nunito?subsets=latin
-
-/* nunito-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/nunito-v26-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* nunito-italic - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Nunito';
-  font-style: italic;
-  font-weight: 400;
-  src: url('../fonts/nunito-v26-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* nunito-700 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/nunito-v26-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* nunito-700italic - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Nunito';
-  font-style: italic;
-  font-weight: 700;
-  src: url('../fonts/nunito-v26-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}

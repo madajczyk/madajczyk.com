@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @use "initial-variables" as iv;
 @use "css-variables" as cv;
 
@@ -360,11 +362,11 @@
 }
 
 @mixin breakpoint($name) {
-  $breakpoint: map-get(iv.$breakpoints, $name);
+  $breakpoint: map.get(iv.$breakpoints, $name);
 
   @if $breakpoint {
-    $from: map-get($breakpoint, "from");
-    $until: map-get($breakpoint, "until");
+    $from: map.get($breakpoint, "from");
+    $until: map.get($breakpoint, "until");
 
     @if $from and $until {
       @include between($from, $until) {
@@ -407,8 +409,13 @@
 }
 
 @mixin ltr-property($property, $spacing, $right: true) {
-  $normal: if($right, "right", "left");
-  $opposite: if($right, "left", "right");
+  $normal: "left";
+  $opposite: "right";
+
+  @if $right {
+    $normal: "right";
+    $opposite: "left";
+  }
 
   @if iv.$rtl {
     #{$property}-#{$opposite}: $spacing;
@@ -418,8 +425,13 @@
 }
 
 @mixin ltr-position($spacing, $right: true) {
-  $normal: if($right, "right", "left");
-  $opposite: if($right, "left", "right");
+  $normal: "left";
+  $opposite: "right";
+
+  @if $right {
+    $normal: "right";
+    $opposite: "left";
+  }
 
   @if iv.$rtl {
     #{$opposite}: $spacing;

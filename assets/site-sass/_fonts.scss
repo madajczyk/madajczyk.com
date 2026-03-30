@@ -1,0 +1,38 @@
+// Local font load of Nunito.
+// Update source files via https://gwfh.mranftl.com/fonts/nunito?subsets=latin
+
+/* nunito-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/nunito-v26-latin-regular.woff2') format('woff2');
+}
+
+/* nunito-italic - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Nunito';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/nunito-v26-latin-italic.woff2') format('woff2');
+}
+
+/* nunito-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/nunito-v26-latin-700.woff2') format('woff2');
+}
+
+/* nunito-700italic - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Nunito';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../fonts/nunito-v26-latin-700italic.woff2') format('woff2');
+}

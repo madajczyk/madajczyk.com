@@ -11,7 +11,7 @@
 	{{ end -}}
 	<link rel="alternate" href="/feed.json" title="madajczyk.com" type="application/json" />
 	<link rel="canonical" href="{{ .Permalink }}">
-	{{ with resources.Get "sass/_index.scss" -}}
+	{{ with resources.Get "site.scss" -}}
 	{{ $opts := dict
 	  "enableSourceMap" (not hugo.IsProduction)
 	  "outputStyle" (cond hugo.IsProduction "compressed" "expanded")
