@@ -2,7 +2,7 @@
 title: "The Agent Did What?!"
 date: "2026-04-03"
 tags: ["security", "ai", "agents", "supply-chain", "zkml", "infrastructure"]
-description: "Agent frameworks are npm packages. Zero-knowledge proofs are the cryptographic primitive that can create accountability at the action layer — and the performance window is opening."
+description: "Agent frameworks are npm packages. Zero-knowledge proofs can be the cryptographic foundation that hold agents  accountable for their actions when something goes wrong."
 imagecredit: Robotic Overlords / Gemini
 ---
 
