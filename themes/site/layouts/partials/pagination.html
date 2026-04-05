@@ -15,7 +15,7 @@
   <ul class="pagination-list">
     {{ range .Paginator.Pagers }}
     <li>
-      <a class="pagination-link {{ if eq . $ }}is-current{{ end }}" aria-label="Goto page {{ .PageNumber }}" href="{{ .URL }}">{{ .PageNumber }}</a>
+      <a class="pagination-link {{ if eq .PageNumber $.Paginator.PageNumber }}is-current{{ end }}" aria-label="Goto page {{ .PageNumber }}" href="{{ .URL }}">{{ .PageNumber }}</a>
     </li>
     {{ end }}
   </ul>

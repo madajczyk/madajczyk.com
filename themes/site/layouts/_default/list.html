@@ -10,22 +10,36 @@
                     {{ $paginator := .Paginate (where .Pages "Type" "in" site.Params.mainSections) }}
                     {{ .Scratch.Set "currentYear" "0000" -}}
                     {{ range $paginator.Pages }}
-                        {{ if ne ($.Scratch.Get "currentYear") (.Date.Format "2006") -}}                        
-                    <p class="title is-2">{{ .Date.Format "2006" }}</p>
+                        {{ $featured_image := partial "func/GetFeaturedImage.html" . }}
+                        {{ if ne ($.Scratch.Get "currentYear") (.Date.Format "2006") -}}
+                        <p class="has-text-grey is-size-5 mb-3 mt-6" style="text-transform: uppercase; letter-spacing: 0.1em;">{{ .Date.Format "2006" }}</p>
                             {{ $.Scratch.Set "currentYear" ( .Date.Format "2006") -}}
                         {{ end -}}
-                    
-                        <p class="title is-3 ml-5"><a href="{{.Permalink}}">{{.Title}}</a></p>
-                        <p class="subtitle is-4 ml-5">{{ .Date.Format "2006-01-02" }}</p>
-                        {{ if ne .Description "" -}}
-                        <p class="ml-5">{{ .Description }}</p>
-                        {{ end -}}
-                        {{- if .Params.tags -}} 
-                        {{- range $key, $tag := .Params.tags }} 
-                            <a href="/tags/{{ $tag | urlize }}" aria-label="{{ $tag }}" class="is-info ml-5"><span class="tag is-success is-light">{{ $tag }}</span></a>
-                        {{- end -}}
-                        {{- end -}}
-                    <hr />
+
+                        <div class="is-flex is-align-items-flex-start mb-5">
+                            {{ if $featured_image -}}
+                            <a href="{{.Permalink}}" class="mr-4 is-flex-shrink-0" aria-hidden="true" tabindex="-1">
+                                {{ if (reflect.IsResource $featured_image) }}
+                                    {{ $thumb := $featured_image.Fill "96x64 webp" }}
+                                    <img src="{{ $thumb.RelPermalink }}" width="96" height="64" alt="" loading="lazy" decoding="async" style="border-radius: 4px; display: block;">
+                                {{ else }}
+                                    <img src="{{ $featured_image }}" width="96" height="64" alt="" loading="lazy" decoding="async" style="border-radius: 4px; object-fit: cover; display: block;">
+                                {{ end }}
+                            </a>
+                            {{ end -}}
+                            <div>
+                                <p class="title is-5 mb-1"><a href="{{.Permalink}}">{{.Title}}</a></p>
+                                <p class="has-text-grey is-size-7 mb-2">{{ .Date.Format "January 2, 2006" }}</p>
+                                {{ if ne .Description "" -}}
+                                <p class="is-size-6 mb-2">{{ .Description }}</p>
+                                {{ end -}}
+                                {{- if .Params.tags -}}
+                                {{- range $key, $tag := .Params.tags }}
+                                    <a href="/tags/{{ $tag | urlize }}" aria-label="{{ $tag }}" class="is-info"><span class="tag is-success is-light">{{ $tag }}</span></a>
+                                {{- end -}}
+                                {{- end -}}
+                            </div>
+                        </div>
                     {{ end -}}
                     {{ partial "pagination.html" . }}
                 </div>
