@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <div class="column is-10 is-offset-1">
-  <section class="mb-6 mt-4">
+  <section class="mb-3 mt-4">
     <div class="columns is-vcentered">
       <div class="column is-narrow has-text-centered-mobile">
         <figure class="image is-128x128 is-inline-block">
@@ -22,7 +22,6 @@
         </p>
       </div>
     </div>
-    <hr>
   </section>
 
   <main role="main">
@@ -36,29 +35,21 @@
       {{/* Derive the section name  */ -}}
       {{ $section_name := index (.Site.Params.mainSections) 0 -}}
     <div>
-      <div class="card">
+      <div class="card mb-5" style="margin-top: -8px;">
         <div class="card-content">
-          <div class="content">
-            {{ $n_posts := .Site.Params.recentPostsNumber | default 1 -}}
-            <section>
-              {{/* Range through the first $n_posts items of the section */ -}}
-              {{ range (first $n_posts $section) -}}
-                <div class="relative w-100 mb4">
-                  {{ .Render "summary-with-image" -}}
-                </div>
-                <div class="pt-3">
-                  <time datetime="{{ .Date.UTC }}" itemprop="datePublished">{{ .Date.Format "2006-01-02" }}</time><span class="mx-1"></span>
-                  {{- if .Params.tags -}} 
-                      {{- range $key, $tag := .Params.tags -}} 
-                          <a href="/tags/{{ $tag | urlize }}" aria-label="{{ $tag }}" class="is-info"><span class="tag is-success is-light">{{ $tag }}</span></a> 
-                      {{ end -}}
-                    {{- else -}}
-                        None
-                  {{- end -}}
-                </div>
-              {{ end -}}
-            </section>
-          </div>
+          {{ $n_posts := .Site.Params.recentPostsNumber | default 1 -}}
+          {{ range (first $n_posts $section) -}}
+            {{ .Render "summary-with-image" -}}
+            <div class="mt-3">
+              <time class="has-text-grey is-size-7" datetime="{{ .Date.UTC }}" itemprop="datePublished">{{ .Date.Format "January 2, 2006" }}</time>
+              {{- if .Params.tags -}}
+              <span class="mx-1 has-text-grey">·</span>
+              {{- range $key, $tag := .Params.tags -}}
+                <a href="/tags/{{ $tag | urlize }}" aria-label="{{ $tag }}" class="is-info"><span class="tag is-success is-light">{{ $tag }}</span></a>
+              {{- end -}}
+              {{- end -}}
+            </div>
+          {{ end -}}
         </div>
       </div>
 
