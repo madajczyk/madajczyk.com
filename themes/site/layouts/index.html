@@ -66,26 +66,39 @@
 
       {{ if ge $section_count (add $n_posts 1) }}
       <section>
-        <div class="fixed-grid has-1-cols-mobile has-2-cols-desktop has-4-cols-fullhd">
+        <div class="fixed-grid has-1-cols-mobile has-2-cols-desktop">
         <div class="grid">
           {{ range (first 4 (after $n_posts $section))  }}
+          {{ $featured_image := partial "func/GetFeaturedImage.html" . }}
           <div class="cell">
-            <div class="box">
-              <div class="content">
-                <h2>
-                  <a href="{{ .RelPermalink }}">
-                    {{ .Title }}
-                  </a>
-                </h2>
-                <p>{{ .Description }}</p>
-                <time datetime="{{ .Date.UTC }}" itemprop="datePublished">{{ .Date.Format "2006-01-02" }}</time><span class="mx-1"></span>
-                {{- if .Params.tags -}} 
-                    {{- range $key, $tag := .Params.tags }} 
-                        <a href="/tags/{{ $tag | urlize }}" aria-label="{{ $tag }}" class="is-info"><span class="tag is-success is-light">{{ $tag }}</span></a>
-                    {{- end -}}
-                  {{- else -}}
-                      None
-                {{- end -}}
+            <div class="card">
+              {{ if $featured_image -}}
+              <div class="card-image">
+                <a href="{{ .RelPermalink }}" aria-hidden="true" tabindex="-1">
+                  <figure class="image is-16by9">
+                    {{ if (reflect.IsResource $featured_image) }}
+                      {{ $thumb := $featured_image.Fill "640x360 webp" }}
+                      <img src="{{ $thumb.RelPermalink }}" width="640" height="360" alt="" loading="lazy" decoding="async">
+                    {{ else }}
+                      <img src="{{ $featured_image }}" alt="" loading="lazy" decoding="async" style="object-fit: cover;">
+                    {{ end }}
+                  </figure>
+                </a>
+              </div>
+              {{ end -}}
+              <div class="card-content">
+                <div class="content">
+                  <h2 class="title is-5 mb-1">
+                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                  </h2>
+                  <p class="has-text-grey is-size-7 mb-2">{{ .Date.Format "January 2, 2006" }}</p>
+                  <p class="is-size-6">{{ .Description }}</p>
+                  {{- if .Params.tags -}}
+                      {{- range $key, $tag := .Params.tags }}
+                          <a href="/tags/{{ $tag | urlize }}" aria-label="{{ $tag }}" class="is-info"><span class="tag is-success is-light">{{ $tag }}</span></a>
+                      {{- end -}}
+                  {{- end -}}
+                </div>
               </div>
             </div>
           </div>
