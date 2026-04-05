@@ -1,8 +1,8 @@
 <head>
 	<meta charset="utf-8">
-	<title>{{ .Site.Title }} - {{ .Title | title }}</title>
+	<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 	<meta name="author" content="Lee Madajczyk">
-	<meta name="description" content="Lee Madajczyk">
+	<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -38,8 +38,8 @@
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="msapplication-config" content="/icons/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
-	{{- template "_internal/opengraph.html" . -}}
-	{{- template "_internal/twitter_cards.html" . -}}
+	{{- partial "opengraph.html" . -}}
+	{{- partial "twitter-cards.html" . -}}
 	{{- partial "structured-data.html" . -}}
   {{- partial "theme-init.html" . -}}
 </head>

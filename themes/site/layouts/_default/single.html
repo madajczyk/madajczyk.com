@@ -2,61 +2,123 @@
 {{ $featured_image := partial "func/GetFeaturedImage.html" . -}}
 <section id="main">
   <div>
-        <article id="content">
-          <div class="column is-8 is-offset-2">
-            <p class="title is-2" itemprop="headline name">{{ .Title }}</p>
-            {{ $showSubtitle := .Params.subtitle | default "true" -}}
-            {{ if $showSubtitle -}}
-            <p class="subtitle mb-3">
-              <time datetime="{{ .Date.UTC }}" itemprop="datePublished">{{ .Date.Format "January 2, 2006" }}</time>
-              <span class="dt-published is-hidden">{{ .Date }}</span>
-              &middot; {{ .ReadingTime }} min read
-            </p>
-            {{- if .Params.tags -}} 
-            <p class="mb-3">
-              {{- range $key, $tag := .Params.tags }} 
-                <a href="/tags/{{ $tag | urlize }}" aria-label="{{ $tag }}" class="is-info"><span class="tag is-success is-light">{{ $tag }}</span></a>
-              {{- end -}}
-            {{- else -}}
-            <hr />
-            {{- end -}}
-            {{ end -}}
-            {{ if $featured_image -}}
-            <div class="has-text-centered pb-4">
-              <figure class="image is-fullwidth">
-                {{ if (reflect.IsResource $featured_image) }}
-                {{ $optimized := $featured_image.Resize "1200x webp" }}
-                <img src="{{ $optimized.RelPermalink }}" alt="Image from {{ .Title }}">
-                {{ else }}
-                <img src="{{ $featured_image }}" alt="Image from {{ .Title }}">
-                {{ end }}
-              </figure>
-              {{ with .Params.imagecredit }}
-              <div class="content is-small is-italic has-text-right">
-                Image Credit: {{ .  }}
-              </div>
-              {{ end }}
-            </div>
+    <article id="content">
+      <div class="column is-8 is-offset-2">
 
+        {{/* Article header */}}
+        <p class="title is-2 mb-2" itemprop="headline name">{{ .Title }}</p>
+        {{ with .Description }}
+        <p class="is-size-5 is-italic has-text-grey mb-3">{{ . }}</p>
+        {{ end }}
+        {{ $showSubtitle := .Params.subtitle | default "true" -}}
+        {{ if $showSubtitle -}}
+        <p class="has-text-grey is-size-7 mb-4">
+          <time datetime="{{ .Date.UTC }}" itemprop="datePublished">{{ .Date.Format "January 2, 2006" }}</time>
+          <span class="dt-published is-hidden">{{ .Date }}</span>
+          &middot; {{ .ReadingTime }} min read
+        </p>
+        {{ end -}}
+
+        <hr class="mt-2 mb-5">
+
+        {{/* Hero image */}}
+        {{ if $featured_image -}}
+        <div class="pb-4">
+          <figure class="image is-fullwidth">
+            {{ if (reflect.IsResource $featured_image) }}
+            {{ $small := $featured_image.Resize "480x webp" }}
+            {{ $medium := $featured_image.Resize "800x webp" }}
+            {{ $large := $featured_image.Resize "1200x webp" }}
+            <img
+              src="{{ $large.RelPermalink }}"
+              srcset="{{ $small.RelPermalink }} 480w, {{ $medium.RelPermalink }} 800w, {{ $large.RelPermalink }} 1200w"
+              sizes="(max-width: 768px) 100vw, 800px"
+              width="{{ $large.Width }}"
+              height="{{ $large.Height }}"
+              alt="{{ .Params.featured_image_alt | default .Title }}"
+              loading="lazy"
+              decoding="async">
+            {{ else }}
+            <img src="{{ $featured_image }}" alt="{{ .Params.featured_image_alt | default .Title }}" loading="lazy" decoding="async">
             {{ end }}
-            <div class="content" itemprop="articleBody">
-              {{ $showOldSiteNotice := .Params.oldsitenotice | default "" -}}
-              {{ if ne $showOldSiteNotice "" -}}
-              <div class="notification is-success is-light">
-                Note: This article was originally posted via {{ $showOldSiteNotice }} on a domain name I no longer own.
-                I've consolidated all of my earlier ramblings and digressions here.
-              </div>
-              {{ end -}}              
-              {{ $showUpdate := .Params.update | default "" -}}
-              {{ if ne $showUpdate "" -}}
-              <div class="notification is-info is-light">
-                {{ .Params.update }}
-              </div>
-              {{ end -}}              
-              {{ .Content }}
-            </div>
+          </figure>
+          {{ with .Params.imagecredit }}
+          <div class="content is-small is-italic has-text-right">
+            Image Credit: {{ . }}
           </div>
-        </article>
+          {{ end }}
+        </div>
+        {{ end -}}
+
+        {{/* Article body */}}
+        <div class="content" itemprop="articleBody">
+          {{ with .Params.oldsitenotice -}}
+          <div class="notification is-success is-light">
+            Note: This article was originally posted via {{ . }} on a domain name I no longer own.
+            I've consolidated all of my earlier ramblings and digressions here.
+          </div>
+          {{ end -}}
+          {{ with .Params.update -}}
+          <div class="notification is-info is-light">
+            {{ . }}
+          </div>
+          {{ end -}}
+          {{ .Content }}
+        </div>
+
+        {{/* Article footer */}}
+        <hr class="mt-5 mb-4">
+
+        {{/* Tags */}}
+        {{ with .Params.tags }}
+        <div class="tags mb-4">
+          {{ range . }}
+          <a href="/tags/{{ . | urlize }}" aria-label="{{ . }}"><span class="tag is-success is-light">{{ . }}</span></a>
+          {{ end }}
+        </div>
+        {{ end }}
+
+        {{/* Fake search bar */}}
+        {{ $allPages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+        {{ $oldest := index (last 1 $allPages) 0 }}
+        {{ $years := sub now.Year $oldest.Date.Year }}
+        <div class="control has-icons-left mb-5">
+          <button
+            type="button"
+            class="input is-rounded"
+            style="text-align: left; cursor: text; height: 2.5em;"
+            onclick="document.getElementById('search-trigger').click()"
+            aria-label="Search the archive"
+          >
+            <span class="has-text-grey">Search {{ $years }}+ years of articles...</span>
+          </button>
+          <span class="icon is-left" style="pointer-events: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </span>
+        </div>
+
+        {{/* 50/50 prev/next */}}
+        {{ if or .PrevInSection .NextInSection }}
+        <div class="columns mt-2">
+          <div class="column">
+            {{ with .PrevInSection }}
+            <p class="has-text-grey is-size-7 mb-1" style="text-transform: uppercase; letter-spacing: 0.1em;">← Older</p>
+            <a class="has-text-weight-semibold" href="{{ .Permalink }}">{{ .Title }}</a>
+            <p class="has-text-grey is-size-7 mt-1">{{ .Date.Format "January 2, 2006" }}</p>
+            {{ end }}
+          </div>
+          <div class="column has-text-right">
+            {{ with .NextInSection }}
+            <p class="has-text-grey is-size-7 mb-1" style="text-transform: uppercase; letter-spacing: 0.1em;">Newer →</p>
+            <a class="has-text-weight-semibold" href="{{ .Permalink }}">{{ .Title }}</a>
+            <p class="has-text-grey is-size-7 mt-1">{{ .Date.Format "January 2, 2006" }}</p>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+
+      </div>
+    </article>
   </div>
 </section>
 {{ end }}
