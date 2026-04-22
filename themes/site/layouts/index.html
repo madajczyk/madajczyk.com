@@ -44,7 +44,7 @@
               <time class="has-text-grey is-size-7" datetime="{{ .Date.UTC }}" itemprop="datePublished">{{ .Date.Format "January 2, 2006" }}</time>
               {{- if .Params.tags -}}
               <span class="mx-1 has-text-grey">·</span>
-              {{- range $key, $tag := .Params.tags -}}
+              {{- range $key, $tag := .Params.tags }}
                 <a href="/tags/{{ $tag | urlize }}" aria-label="{{ $tag }}" class="is-info"><span class="tag is-success is-light">{{ $tag }}</span></a>
               {{- end -}}
               {{- end -}}
