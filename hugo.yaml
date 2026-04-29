@@ -18,6 +18,11 @@ params:
     resultLimit: 10
     threshold: 0.4
 
+mediaTypes:
+  text/markdown:
+    suffixes:
+      - md
+
 outputFormats:
   jsonfeed:
     mediaType: "application/json"
@@ -27,12 +32,31 @@ outputFormats:
     mediaType: "application/json"
     baseName: "search"
     isPlainText: true
+  Markdown:
+    mediaType: text/markdown
+    baseName: index
+    isPlainText: true
+    isHTML: false
+    rel: alternate
+    permalinkable: false
+  LLMsTxt:
+    mediaType: text/plain
+    baseName: llms
+    isPlainText: true
+    isHTML: false
+    rel: alternate
 
 outputs:
   home:
-    - "html"
-    - "rss"
-    - "jsonfeed"
-    - "SearchIndex"
+    - html
+    - rss
+    - jsonfeed
+    - SearchIndex
+    - LLMsTxt
   page:
-    - "html"
+    - html
+    - Markdown
+  section:
+    - html
+    - rss
+    - Markdown
