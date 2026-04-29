@@ -1,5 +1,5 @@
-# {{ .Title }}
+# {{ .Title | htmlUnescape | safeHTML }}
 
 {{- range .Pages }}
-- [{{ .Title }}]({{ .RelPermalink }}index.md){{ with .Description }}: {{ . }}{{ end }}
+- [{{ .Title | htmlUnescape | safeHTML }}]({{ .RelPermalink }}index.md){{ with .Description }}: {{ . | htmlUnescape | safeHTML }}{{ end }}
 {{- end }}

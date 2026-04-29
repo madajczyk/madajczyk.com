@@ -7,12 +7,12 @@
 {{ $mainSections := .Site.Params.mainSections -}}
 {{ $pages := where .Site.RegularPages "Type" "not in" $mainSections -}}
 {{- range $pages }}
-- [{{ .Title }}]({{ .Permalink }}index.md){{ with .Description }}: {{ . }}{{ end }}
+- [{{ .Title | htmlUnescape | safeHTML }}]({{ .Permalink }}index.md){{ with .Description }}: {{ . | htmlUnescape | safeHTML }}{{ end }}
 {{- end }}
 
 ## Posts
 
 {{ $posts := where .Site.RegularPages "Type" "in" $mainSections -}}
 {{- range $posts }}
-- [{{ .Title }}]({{ .Permalink }}index.md){{ with .Description }}: {{ . }}{{ end }}
+- [{{ .Title | htmlUnescape | safeHTML }}]({{ .Permalink }}index.md){{ with .Description }}: {{ . | htmlUnescape | safeHTML }}{{ end }}
 {{- end }}

@@ -1,7 +1,7 @@
-{{- with .Title -}}# {{ . }}
+{{- with .Title -}}# {{ . | htmlUnescape | safeHTML }}
 
 {{ end -}}
-{{- with .Description -}}> {{ . }}
+{{- with .Description -}}> {{ . | htmlUnescape | safeHTML }}
 
 {{ end -}}
 {{- with .Date -}}Published: {{ .Format "January 2, 2006" }}
