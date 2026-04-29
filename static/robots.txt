@@ -1,4 +1,5 @@
 User-agent: *
-Disallow: 
+Disallow:
 
 Sitemap: https://madajczyk.com/sitemap.xml
+LLMs: https://madajczyk.com/llms.txt
