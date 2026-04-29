@@ -1,6 +1,7 @@
 {{ define "main" -}}
 {{ $featured_image := partial "func/GetFeaturedImage.html" . -}}
 <section id="main">
+  {{- partial "agent-directive.html" . }}
   <div>
     <article id="content">
       <div class="column is-8 is-offset-2">
