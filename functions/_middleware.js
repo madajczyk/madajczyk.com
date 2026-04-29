@@ -7,8 +7,13 @@ export async function onRequest({ request, next }) {
 
     // Don't double-rewrite direct .md requests
     if (!path.endsWith(".md")) {
-      if (!path.endsWith("/")) path += "/";
-      url.pathname = path + "index.md";
+      // Homepage has no index.md — serve llms.txt instead
+      if (path === "/") {
+        url.pathname = "/llms.txt";
+      } else {
+        if (!path.endsWith("/")) path += "/";
+        url.pathname = path + "index.md";
+      }
 
       const mdResponse = await fetch(url.toString());
       if (mdResponse.ok) {
