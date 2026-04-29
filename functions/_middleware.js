@@ -21,7 +21,7 @@ export async function onRequest({ request, next }) {
           status: 200,
           headers: {
             "Content-Type": "text/markdown; charset=utf-8",
-            "Vary": "Accept",
+            "Cache-Control": "no-store",
           },
         });
       }
