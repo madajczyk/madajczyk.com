@@ -23,10 +23,5 @@ export async function onRequest({ request, next }) {
     }
   }
 
-  const response = await next();
-
-  // Add Vary: Accept to all responses so caches handle negotiation correctly
-  const newHeaders = new Headers(response.headers);
-  newHeaders.set("Vary", "Accept");
-  return new Response(response.body, { ...response, headers: newHeaders });
+  return next();
 }
