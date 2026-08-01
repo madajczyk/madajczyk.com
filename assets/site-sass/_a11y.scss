@@ -1,0 +1,21 @@
+// Accessibility corrections for vendor Bulma helpers.
+// Vendor tree stays untouched — see assets/sass/VENDOR_PATCHES.md.
+
+// Bulma emits `.has-text-grey` as a single `!important` rule that is never
+// re-themed, so the same hsl(221, 14%, 48%) that reads fine on the light
+// scheme lands at 3.86:1 on the dark scheme background (#14161a) — under the
+// WCAG AA 4.5:1 minimum for small text. Lifting lightness to 54% gives 4.81:1
+// while keeping the muted tone. Applied to the dark scheme only.
+$grey-on-dark-scheme: hsl(221, 14%, 54%);
+
+// Matches Bulma's own dark conditions: system preference, unless the reader
+// has explicitly chosen light via the theme toggle.
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .has-text-grey {
+    color: $grey-on-dark-scheme !important;
+  }
+}
+
+[data-theme="dark"] .has-text-grey {
+  color: $grey-on-dark-scheme !important;
+}

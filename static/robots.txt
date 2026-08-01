@@ -2,4 +2,7 @@ User-agent: *
 Disallow:
 
 Sitemap: https://madajczyk.com/sitemap.xml
-LLMs: https://madajczyk.com/llms.txt
+
+# LLMs is not a registered robots.txt directive, so it must stay a comment or
+# validators reject the file. /llms.txt is discovered by convention at the root.
+# LLMs: https://madajczyk.com/llms.txt
