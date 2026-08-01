@@ -10,7 +10,40 @@ document.addEventListener('DOMContentLoaded', () => {
   const searchThreshold = Number.parseFloat(modal.dataset.searchThreshold || '0.4');
   let lastFocusedElement = null;
   let fuse;
-  let recentSearches = JSON.parse(localStorage.getItem('recentSearches') || '[]');
+
+  // Build detached nodes and assign text via textContent so untrusted values
+  // are never parsed as HTML.
+  const el = (tag, className, text) => {
+    const node = document.createElement(tag);
+    if (className) node.className = className;
+    if (text !== undefined) node.textContent = text;
+    return node;
+  };
+
+  // Only same-scheme http(s) links are allowed through; blocks javascript:/data: URLs.
+  const safeHref = (value) => {
+    if (typeof value !== 'string') return '#';
+    try {
+      const parsed = new URL(value, window.location.origin);
+      return parsed.protocol === 'http:' || parsed.protocol === 'https:' ? parsed.href : '#';
+    } catch {
+      return '#';
+    }
+  };
+
+  // localStorage is untrusted input: malformed JSON here used to throw and break search entirely.
+  const loadRecentSearches = () => {
+    try {
+      const parsed = JSON.parse(localStorage.getItem('recentSearches') || '[]');
+      if (!Array.isArray(parsed)) return [];
+      return parsed.filter((term) => typeof term === 'string').slice(0, 5);
+    } catch (err) {
+      console.warn('Discarding malformed recentSearches from localStorage', err);
+      return [];
+    }
+  };
+
+  let recentSearches = loadRecentSearches();
 
   const getFocusableElements = () => Array.from(
     modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')
@@ -18,23 +51,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const updateRecentSearchesUI = () => {
     if (recentSearches.length === 0) return;
-    const tagsHtml = recentSearches.map(term => `
-      <span class="tag is-info is-light is-clickable recent-search-tag mr-2 mb-2" data-term="${term}">${term}</span>
-    `).join('');
-    
-    resultsDiv.innerHTML = `
-      <div class="mb-4">
-        <p class="is-size-7 has-text-grey mb-2">Recent Searches:</p>
-        <div class="tags">${tagsHtml}</div>
-      </div>
-    `;
 
-    resultsDiv.querySelectorAll('.recent-search-tag').forEach(tag => {
+    const wrapper = el('div', 'mb-4');
+    wrapper.append(el('p', 'is-size-7 has-text-grey mb-2', 'Recent Searches:'));
+
+    const tags = el('div', 'tags');
+    recentSearches.forEach((term) => {
+      const tag = el('span', 'tag is-info is-light is-clickable recent-search-tag mr-2 mb-2', term);
+      tag.dataset.term = term;
       tag.addEventListener('click', () => {
-        input.value = tag.dataset.term;
+        input.value = term;
         input.dispatchEvent(new Event('input'));
       });
+      tags.append(tag);
     });
+
+    wrapper.append(tags);
+    resultsDiv.replaceChildren(wrapper);
   };
 
   const openModal = () => {
@@ -46,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
     modal.classList.add('is-active');
     openBtn.setAttribute('aria-expanded', 'true');
     input.value = '';
-    resultsDiv.innerHTML = '';
+    resultsDiv.replaceChildren();
     updateRecentSearchesUI();
     input.focus();
     if (!fuse) loadSearch();
@@ -152,38 +185,44 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     } catch (err) {
         console.error("Failed to load search index", err);
-        resultsDiv.innerHTML = '<p class="has-text-danger">Failed to load search. Please try again later.</p>';
+        resultsDiv.replaceChildren(
+          el('p', 'has-text-danger', 'Failed to load search. Please try again later.')
+        );
     }
   }
 
+  const formatYear = (date) => {
+    if (!date) return '';
+    const year = new Date(date).getFullYear();
+    return Number.isFinite(year) ? String(year) : '';
+  };
+
+  const buildResultItem = (item) => {
+    const link = el('a', 'search-result-item box is-shadowless mb-2 p-3');
+    link.href = safeHref(item.permalink);
+
+    const columns = el('div', 'columns is-mobile is-vcentered is-gapless mb-1');
+    const titleColumn = el('div', 'column');
+    titleColumn.append(el('h4', 'title is-6 has-text-weight-bold mb-0', item.title ?? ''));
+    const yearColumn = el('div', 'column is-narrow');
+    yearColumn.append(el('span', 'tag is-light is-rounded', formatYear(item.date)));
+    columns.append(titleColumn, yearColumn);
+
+    const summary = item.summary ? `${String(item.summary).substring(0, 100)}...` : '';
+    link.append(columns, el('p', 'is-size-7 is-italic mb-2 has-text-grey', summary));
+
+    link.addEventListener('click', () => saveSearch(input.value));
+    return link;
+  };
+
   function displayResults(results) {
     if (results.length === 0) {
-        resultsDiv.innerHTML = '<div class="notification is-light">No results found.</div>';
+        resultsDiv.replaceChildren(el('div', 'notification is-light', 'No results found.'));
         return;
     }
-    
-    const html = results.slice(0, resultLimit).map(result => {
-        const item = result.item;
-        return `
-            <a href="${item.permalink}" class="search-result-item box is-shadowless mb-2 p-3">
-                <div class="columns is-mobile is-vcentered is-gapless mb-1">
-                    <div class="column">
-                        <h4 class="title is-6 has-text-weight-bold mb-0">${item.title}</h4>
-                    </div>
-                    <div class="column is-narrow">
-                        <span class="tag is-light is-rounded">${item.date ? new Date(item.date).getFullYear() : ''}</span>
-                    </div>
-                </div>
-                <p class="is-size-7 is-italic mb-2 has-text-grey">${item.summary ? item.summary.substring(0, 100) + '...' : ''}</p>
-            </a>
-        `;
-    }).join('');
-    
-    resultsDiv.innerHTML = html;
-    resultsDiv.querySelectorAll('.search-result-item').forEach((item) => {
-      item.addEventListener('click', () => {
-        saveSearch(input.value);
-      });
-    });
+
+    resultsDiv.replaceChildren(
+      ...results.slice(0, resultLimit).map((result) => buildResultItem(result.item))
+    );
   }
 });
